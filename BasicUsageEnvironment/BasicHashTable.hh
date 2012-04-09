@@ -21,10 +21,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #define _BASIC_HASH_TABLE_HH
 
 #ifndef _HASH_TABLE_HH
-#include "HashTable.hh"
+#include <UsageEnvironment/HashTable.hh>
 #endif
 #ifndef _NET_COMMON_H
-#include <NetCommon.h> // to ensure that "uintptr_t" is defined
+#include <groupsock/NetCommon.h> // to ensure that "uintptr_t" is defined
 #endif
 
 // A simple hash table implementation, inspired by the hash table

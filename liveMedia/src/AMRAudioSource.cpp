@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A source object for AMR audio sources
 // Implementation
 
-#include "AMRAudioSource.hh"
+#include "../AMRAudioSource.hh"
 
 AMRAudioSource::AMRAudioSource(UsageEnvironment& env,
 			       Boolean isWideband, unsigned numChannels)

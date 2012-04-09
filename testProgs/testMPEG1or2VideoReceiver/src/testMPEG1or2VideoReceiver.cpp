@@ -18,10 +18,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // and outputs the resulting MPEG file stream to 'stdout'
 // main program
 
-#include "liveMedia.hh"
-#include "GroupsockHelper.hh"
-
-#include "BasicUsageEnvironment.hh"
+#include <liveMedia/liveMedia.hh>
+#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
+#include <groupsock/GroupsockHelper.hh>
 
 // To receive a "source-specific multicast" (SSM) stream, uncomment this:
 //#define USE_SSM 1

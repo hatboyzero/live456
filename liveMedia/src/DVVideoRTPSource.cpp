@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // DV Video RTP Sources
 // Implementation
 
-#include "DVVideoRTPSource.hh"
+#include "../DVVideoRTPSource.hh"
 
 DVVideoRTPSource*
 DVVideoRTPSource::createNew(UsageEnvironment& env,

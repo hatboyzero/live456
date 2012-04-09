@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // An class that can be used to create (possibly multiple) 'replicas' of an incoming stream.
 // Implementation.
 
-#include "StreamReplicator.hh"
+#include "../StreamReplicator.hh"
 
 ////////// Definition of "StreamReplica": The class that implements each stream replica //////////
 

@@ -20,8 +20,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // be implemented transparently.)
 // Implementation
 
-#include "RTPInterface.hh"
-#include <GroupsockHelper.hh>
+#include "../RTPInterface.hh"
+#include <groupsock/GroupsockHelper.hh>
 #include <stdio.h>
 
 ////////// Helper Functions - Definition //////////

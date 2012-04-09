@@ -24,10 +24,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #define _MP3_AUDIO_MATROSKA_FILE_SERVER_MEDIA_SUBSESSION_HH
 
 #ifndef _MP3_AUDIO_FILE_SERVER_MEDIA_SUBSESSION_HH
-#include "MP3AudioFileServerMediaSubsession.hh"
+#include "../MP3AudioFileServerMediaSubsession.hh"
 #endif
 #ifndef _MATROSKA_FILE_SERVER_DEMUX_HH
-#include "MatroskaFileServerDemux.hh"
+#include "../MatroskaFileServerDemux.hh"
 #endif
 
 class MP3AudioMatroskaFileServerMediaSubsession: public MP3AudioFileServerMediaSubsession {

@@ -17,8 +17,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A SIP client test program that opens a SIP URL argument,
 // and extracts the data from each incoming RTP stream.
 
-#include "playCommon.hh"
-#include "SIPClient.hh"
+#include "../../Common/src/playCommon.hh"
+#include <liveMedia/SIPClient.hh>
 
 SIPClient* ourSIPClient = NULL;
 Medium* createClient(UsageEnvironment& env, char const* /*url*/, int verbosityLevel, char const* applicationName) {

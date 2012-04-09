@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A server demultiplexor for a Matroska file
 // Implementation
 
-#include "MatroskaFileServerDemux.hh"
+#include "../MatroskaFileServerDemux.hh"
 #include "MP3AudioMatroskaFileServerMediaSubsession.hh"
 #include "AACAudioMatroskaFileServerMediaSubsession.hh"
 #include "AC3AudioMatroskaFileServerMediaSubsession.hh"

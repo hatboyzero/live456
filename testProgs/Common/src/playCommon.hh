@@ -17,7 +17,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A common framework, used for the "openRTSP" and "playSIP" applications
 // Interfaces
 
-#include "liveMedia.hh"
+#include <liveMedia/liveMedia.hh>
 
 extern Medium* createClient(UsageEnvironment& env, char const* URL, int verbosityLevel, char const* applicationName);
 extern RTSPClient* ourRTSPClient;

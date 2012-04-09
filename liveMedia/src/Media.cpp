@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Media
 // Implementation
 
-#include "Media.hh"
-#include "HashTable.hh"
+#include "../Media.hh"
+#include <UsageEnvironment/HashTable.hh>
 
 ////////// Medium //////////
 

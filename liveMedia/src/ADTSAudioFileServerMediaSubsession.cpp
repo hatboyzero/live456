@@ -19,9 +19,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // on demand, from an AAC audio file in ADTS format
 // Implementation
 
-#include "ADTSAudioFileServerMediaSubsession.hh"
-#include "ADTSAudioFileSource.hh"
-#include "MPEG4GenericRTPSink.hh"
+#include "../ADTSAudioFileServerMediaSubsession.hh"
+#include "../ADTSAudioFileSource.hh"
+#include "../MPEG4GenericRTPSink.hh"
 
 ADTSAudioFileServerMediaSubsession*
 ADTSAudioFileServerMediaSubsession::createNew(UsageEnvironment& env,

@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A generic RTP sink for text codecs (abstract base class)
 // Implementation
 
-#include "TextRTPSink.hh"
+#include "../TextRTPSink.hh"
 
 TextRTPSink::TextRTPSink(UsageEnvironment& env,
 			 Groupsock* rtpgs, unsigned char rtpPayloadType,

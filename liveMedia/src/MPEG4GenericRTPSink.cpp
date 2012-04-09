@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // MPEG4-GENERIC ("audio", "video", or "application") RTP stream sinks
 // Implementation
 
-#include "MPEG4GenericRTPSink.hh"
-#include "Locale.hh"
+#include "../MPEG4GenericRTPSink.hh"
+#include "../Locale.hh"
 
 MPEG4GenericRTPSink
 ::MPEG4GenericRTPSink(UsageEnvironment& env, Groupsock* RTPgs,

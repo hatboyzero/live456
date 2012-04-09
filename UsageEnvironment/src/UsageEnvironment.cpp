@@ -17,7 +17,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Usage Environment
 // Implementation
 
-#include "UsageEnvironment.hh"
+#include "../UsageEnvironment.hh"
 
 void UsageEnvironment::reclaim() {
   // We delete ourselves only if we have no remainining state:

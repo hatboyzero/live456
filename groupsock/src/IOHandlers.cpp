@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // IO event handlers
 // Implementation
 
-#include "IOHandlers.hh"
-#include "TunnelEncaps.hh"
+#include "../IOHandlers.hh"
+#include "../TunnelEncaps.hh"
 
 //##### TEMP: Use a single buffer, sized for UDP tunnels:
 //##### This assumes that the I/O handlers are non-reentrant

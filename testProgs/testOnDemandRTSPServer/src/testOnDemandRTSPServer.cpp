@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // - various kinds of file on demand, using a built-in RTSP server.
 // main program
 
-#include "liveMedia.hh"
-#include "BasicUsageEnvironment.hh"
+#include <liveMedia/liveMedia.hh>
+#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
 
 UsageEnvironment* env;
 

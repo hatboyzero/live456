@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Common routines for opening/closing named input files
 // Implementation
 
-#include "InputFile.hh"
+#include "../InputFile.hh"
 #include <string.h>
 
 FILE* OpenInputFile(UsageEnvironment& env, char const* fileName) {

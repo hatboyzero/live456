@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // H.264 Video RTP Sources
 // Implementation
 
-#include "H264VideoRTPSource.hh"
-#include "Base64.hh"
+#include "../H264VideoRTPSource.hh"
+#include "../Base64.hh"
 
 ////////// H264BufferedPacket and H264BufferedPacketFactory //////////
 

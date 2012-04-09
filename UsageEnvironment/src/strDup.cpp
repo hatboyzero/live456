@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // This generates a char* that can be deleted using "delete[]"
 // Implementation
 
-#include "strDup.hh"
+#include "../strDup.hh"
 #include "string.h"
 
 char* strDup(char const* str) {

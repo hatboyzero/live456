@@ -23,7 +23,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #define _WINDOWS_AUDIO_INPUT_DEVICE_COMMON_HH
 
 #ifndef _AUDIO_INPUT_DEVICE_HH
-#include "AudioInputDevice.hh"
+#include <liveMedia/AudioInputDevice.hh>
 #endif
 
 class WindowsAudioInputDevice_common: public AudioInputDevice {

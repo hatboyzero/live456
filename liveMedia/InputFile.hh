@@ -21,7 +21,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _INPUT_FILE_HH
 #define _INPUT_FILE_HH
 
-#include <UsageEnvironment.hh>
+#include <UsageEnvironment/UsageEnvironment.hh>
 #include <stdio.h>
 
 #if (defined(__WIN32__) || defined(_WIN32)) && !defined(_WIN32_WCE)

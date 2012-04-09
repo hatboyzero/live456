@@ -20,8 +20,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // reflection to potentially arbitrarily many remote RTSP clients).
 // Implementation
 
-#include "DarwinInjector.hh"
-#include <GroupsockHelper.hh>
+#include "../DarwinInjector.hh"
+#include <groupsock/GroupsockHelper.hh>
 
 ////////// SubstreamDescriptor definition //////////
 

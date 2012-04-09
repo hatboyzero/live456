@@ -18,9 +18,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A server demultiplexer for a MPEG 1 or 2 Program Stream
 // Implementation
 
-#include "MPEG1or2FileServerDemux.hh"
-#include "MPEG1or2DemuxedServerMediaSubsession.hh"
-#include "ByteStreamFileSource.hh"
+#include "../MPEG1or2FileServerDemux.hh"
+#include "../MPEG1or2DemuxedServerMediaSubsession.hh"
+#include "../ByteStreamFileSource.hh"
 
 MPEG1or2FileServerDemux*
 MPEG1or2FileServerDemux::createNew(UsageEnvironment& env, char const* fileName,

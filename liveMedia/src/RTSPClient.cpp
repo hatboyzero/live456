@@ -18,11 +18,11 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A generic RTSP client
 // Implementation
 
-#include "RTSPClient.hh"
-#include "RTSPCommon.hh"
-#include "Base64.hh"
-#include "Locale.hh"
-#include <GroupsockHelper.hh>
+#include "../RTSPClient.hh"
+#include "../RTSPCommon.hh"
+#include "../Base64.hh"
+#include "../Locale.hh"
+#include <groupsock/GroupsockHelper.hh>
 #include "our_md5.h"
 
 ////////// RTSPClient implementation //////////

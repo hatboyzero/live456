@@ -22,16 +22,16 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #define _MP3_STREAM_STATE_HH
 
 #ifndef _USAGE_ENVIRONMENT_HH
-#include "UsageEnvironment.hh"
+#include <UsageEnvironment/UsageEnvironment.hh>
 #endif
 #ifndef _BOOLEAN_HH
-#include "Boolean.hh"
+#include <UsageEnvironment/Boolean.hh>
 #endif
 #ifndef _MP3_INTERNALS_HH
 #include "MP3Internals.hh"
 #endif
 #ifndef _NET_COMMON_H
-#include "NetCommon.h"
+#include <groupsock/NetCommon.h>
 #endif
 
 #include <stdio.h>

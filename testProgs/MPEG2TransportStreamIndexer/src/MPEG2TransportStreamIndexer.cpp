@@ -20,8 +20,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Transport Stream file.
 // main program
 
-#include <liveMedia.hh>
-#include <BasicUsageEnvironment.hh>
+#include <liveMedia/liveMedia.hh>
+#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
 
 void afterPlaying(void* clientData); // forward
 

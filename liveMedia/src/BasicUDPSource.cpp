@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A simple UDP source, where every UDP payload is a complete frame
 // Implementation
 
-#include "BasicUDPSource.hh"
-#include <GroupsockHelper.hh>
+#include "../BasicUDPSource.hh"
+#include <groupsock/GroupsockHelper.hh>
 
 BasicUDPSource* BasicUDPSource::createNew(UsageEnvironment& env,
 					Groupsock* inputGS) {

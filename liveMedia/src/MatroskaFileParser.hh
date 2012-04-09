@@ -24,7 +24,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "StreamParser.hh"
 #endif
 #ifndef _MATROSKA_FILE_HH
-#include "MatroskaFile.hh"
+#include "../MatroskaFile.hh"
 #endif
 #ifndef _EBML_NUMBER_HH
 #include "EBMLNumber.hh"

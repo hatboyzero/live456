@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Implementation
 
 
-#include "BasicUsageEnvironment.hh"
-#include "HandlerSet.hh"
+#include "../BasicUsageEnvironment.hh"
+#include "../HandlerSet.hh"
 #include <stdio.h>
 #if defined(_QNX4)
 #include <sys/select.h>

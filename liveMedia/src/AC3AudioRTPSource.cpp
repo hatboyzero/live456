@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // AC3 Audio RTP Sources
 // Implementation
 
-#include "AC3AudioRTPSource.hh"
+#include "../AC3AudioRTPSource.hh"
 
 AC3AudioRTPSource*
 AC3AudioRTPSource::createNew(UsageEnvironment& env,

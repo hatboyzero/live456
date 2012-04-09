@@ -25,7 +25,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "StreamParser.hh"
 #endif
 #ifndef _MPEG_VIDEO_STREAM_FRAMER_HH
-#include "MPEGVideoStreamFramer.hh"
+#include "../MPEGVideoStreamFramer.hh"
 #endif
 
 ////////// MPEGVideoStreamParser definition //////////

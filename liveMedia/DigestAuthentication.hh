@@ -22,7 +22,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #define _DIGEST_AUTHENTICATION_HH
 
 #ifndef _BOOLEAN_HH
-#include <Boolean.hh>
+#include <UsageEnvironment/Boolean.hh>
 #endif
 
 // A class used for digest authentication.

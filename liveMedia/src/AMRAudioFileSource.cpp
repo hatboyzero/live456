@@ -18,9 +18,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A source object for AMR audio files (as defined in RFC 3267, section 5)
 // Implementation
 
-#include "AMRAudioFileSource.hh"
-#include "InputFile.hh"
-#include "GroupsockHelper.hh"
+#include "../AMRAudioFileSource.hh"
+#include "../InputFile.hh"
+#include <groupsock/GroupsockHelper.hh>
 
 ////////// AMRAudioFileSource //////////
 

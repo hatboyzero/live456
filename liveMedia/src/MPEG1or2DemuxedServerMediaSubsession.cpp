@@ -19,14 +19,14 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // on demand, from a MPEG-1 or 2 demuxer.
 // Implementation
 
-#include "MPEG1or2DemuxedServerMediaSubsession.hh"
-#include "MPEG1or2AudioStreamFramer.hh"
-#include "MPEG1or2AudioRTPSink.hh"
-#include "MPEG1or2VideoStreamFramer.hh"
-#include "MPEG1or2VideoRTPSink.hh"
-#include "AC3AudioStreamFramer.hh"
-#include "AC3AudioRTPSink.hh"
-#include "ByteStreamFileSource.hh"
+#include "../MPEG1or2DemuxedServerMediaSubsession.hh"
+#include "../MPEG1or2AudioStreamFramer.hh"
+#include "../MPEG1or2AudioRTPSink.hh"
+#include "../MPEG1or2VideoStreamFramer.hh"
+#include "../MPEG1or2VideoRTPSink.hh"
+#include "../AC3AudioStreamFramer.hh"
+#include "../AC3AudioRTPSink.hh"
+#include "../ByteStreamFileSource.hh"
 
 MPEG1or2DemuxedServerMediaSubsession* MPEG1or2DemuxedServerMediaSubsession
 ::createNew(MPEG1or2FileServerDemux& demux, u_int8_t streamIdTag,

@@ -19,8 +19,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // on demand, from a MPEG-2 Transport Stream file.
 // Implementation
 
-#include "MPEG2TransportFileServerMediaSubsession.hh"
-#include "SimpleRTPSink.hh"
+#include "../MPEG2TransportFileServerMediaSubsession.hh"
+#include "../SimpleRTPSink.hh"
 
 MPEG2TransportFileServerMediaSubsession*
 MPEG2TransportFileServerMediaSubsession::createNew(UsageEnvironment& env,

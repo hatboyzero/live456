@@ -17,8 +17,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Basic Usage Environment: for a simple, non-scripted, console application
 // Implementation
 
-#include "BasicUsageEnvironment0.hh"
-#include "HandlerSet.hh"
+#include "../BasicUsageEnvironment0.hh"
+#include "../HandlerSet.hh"
 
 ////////// A subclass of DelayQueueEntry,
 //////////     used to implement BasicTaskScheduler0::scheduleDelayedTask()

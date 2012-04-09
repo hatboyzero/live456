@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // MPEG-1 or MPEG-2 Video RTP Sources
 // Implementation
 
-#include "MPEG1or2VideoRTPSource.hh"
+#include "../MPEG1or2VideoRTPSource.hh"
 
 MPEG1or2VideoRTPSource*
 MPEG1or2VideoRTPSource::createNew(UsageEnvironment& env, Groupsock* RTPgs,

@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A generic RTP sink for video codecs (abstract base class)
 // Implementation
 
-#include "VideoRTPSink.hh"
+#include "../VideoRTPSink.hh"
 
 VideoRTPSink::VideoRTPSink(UsageEnvironment& env,
 			   Groupsock* rtpgs, unsigned char rtpPayloadType,

@@ -20,7 +20,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Based on MPEG4IP/mp4creator/h263.c
 
 #include "H263plusVideoStreamParser.hh"
-#include "H263plusVideoStreamFramer.hh"
+#include "../H263plusVideoStreamFramer.hh"
 //#include <string.h>
 //#include "GroupsockHelper.hh"
 

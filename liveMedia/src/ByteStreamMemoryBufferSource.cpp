@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A class for streaming data from a (static) memory buffer, as if it were a file.
 // Implementation
 
-#include "ByteStreamMemoryBufferSource.hh"
-#include "GroupsockHelper.hh"
+#include "../ByteStreamMemoryBufferSource.hh"
+#include <groupsock/GroupsockHelper.hh>
 
 ////////// ByteStreamMemoryBufferSource //////////
 

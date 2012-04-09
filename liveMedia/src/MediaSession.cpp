@@ -19,9 +19,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // potentially multiple (audio and/or video) sub-sessions
 // Implementation
 
-#include "liveMedia.hh"
-#include "Locale.hh"
-#include "GroupsockHelper.hh"
+#include "../liveMedia.hh"
+#include "../Locale.hh"
+#include <groupsock/GroupsockHelper.hh>
 #include <ctype.h>
 
 ////////// MediaSession //////////

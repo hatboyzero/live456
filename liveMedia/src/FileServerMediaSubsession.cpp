@@ -19,7 +19,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // on demand, from a file.
 // Implementation
 
-#include "FileServerMediaSubsession.hh"
+#include "../FileServerMediaSubsession.hh"
 
 FileServerMediaSubsession
 ::FileServerMediaSubsession(UsageEnvironment& env, char const* fileName,

@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // MP3 Transcoder
 // Implementation
 
-#include "MP3Transcoder.hh"
+#include "../MP3Transcoder.hh"
 
 MP3Transcoder::MP3Transcoder(UsageEnvironment& env,
 			     MP3ADUTranscoder* aduTranscoder)

@@ -19,10 +19,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // on demand, from a MPEG-4 video file.
 // Implementation
 
-#include "MPEG4VideoFileServerMediaSubsession.hh"
-#include "MPEG4ESVideoRTPSink.hh"
-#include "ByteStreamFileSource.hh"
-#include "MPEG4VideoStreamFramer.hh"
+#include "../MPEG4VideoFileServerMediaSubsession.hh"
+#include "../MPEG4ESVideoRTPSink.hh"
+#include "../ByteStreamFileSource.hh"
+#include "../MPEG4VideoStreamFramer.hh"
 
 MPEG4VideoFileServerMediaSubsession*
 MPEG4VideoFileServerMediaSubsession::createNew(UsageEnvironment& env,

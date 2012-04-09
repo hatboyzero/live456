@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // RTP sink for MPEG audio (RFC 2250)
 // Implementation
 
-#include "MPEG1or2AudioRTPSink.hh"
+#include "../MPEG1or2AudioRTPSink.hh"
 
 MPEG1or2AudioRTPSink::MPEG1or2AudioRTPSink(UsageEnvironment& env, Groupsock* RTPgs)
   : AudioRTPSink(env, RTPgs, 14, 90000, "MPA") {

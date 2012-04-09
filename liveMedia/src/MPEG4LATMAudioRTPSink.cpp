@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // RTP sink for MPEG-4 audio, using LATM multiplexing (RFC 3016)
 // Implementation
 
-#include "MPEG4LATMAudioRTPSink.hh"
+#include "../MPEG4LATMAudioRTPSink.hh"
 
 MPEG4LATMAudioRTPSink
 ::MPEG4LATMAudioRTPSink(UsageEnvironment& env, Groupsock* RTPgs,

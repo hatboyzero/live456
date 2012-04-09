@@ -22,7 +22,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #define _GROUPEID_HH
 
 #ifndef _BOOLEAN_HH
-#include "Boolean.hh"
+#include <UsageEnvironment/Boolean.hh>
 #endif
 
 #ifndef _NET_ADDRESS_HH

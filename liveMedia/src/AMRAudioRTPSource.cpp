@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // AMR Audio RTP Sources (RFC 3267)
 // Implementation
 
-#include "AMRAudioRTPSource.hh"
-#include "MultiFramedRTPSource.hh"
+#include "../AMRAudioRTPSource.hh"
+#include "../MultiFramedRTPSource.hh"
 #include "BitVector.hh"
 #include <string.h>
 #include <stdlib.h>

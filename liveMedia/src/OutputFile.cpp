@@ -27,7 +27,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #endif
 #include <string.h>
 
-#include "OutputFile.hh"
+#include "../OutputFile.hh"
 
 FILE* OpenOutputFile(UsageEnvironment& env, char const* fileName) {
   FILE* fid;

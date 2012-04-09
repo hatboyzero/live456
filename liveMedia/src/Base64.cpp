@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Base64 encoding and decoding
 // implementation
 
-#include "Base64.hh"
-#include <strDup.hh>
+#include "../Base64.hh"
+#include <UsageEnvironment/strDup.hh>
 #include <string.h>
 
 static char base64DecodeTable[256];

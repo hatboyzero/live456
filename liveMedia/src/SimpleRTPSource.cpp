@@ -20,7 +20,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 //     - doesn't have any special framing apart from the packet data itself
 // Implementation
 
-#include "SimpleRTPSource.hh"
+#include "../SimpleRTPSource.hh"
 #include <string.h>
 
 SimpleRTPSource*

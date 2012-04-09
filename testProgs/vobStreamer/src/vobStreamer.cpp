@@ -19,10 +19,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // and streams both using RTP.
 // main program
 
-#include "liveMedia.hh"
-#include "AC3AudioStreamFramer.hh"
-#include "BasicUsageEnvironment.hh"
-#include "GroupsockHelper.hh"
+#include <liveMedia/liveMedia.hh>
+#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
+#include <groupsock/GroupsockHelper.hh>
+#include <liveMedia/AC3AudioStreamFramer.hh>
 
 char const* programName;
 // Whether to stream *only* "I" (key) frames

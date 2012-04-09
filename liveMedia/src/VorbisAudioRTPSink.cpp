@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // RTP sink for Vorbis audio
 // Implementation
 
-#include "VorbisAudioRTPSink.hh"
-#include "Base64.hh"
+#include "../VorbisAudioRTPSink.hh"
+#include "../Base64.hh"
 
 VorbisAudioRTPSink::VorbisAudioRTPSink(UsageEnvironment& env, Groupsock* RTPgs,
 				       u_int8_t rtpPayloadFormat,

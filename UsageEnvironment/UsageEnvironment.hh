@@ -25,7 +25,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #endif
 
 #ifndef _NETCOMMON_H
-#include "NetCommon.h"
+#include <groupsock/NetCommon.h>
 #endif
 
 #ifndef _BOOLEAN_HH

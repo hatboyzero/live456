@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Framed Sources
 // Implementation
 
-#include "FramedSource.hh"
+#include "../FramedSource.hh"
 #include <stdlib.h>
 
 ////////// FramedSource //////////

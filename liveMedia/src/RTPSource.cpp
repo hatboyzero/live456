@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // RTP Sources
 // Implementation
 
-#include "RTPSource.hh"
-#include "GroupsockHelper.hh"
+#include "../RTPSource.hh"
+#include <groupsock/GroupsockHelper.hh>
 
 ////////// RTPSource //////////
 

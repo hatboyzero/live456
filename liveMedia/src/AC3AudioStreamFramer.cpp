@@ -18,9 +18,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A filter that breaks up an AC3 audio elementary stream into frames
 // Implementation
 
-#include "AC3AudioStreamFramer.hh"
+#include "../AC3AudioStreamFramer.hh"
 #include "StreamParser.hh"
-#include <GroupsockHelper.hh>
+#include <groupsock/GroupsockHelper.hh>
 
 ////////// AC3AudioStreamParser definition //////////
 

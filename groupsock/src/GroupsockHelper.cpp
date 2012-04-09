@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Helper routines to implement 'group sockets'
 // Implementation
 
-#include "GroupsockHelper.hh"
+#include "../GroupsockHelper.hh"
 
 #if defined(__WIN32__) || defined(_WIN32)
 #include <time.h>

@@ -19,10 +19,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // on demand, from a MPEG-1 or 2 Elementary Stream video file.
 // Implementation
 
-#include "MPEG1or2VideoFileServerMediaSubsession.hh"
-#include "MPEG1or2VideoRTPSink.hh"
-#include "ByteStreamFileSource.hh"
-#include "MPEG1or2VideoStreamFramer.hh"
+#include "../MPEG1or2VideoFileServerMediaSubsession.hh"
+#include "../MPEG1or2VideoRTPSink.hh"
+#include "../ByteStreamFileSource.hh"
+#include "../MPEG1or2VideoStreamFramer.hh"
 
 MPEG1or2VideoFileServerMediaSubsession*
 MPEG1or2VideoFileServerMediaSubsession::createNew(UsageEnvironment& env,

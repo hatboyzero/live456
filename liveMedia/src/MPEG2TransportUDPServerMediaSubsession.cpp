@@ -19,12 +19,12 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // on demand, from an incoming UDP (or RTP/UDP) MPEG-2 Transport Stream
 // Implementation
 
-#include "MPEG2TransportUDPServerMediaSubsession.hh"
-#include "BasicUDPSource.hh"
-#include "SimpleRTPSource.hh"
-#include "MPEG2TransportStreamFramer.hh"
-#include "SimpleRTPSink.hh"
-#include "GroupsockHelper.hh"
+#include "../MPEG2TransportUDPServerMediaSubsession.hh"
+#include "../BasicUDPSource.hh"
+#include "../SimpleRTPSource.hh"
+#include "../MPEG2TransportStreamFramer.hh"
+#include "../SimpleRTPSink.hh"
+#include <groupsock/GroupsockHelper.hh>
 
 
 MPEG2TransportUDPServerMediaSubsession*

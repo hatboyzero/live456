@@ -21,8 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // the video stream.
 // Implementation
 
-#include "MPEG2TransportStreamTrickModeFilter.hh"
-#include <ByteStreamFileSource.hh>
+#include "../MPEG2TransportStreamTrickModeFilter.hh"
+#include "../ByteStreamFileSource.hh"
 
 // Define the following to be True if we want the output file to have the same frame rate as the original file.
 //    (Because the output file contains I-frames only, this means that each I-frame will appear in the output file

@@ -20,8 +20,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 #include "MatroskaFileParser.hh"
 #include "MatroskaDemuxedTrack.hh"
-#include <ByteStreamFileSource.hh>
-#include <GroupsockHelper.hh> // for "gettimeofday()
+#include "../ByteStreamFileSource.hh"
+#include <groupsock/GroupsockHelper.hh> // for "gettimeofday()
 
 MatroskaFileParser::MatroskaFileParser(MatroskaFile& ourFile, FramedSource* inputSource,
 				       FramedSource::onCloseFunc* onEndFunc, void* onEndClientData,

@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // RTP sink for H.263+ video (RFC 4629)
 // Implementation
 
-#include "H263plusVideoRTPSink.hh"
+#include "../H263plusVideoRTPSink.hh"
 
 H263plusVideoRTPSink
 ::H263plusVideoRTPSink(UsageEnvironment& env, Groupsock* RTPgs,

@@ -18,15 +18,15 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A sink that generates a QuickTime file from a composite media session
 // Implementation
 
-#include "QuickTimeFileSink.hh"
-#include "QuickTimeGenericRTPSource.hh"
-#include "GroupsockHelper.hh"
-#include "InputFile.hh"
-#include "OutputFile.hh"
-#include "H263plusVideoRTPSource.hh" // for the special header
-#include "MPEG4GenericRTPSource.hh" //for "samplingFrequencyFromAudioSpecificConfig()"
-#include "MPEG4LATMAudioRTPSource.hh" // for "parseGeneralConfigStr()"
-#include "Base64.hh"
+#include "../QuickTimeFileSink.hh"
+#include "../QuickTimeGenericRTPSource.hh"
+#include <groupsock/GroupsockHelper.hh>
+#include "../InputFile.hh"
+#include "../OutputFile.hh"
+#include "../H263plusVideoRTPSource.hh" // for the special header
+#include "../MPEG4GenericRTPSource.hh" //for "samplingFrequencyFromAudioSpecificConfig()"
+#include "../MPEG4LATMAudioRTPSource.hh" // for "parseGeneralConfigStr()"
+#include "../Base64.hh"
 
 #include <ctype.h>
 

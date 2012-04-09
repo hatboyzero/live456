@@ -25,7 +25,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #endif
 
 #ifndef _USAGE_ENVIRONMENT_HH
-#include "UsageEnvironment.hh"
+#include <UsageEnvironment/UsageEnvironment.hh>
 #endif
 
 #ifndef _DELAY_QUEUE_HH

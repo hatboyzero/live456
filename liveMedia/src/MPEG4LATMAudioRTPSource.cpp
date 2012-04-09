@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // MPEG-4 audio, using LATM multiplexing
 // Implementation
 
-#include "MPEG4LATMAudioRTPSource.hh"
+#include "../MPEG4LATMAudioRTPSource.hh"
 
 ////////// LATMBufferedPacket and LATMBufferedPacketFactory //////////
 

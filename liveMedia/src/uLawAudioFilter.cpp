@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Filters for converting between raw PCM audio and uLaw
 // Implementation
 
-#include "uLawAudioFilter.hh"
+#include "../uLawAudioFilter.hh"
 
 ////////// 16-bit PCM (in various byte orders) -> 8-bit u-Law //////////
 

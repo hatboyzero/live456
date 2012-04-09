@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A sink representing a TCP output stream
 // Implementation
 
-#include "TCPStreamSink.hh"
+#include "../TCPStreamSink.hh"
 
 TCPStreamSink* TCPStreamSink::createNew(UsageEnvironment& env, int socketNum) {
   return new TCPStreamSink(env, socketNum);

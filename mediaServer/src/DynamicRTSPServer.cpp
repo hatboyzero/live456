@@ -19,7 +19,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Implementation
 
 #include "DynamicRTSPServer.hh"
-#include <liveMedia.hh>
+#include <liveMedia/liveMedia.hh>
 #include <string.h>
 
 DynamicRTSPServer*

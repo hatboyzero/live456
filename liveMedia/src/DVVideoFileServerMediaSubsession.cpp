@@ -19,10 +19,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // on demand, from a DV video file.
 // Implementation
 
-#include "DVVideoFileServerMediaSubsession.hh"
-#include "DVVideoRTPSink.hh"
-#include "ByteStreamFileSource.hh"
-#include "DVVideoStreamFramer.hh"
+#include "../DVVideoFileServerMediaSubsession.hh"
+#include "../DVVideoRTPSink.hh"
+#include "../ByteStreamFileSource.hh"
+#include "../DVVideoStreamFramer.hh"
 
 DVVideoFileServerMediaSubsession*
 DVVideoFileServerMediaSubsession::createNew(UsageEnvironment& env, char const* fileName, Boolean reuseFirstSource) {

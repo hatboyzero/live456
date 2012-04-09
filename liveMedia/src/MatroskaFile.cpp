@@ -20,7 +20,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 #include "MatroskaFileParser.hh"
 #include "MatroskaDemuxedTrack.hh"
-#include <ByteStreamFileSource.hh>
+#include "../ByteStreamFileSource.hh"
 
 ////////// CuePoint definition //////////
 

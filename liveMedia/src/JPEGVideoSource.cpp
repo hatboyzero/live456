@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // JPEG video sources
 // Implementation
 
-#include "JPEGVideoSource.hh"
+#include "../JPEGVideoSource.hh"
 
 JPEGVideoSource::JPEGVideoSource(UsageEnvironment& env)
   : FramedSource(env) {

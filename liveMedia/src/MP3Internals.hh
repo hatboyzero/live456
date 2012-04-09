@@ -22,7 +22,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #define _MP3_INTERNALS_HH
 
 #ifndef _BOOLEAN_HH
-#include "Boolean.hh"
+#include <UsageEnvironment/Boolean.hh>
 #endif
 #ifndef _BIT_VECTOR_HH
 #include "BitVector.hh"

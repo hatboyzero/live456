@@ -18,10 +18,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // and outputs the resulting MP3 file stream to 'stdout'
 // main program
 
-#include "liveMedia.hh"
-#include "GroupsockHelper.hh"
-
-#include "BasicUsageEnvironment.hh"
+#include <liveMedia/liveMedia.hh>
+#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
+#include <groupsock/GroupsockHelper.hh>
 
 // To receive a stream of 'ADUs' rather than raw MP3 frames, uncomment this:
 //#define STREAM_USING_ADUS 1

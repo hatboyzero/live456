@@ -1,5 +1,5 @@
 #ifndef _NET_COMMON_H
-#include "NetCommon.h"
+#include "../NetCommon.h"
 #endif
 
 #include <stdio.h>

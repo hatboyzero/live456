@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // JPEG Video (RFC 2435) RTP Sources
 // Implementation
 
-#include "JPEGVideoRTPSource.hh"
+#include "../JPEGVideoRTPSource.hh"
 
 ////////// JPEGBufferedPacket and JPEGBufferedPacketFactory //////////
 

@@ -18,9 +18,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Qualcomm "PureVoice" (aka. "QCELP") Audio RTP Sources
 // Implementation
 
-#include "QCELPAudioRTPSource.hh"
-#include "MultiFramedRTPSource.hh"
-#include "FramedFilter.hh"
+#include "../QCELPAudioRTPSource.hh"
+#include "../MultiFramedRTPSource.hh"
+#include "../FramedFilter.hh"
 #include <string.h>
 #include <stdlib.h>
 

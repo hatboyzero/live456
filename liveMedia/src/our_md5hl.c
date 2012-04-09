@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "our_md5.h"
-#include "NetCommon.h"
+#include <groupsock/NetCommon.h>
 
 #ifndef BUFSIZ //pocket pc
 #define BUFSIZ 255

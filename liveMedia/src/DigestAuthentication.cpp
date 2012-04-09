@@ -18,10 +18,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A class used for digest authentication.
 // Implementation
 
-#include "DigestAuthentication.hh"
+#include "../DigestAuthentication.hh"
 #include "our_md5.h"
-#include <strDup.hh>
-#include <GroupsockHelper.hh> // for gettimeofday()
+#include <UsageEnvironment/strDup.hh>
+#include <groupsock/GroupsockHelper.hh> // for gettimeofday()
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

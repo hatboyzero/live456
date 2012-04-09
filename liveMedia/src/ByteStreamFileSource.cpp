@@ -18,9 +18,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A file source that is a plain byte stream (rather than frames)
 // Implementation
 
-#include "ByteStreamFileSource.hh"
-#include "InputFile.hh"
-#include "GroupsockHelper.hh"
+#include "../ByteStreamFileSource.hh"
+#include "../InputFile.hh"
+#include <groupsock/GroupsockHelper.hh>
 
 ////////// ByteStreamFileSource //////////
 

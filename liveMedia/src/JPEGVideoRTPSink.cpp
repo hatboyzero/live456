@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // RTP sink for JPEG video (RFC 2435)
 // Implementation
 
-#include "JPEGVideoRTPSink.hh"
-#include "JPEGVideoSource.hh"
+#include "../JPEGVideoRTPSink.hh"
+#include "../JPEGVideoSource.hh"
 
 JPEGVideoRTPSink
 ::JPEGVideoRTPSink(UsageEnvironment& env, Groupsock* RTPgs)

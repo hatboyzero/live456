@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // VP8 Video RTP Sources
 // Implementation
 
-#include "VP8VideoRTPSource.hh"
+#include "../VP8VideoRTPSource.hh"
 
 VP8VideoRTPSource*
 VP8VideoRTPSource::createNew(UsageEnvironment& env, Groupsock* RTPgs,

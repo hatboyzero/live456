@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A filter for converting a stream of MPEG PES packets to a MPEG-2 Transport Stream
 // Implementation
 
-#include "MPEG2TransportStreamFromPESSource.hh"
+#include "../MPEG2TransportStreamFromPESSource.hh"
 
 #define MAX_PES_PACKET_SIZE (6+65535)
 

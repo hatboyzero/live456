@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Media Sinks
 // Implementation
 
-#include "MediaSink.hh"
-#include "GroupsockHelper.hh"
+#include "../MediaSink.hh"
+#include <groupsock/GroupsockHelper.hh>
 #include <string.h>
 
 ////////// MediaSink //////////

@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // RTP sink for AC3 audio
 // Implementation
 
-#include "AC3AudioRTPSink.hh"
+#include "../AC3AudioRTPSink.hh"
 
 AC3AudioRTPSink::AC3AudioRTPSink(UsageEnvironment& env, Groupsock* RTPgs,
 				 u_int8_t rtpPayloadFormat,

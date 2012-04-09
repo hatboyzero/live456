@@ -18,10 +18,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // and outputs the resulting Transport Stream data to 'stdout'
 // main program
 
-#include "liveMedia.hh"
-#include "GroupsockHelper.hh"
+#include <liveMedia/liveMedia.hh>
+#include <groupsock/GroupsockHelper.hh>
 
-#include "BasicUsageEnvironment.hh"
+#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
 
 // To receive a "source-specific multicast" (SSM) stream, uncomment this:
 //#define USE_SSM 1

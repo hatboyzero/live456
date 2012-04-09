@@ -25,7 +25,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "MediaSink.hh"
 #endif
 #ifndef _GROUPSOCK_HH
-#include <Groupsock.hh>
+#include <groupsock/Groupsock.hh>
 #endif
 
 class BasicUDPSink: public MediaSink {

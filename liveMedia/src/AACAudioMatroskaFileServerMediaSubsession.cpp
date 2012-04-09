@@ -20,7 +20,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Implementation
 
 #include "AACAudioMatroskaFileServerMediaSubsession.hh"
-#include "MPEG4GenericRTPSink.hh"
+#include "../MPEG4GenericRTPSink.hh"
 #include "MatroskaDemuxedTrack.hh"
 
 AACAudioMatroskaFileServerMediaSubsession* AACAudioMatroskaFileServerMediaSubsession

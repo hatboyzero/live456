@@ -21,7 +21,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // "H264VideoStreamFramer".
 // Implementation
 
-#include "H264VideoStreamDiscreteFramer.hh"
+#include "../H264VideoStreamDiscreteFramer.hh"
 
 H264VideoStreamDiscreteFramer*
 H264VideoStreamDiscreteFramer::createNew(UsageEnvironment& env, FramedSource* inputSource) {

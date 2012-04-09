@@ -17,7 +17,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Generic audio input device (such as a microphone, or an input sound card)
 // Implementation
 
-#include <AudioInputDevice.hh>
+#include "../AudioInputDevice.hh"
 
 AudioInputDevice
 ::AudioInputDevice(UsageEnvironment& env, unsigned char bitsPerSample,

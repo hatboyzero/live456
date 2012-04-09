@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Framed Filters
 // Implementation
 
-#include "FramedFilter.hh"
+#include "../FramedFilter.hh"
 
 ////////// FramedFilter //////////
 #include <string.h>

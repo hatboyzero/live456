@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A generic RTP sink for audio codecs (abstract base class)
 // Implementation
 
-#include "AudioRTPSink.hh"
+#include "../AudioRTPSink.hh"
 
 AudioRTPSink::AudioRTPSink(UsageEnvironment& env,
 			   Groupsock* rtpgs, unsigned char rtpPayloadType,

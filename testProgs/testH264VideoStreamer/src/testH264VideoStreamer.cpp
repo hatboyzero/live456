@@ -24,9 +24,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Note also that - unlike some other "*Streamer" demo applications - the resulting stream can be received only using a
 // RTSP client (such as "openRTSP")
 
-#include <liveMedia.hh>
-#include <BasicUsageEnvironment.hh>
-#include <GroupsockHelper.hh>
+#include <liveMedia/liveMedia.hh>
+#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
+#include <groupsock/GroupsockHelper.hh>
 
 UsageEnvironment* env;
 char const* inputFileName = "test.264";

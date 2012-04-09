@@ -22,9 +22,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include <io.h>
 #include <fcntl.h>
 #endif
-#include "FileSink.hh"
-#include "GroupsockHelper.hh"
-#include "OutputFile.hh"
+#include "../FileSink.hh"
+#include <groupsock/GroupsockHelper.hh>
+#include "../OutputFile.hh"
 
 ////////// FileSink //////////
 

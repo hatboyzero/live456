@@ -20,7 +20,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Implementation
 
 #include "VP8VideoMatroskaFileServerMediaSubsession.hh"
-#include "VP8VideoRTPSink.hh"
+#include "../VP8VideoRTPSink.hh"
 #include "MatroskaDemuxedTrack.hh"
 
 VP8VideoMatroskaFileServerMediaSubsession* VP8VideoMatroskaFileServerMediaSubsession

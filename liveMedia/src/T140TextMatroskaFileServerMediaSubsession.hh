@@ -23,10 +23,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #define _T140_TEXT_MATROSKA_FILE_SERVER_MEDIA_SUBSESSION_HH
 
 #ifndef _FILE_SERVER_MEDIA_SUBSESSION_HH
-#include "FileServerMediaSubsession.hh"
+#include "../FileServerMediaSubsession.hh"
 #endif
 #ifndef _MATROSKA_FILE_SERVER_DEMUX_HH
-#include "MatroskaFileServerDemux.hh"
+#include "../MatroskaFileServerDemux.hh"
 #endif
 
 class T140TextMatroskaFileServerMediaSubsession: public FileServerMediaSubsession {

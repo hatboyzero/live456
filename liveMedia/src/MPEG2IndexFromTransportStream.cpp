@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A filter that produces a sequence of I-frame indices from a MPEG-2 Transport Stream
 // Implementation
 
-#include "MPEG2IndexFromTransportStream.hh"
+#include "../MPEG2IndexFromTransportStream.hh"
 
 ////////// IndexRecord definition //////////
 

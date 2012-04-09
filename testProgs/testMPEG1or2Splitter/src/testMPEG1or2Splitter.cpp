@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // video and audio output files.
 // main program
 
-#include "liveMedia.hh"
-#include "BasicUsageEnvironment.hh"
+#include <liveMedia/liveMedia.hh>
+#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
 #include <stdlib.h>
 
 char const* inputFileName = "in.mpg";

@@ -17,10 +17,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A test program that streams a MP3 file via RTP/RTCP
 // main program
 
-#include "liveMedia.hh"
-#include "GroupsockHelper.hh"
-
-#include "BasicUsageEnvironment.hh"
+#include <liveMedia/liveMedia.hh>
+#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
+#include <groupsock/GroupsockHelper.hh>
 
 // To stream using 'ADUs' rather than raw MP3 frames, uncomment the following:
 //#define STREAM_USING_ADUS 1

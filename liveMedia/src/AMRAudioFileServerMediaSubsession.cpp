@@ -19,9 +19,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // on demand, from an AMR audio file.
 // Implementation
 
-#include "AMRAudioFileServerMediaSubsession.hh"
-#include "AMRAudioRTPSink.hh"
-#include "AMRAudioFileSource.hh"
+#include "../AMRAudioFileServerMediaSubsession.hh"
+#include "../AMRAudioRTPSink.hh"
+#include "../AMRAudioFileSource.hh"
 
 AMRAudioFileServerMediaSubsession*
 AMRAudioFileServerMediaSubsession::createNew(UsageEnvironment& env,

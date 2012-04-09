@@ -19,8 +19,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // on demand.
 // Implementation
 
-#include "OnDemandServerMediaSubsession.hh"
-#include <GroupsockHelper.hh>
+#include "../OnDemandServerMediaSubsession.hh"
+#include <groupsock/GroupsockHelper.hh>
 
 OnDemandServerMediaSubsession
 ::OnDemandServerMediaSubsession(UsageEnvironment& env,

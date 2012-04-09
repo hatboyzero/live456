@@ -21,7 +21,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // "MPEG4VideoStreamFramer".
 // Implementation
 
-#include "MPEG4VideoStreamDiscreteFramer.hh"
+#include "../MPEG4VideoStreamDiscreteFramer.hh"
 
 MPEG4VideoStreamDiscreteFramer*
 MPEG4VideoStreamDiscreteFramer::createNew(UsageEnvironment& env,

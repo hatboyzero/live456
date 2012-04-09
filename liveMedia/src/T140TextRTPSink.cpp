@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // RTP sink for T.140 text (RFC 2793)
 // Implementation
 
-#include "T140TextRTPSink.hh"
-#include <GroupsockHelper.hh> // for "gettimeofday()"
+#include "../T140TextRTPSink.hh"
+#include <groupsock/GroupsockHelper.hh> // for "gettimeofday()"
 
 ////////// T140TextRTPSink implementation //////////
 

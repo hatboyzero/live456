@@ -18,10 +18,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // RTP sink for H.264 video (RFC 3984)
 // Implementation
 
-#include "H264VideoRTPSink.hh"
-#include "H264VideoStreamFramer.hh"
-#include "Base64.hh"
-#include "H264VideoRTPSource.hh" // for "parseSPropParameterSets()"
+#include "../H264VideoRTPSink.hh"
+#include "../H264VideoStreamFramer.hh"
+#include "../Base64.hh"
+#include "../H264VideoRTPSource.hh" // for "parseSPropParameterSets()"
 
 ////////// H264VideoRTPSink implementation //////////
 

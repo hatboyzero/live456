@@ -19,7 +19,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 //     packet, without any fragmentation or special headers.
 // Implementation
 
-#include "SimpleRTPSink.hh"
+#include "../SimpleRTPSink.hh"
 
 SimpleRTPSink::SimpleRTPSink(UsageEnvironment& env, Groupsock* RTPgs,
 			     unsigned char rtpPayloadFormat,

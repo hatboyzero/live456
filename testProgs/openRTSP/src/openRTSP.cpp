@@ -21,7 +21,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // then we don't recommend using this code as a model, because it is too complex (with many options).
 // Instead, we recommend using the "testRTSPClient" application code as a model.
 
-#include "playCommon.hh"
+#include "../../Common/src/playCommon.hh"
 
 RTSPClient* ourRTSPClient = NULL;
 Medium* createClient(UsageEnvironment& env, char const* url, int verbosityLevel, char const* applicationName) {

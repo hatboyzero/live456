@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Media Sources
 // Implementation
 
-#include "MediaSource.hh"
+#include "../MediaSource.hh"
 
 ////////// MediaSource //////////
 

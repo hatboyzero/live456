@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // RTCP
 // Implementation
 
-#include "RTCP.hh"
-#include "GroupsockHelper.hh"
+#include "../RTCP.hh"
+#include <groupsock/GroupsockHelper.hh>
 #include "rtcp_from_spec.h"
 
 ////////// RTCPMemberDatabase //////////

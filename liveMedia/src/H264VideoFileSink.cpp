@@ -18,9 +18,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // H.264 Video File sinks
 // Implementation
 
-#include "H264VideoFileSink.hh"
-#include "OutputFile.hh"
-#include "H264VideoRTPSource.hh"
+#include "../H264VideoFileSink.hh"
+#include "../OutputFile.hh"
+#include "../H264VideoRTPSource.hh"
 
 ////////// H264VideoFileSink //////////
 

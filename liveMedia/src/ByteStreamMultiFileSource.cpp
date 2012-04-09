@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A source that consists of multiple byte-stream files, read sequentially
 // Implementation
 
-#include "ByteStreamMultiFileSource.hh"
+#include "../ByteStreamMultiFileSource.hh"
 
 ByteStreamMultiFileSource
 ::ByteStreamMultiFileSource(UsageEnvironment& env, char const** fileNameArray,

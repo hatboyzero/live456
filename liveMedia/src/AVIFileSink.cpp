@@ -18,10 +18,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A sink that generates an AVI file from a composite media session
 // Implementation
 
-#include "AVIFileSink.hh"
-#include "InputFile.hh"
-#include "OutputFile.hh"
-#include "GroupsockHelper.hh"
+#include "../AVIFileSink.hh"
+#include "../InputFile.hh"
+#include "../OutputFile.hh"
+#include <groupsock/GroupsockHelper.hh>
 
 #define fourChar(x,y,z,w) ( ((w)<<24)|((z)<<16)|((y)<<8)|(x) )/*little-endian*/
 

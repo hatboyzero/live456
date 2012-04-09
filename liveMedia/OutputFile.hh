@@ -21,7 +21,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _OUTPUT_FILE_HH
 #define _OUTPUT_FILE_HH
 
-#include <UsageEnvironment.hh>
+#include <UsageEnvironment/UsageEnvironment.hh>
 #include <stdio.h>
 
 FILE* OpenOutputFile(UsageEnvironment& env, char const* fileName);

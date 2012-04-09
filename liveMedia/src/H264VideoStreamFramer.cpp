@@ -18,10 +18,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A filter that breaks up a H.264 Video Elementary Stream into NAL units.
 // Implementation
 
-#include "H264VideoStreamFramer.hh"
+#include "../H264VideoStreamFramer.hh"
 #include "MPEGVideoStreamParser.hh"
 #include "BitVector.hh"
-#include "H264VideoRTPSource.hh" // for "parseSPropParameterSets()"
+#include "../H264VideoRTPSource.hh" // for "parseSPropParameterSets()"
 
 ////////// H264VideoStreamParser definition //////////
 

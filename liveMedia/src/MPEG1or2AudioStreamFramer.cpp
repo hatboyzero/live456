@@ -18,10 +18,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A filter that breaks up an MPEG (1,2) audio elementary stream into frames
 // Implementation
 
-#include "MPEG1or2AudioStreamFramer.hh"
+#include "../MPEG1or2AudioStreamFramer.hh"
 #include "StreamParser.hh"
 #include "MP3Internals.hh"
-#include <GroupsockHelper.hh>
+#include <groupsock/GroupsockHelper.hh>
 
 ////////// MPEG1or2AudioStreamParser definition //////////
 

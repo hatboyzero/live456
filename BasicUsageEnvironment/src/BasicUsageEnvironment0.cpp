@@ -17,7 +17,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Basic Usage Environment: for a simple, non-scripted, console application
 // Implementation
 
-#include "BasicUsageEnvironment0.hh"
+#include "../BasicUsageEnvironment0.hh"
 #include <stdio.h>
 
 ////////// BasicUsageEnvironment //////////

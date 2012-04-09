@@ -23,10 +23,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #define _H264_VIDEO_MATROSKA_FILE_SERVER_MEDIA_SUBSESSION_HH
 
 #ifndef _H264_VIDEO_FILE_SERVER_MEDIA_SUBSESSION_HH
-#include "H264VideoFileServerMediaSubsession.hh"
+#include "../H264VideoFileServerMediaSubsession.hh"
 #endif
 #ifndef _MATROSKA_FILE_SERVER_DEMUX_HH
-#include "MatroskaFileServerDemux.hh"
+#include "../MatroskaFileServerDemux.hh"
 #endif
 
 class H264VideoMatroskaFileServerMediaSubsession: public H264VideoFileServerMediaSubsession {

@@ -17,10 +17,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A test program that streams a WAV audio file via RTP/RTCP
 // main program
 
-#include "liveMedia.hh"
-#include "GroupsockHelper.hh"
-
-#include "BasicUsageEnvironment.hh"
+#include <liveMedia/liveMedia.hh>
+#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
+#include <groupsock/GroupsockHelper.hh>
 
 // To convert 16-bit samples to 8-bit u-law ("u" is the Greek letter "mu")
 // encoding, before streaming, uncomment the following line:

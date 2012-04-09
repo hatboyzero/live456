@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // RTP sink for 'ADUized' MP3 frames ("mpa-robust")
 // Implementation
 
-#include "MP3ADURTPSink.hh"
+#include "../MP3ADURTPSink.hh"
 
 MP3ADURTPSink::MP3ADURTPSink(UsageEnvironment& env, Groupsock* RTPgs,
 			     unsigned char RTPPayloadType)

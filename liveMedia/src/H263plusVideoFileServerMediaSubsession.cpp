@@ -22,10 +22,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Author: Bernhard Feiten. // Based on MPEG4VideoFileServerMediaSubsession
 // Updated by Ross FInlayson (December 2007)
 
-#include "H263plusVideoFileServerMediaSubsession.hh"
-#include "H263plusVideoRTPSink.hh"
-#include "ByteStreamFileSource.hh"
-#include "H263plusVideoStreamFramer.hh"
+#include "../H263plusVideoFileServerMediaSubsession.hh"
+#include "../H263plusVideoRTPSink.hh"
+#include "../ByteStreamFileSource.hh"
+#include "../H263plusVideoStreamFramer.hh"
 
 H263plusVideoFileServerMediaSubsession*
 H263plusVideoFileServerMediaSubsession::createNew(UsageEnvironment& env,

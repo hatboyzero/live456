@@ -19,7 +19,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // (Thanks to Ben Hutchings for prototyping this.)
 // Implementation
 
-#include "DVVideoRTPSink.hh"
+#include "../DVVideoRTPSink.hh"
 
 ////////// DVVideoRTPSink implementation //////////
 

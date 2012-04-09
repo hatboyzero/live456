@@ -21,8 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 //  For media receivers, use "MediaSession" instead.)
 // Implementation
 
-#include "ServerMediaSession.hh"
-#include <GroupsockHelper.hh>
+#include "../ServerMediaSession.hh"
+#include <groupsock/GroupsockHelper.hh>
 #include <math.h>
 
 ////////// ServerMediaSession //////////

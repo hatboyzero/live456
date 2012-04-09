@@ -20,7 +20,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Implementation
 
 #include "T140TextMatroskaFileServerMediaSubsession.hh"
-#include "T140TextRTPSink.hh"
+#include "../T140TextRTPSink.hh"
 #include "MatroskaDemuxedTrack.hh"
 
 T140TextMatroskaFileServerMediaSubsession* T140TextMatroskaFileServerMediaSubsession

@@ -19,8 +19,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Implementation
 
 #include "MP3StreamState.hh"
-#include "InputFile.hh"
-#include "GroupsockHelper.hh"
+#include "../InputFile.hh"
+#include <groupsock/GroupsockHelper.hh>
 
 #if defined(__WIN32__) || defined(_WIN32)
 #define snprintf _snprintf

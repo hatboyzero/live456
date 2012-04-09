@@ -19,7 +19,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Elementary Stream data sources
 // Implementation
 
-#include "MPEG2TransportStreamMultiplexor.hh"
+#include "../MPEG2TransportStreamMultiplexor.hh"
 
 #define TRANSPORT_PACKET_SIZE 188
 

@@ -17,9 +17,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A program that receives and prints SDP/SAP announcements
 // (on the default SDP/SAP directory: 224.2.127.254/9875)
 
-#include "Groupsock.hh"
-#include "GroupsockHelper.hh"
-#include "BasicUsageEnvironment.hh"
+#include <groupsock/Groupsock.hh>
+#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
+#include <groupsock/GroupsockHelper.hh>
 #include <stdio.h>
 
 static unsigned const maxPacketSize = 65536;

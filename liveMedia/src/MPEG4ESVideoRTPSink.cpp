@@ -18,9 +18,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // RTP sink for MPEG-4 Elementary Stream video (RFC 3016)
 // Implementation
 
-#include "MPEG4ESVideoRTPSink.hh"
-#include "MPEG4VideoStreamFramer.hh"
-#include "MPEG4LATMAudioRTPSource.hh" // for "parseGeneralConfigStr()"
+#include "../MPEG4ESVideoRTPSink.hh"
+#include "../MPEG4VideoStreamFramer.hh"
+#include "../MPEG4LATMAudioRTPSource.hh" // for "parseGeneralConfigStr()"
 
 MPEG4ESVideoRTPSink
 ::MPEG4ESVideoRTPSink(UsageEnvironment& env, Groupsock* RTPgs, unsigned char rtpPayloadFormat, u_int32_t rtpTimestampFrequency,

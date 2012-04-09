@@ -19,8 +19,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // 'RTPSink', rather than one that creates new 'RTPSink's on demand.
 // Implementation
 
-#include "PassiveServerMediaSubsession.hh"
-#include <GroupsockHelper.hh>
+#include "../PassiveServerMediaSubsession.hh"
+#include <groupsock/GroupsockHelper.hh>
 
 ////////// PassiveServerMediaSubsession //////////
 

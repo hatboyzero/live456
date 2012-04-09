@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A MPEG 1 or 2 Elementary Stream, demultiplexed from a Program Stream
 // Implementation
 
-#include "MPEG1or2DemuxedElementaryStream.hh"
+#include "../MPEG1or2DemuxedElementaryStream.hh"
 
 ////////// MPEG1or2DemuxedElementaryStream //////////
 

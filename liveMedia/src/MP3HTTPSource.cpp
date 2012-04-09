@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // MP3 HTTP Sources
 // Implementation
 
-#include "MP3HTTPSource.hh"
-#include "GroupsockHelper.hh"
+#include "../MP3HTTPSource.hh"
+#include <groupsock/GroupsockHelper.hh>
 #include "MP3StreamState.hh"
 
 MP3HTTPSource* MP3HTTPSource::createNew(UsageEnvironment& env,

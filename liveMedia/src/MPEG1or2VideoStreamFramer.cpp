@@ -19,7 +19,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 //   frames for: Video_Sequence_Header, GOP_Header, Picture_Header
 // Implementation
 
-#include "MPEG1or2VideoStreamFramer.hh"
+#include "../MPEG1or2VideoStreamFramer.hh"
 #include "MPEGVideoStreamParser.hh"
 #include <string.h>
 

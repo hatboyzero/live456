@@ -20,7 +20,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Implementation
 
 #include "AC3AudioMatroskaFileServerMediaSubsession.hh"
-#include "AC3AudioRTPSink.hh"
+#include "../AC3AudioRTPSink.hh"
 #include "MatroskaDemuxedTrack.hh"
 
 AC3AudioMatroskaFileServerMediaSubsession* AC3AudioMatroskaFileServerMediaSubsession

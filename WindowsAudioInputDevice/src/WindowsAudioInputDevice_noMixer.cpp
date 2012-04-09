@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // This version does not use Windows' built-in software mixer.
 // Implementation
 
-#include <WindowsAudioInputDevice_noMixer.hh>
+#include "WindowsAudioInputDevice_noMixer.hh"
 
 ////////// AudioInputPort definition //////////
 

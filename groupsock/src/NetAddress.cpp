@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Network Addresses
 // Implementation
 
-#include "NetAddress.hh"
-#include "GroupsockHelper.hh"
+#include "../NetAddress.hh"
+#include "../GroupsockHelper.hh"
 
 #include <stddef.h>
 #include <stdio.h>

@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A server that supports both RTSP, and HTTP streaming (using Apple's "HTTP Live Streaming" protocol)
 // Implementation
 
-#include "RTSPServerSupportingHTTPStreaming.hh"
-#include "RTSPCommon.hh"
+#include "../RTSPServerSupportingHTTPStreaming.hh"
+#include "../RTSPCommon.hh"
 #include <sys/stat.h>
 #include <time.h>
 

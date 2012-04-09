@@ -19,8 +19,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // complete codec frames (as many as possible) into each RTP packet.
 // Implementation
 
-#include "MultiFramedRTPSource.hh"
-#include "GroupsockHelper.hh"
+#include "../MultiFramedRTPSource.hh"
+#include <groupsock/GroupsockHelper.hh>
 #include <string.h>
 
 ////////// ReorderingPacketBuffer definition //////////

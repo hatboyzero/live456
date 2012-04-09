@@ -19,7 +19,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 //     <http://developer.apple.com/quicktime/icefloe/dispatch026.html>
 // Implementation
 
-#include "QuickTimeGenericRTPSource.hh"
+#include "../QuickTimeGenericRTPSource.hh"
 
 ///// QTGenericBufferedPacket and QTGenericBufferedPacketFactory /////
 

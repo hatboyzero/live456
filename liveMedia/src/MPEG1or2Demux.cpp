@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Demultiplexer for a MPEG 1 or 2 Program Stream
 // Implementation
 
-#include "MPEG1or2Demux.hh"
-#include "MPEG1or2DemuxedElementaryStream.hh"
+#include "../MPEG1or2Demux.hh"
+#include "../MPEG1or2DemuxedElementaryStream.hh"
 #include "StreamParser.hh"
 #include <stdlib.h>
 

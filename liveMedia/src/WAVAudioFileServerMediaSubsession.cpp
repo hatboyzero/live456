@@ -19,10 +19,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // on demand, from an WAV audio file.
 // Implementation
 
-#include "WAVAudioFileServerMediaSubsession.hh"
-#include "WAVAudioFileSource.hh"
-#include "uLawAudioFilter.hh"
-#include "SimpleRTPSink.hh"
+#include "../WAVAudioFileServerMediaSubsession.hh"
+#include "../WAVAudioFileSource.hh"
+#include "../uLawAudioFilter.hh"
+#include "../SimpleRTPSink.hh"
 
 WAVAudioFileServerMediaSubsession* WAVAudioFileServerMediaSubsession
 ::createNew(UsageEnvironment& env, char const* fileName, Boolean reuseFirstSource,

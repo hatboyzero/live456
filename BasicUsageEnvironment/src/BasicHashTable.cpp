@@ -17,8 +17,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Basic Hash Table implementation
 // Implementation
 
-#include "BasicHashTable.hh"
-#include "strDup.hh"
+#include "../BasicHashTable.hh"
+#include <UsageEnvironment/strDup.hh>
 
 #if defined(__WIN32__) || defined(_WIN32)
 #else

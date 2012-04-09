@@ -21,8 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _EBML_NUMBER_HH
 #define _EBML_NUMBER_HH
 
-#include "NetCommon.h"
-#include "Boolean.hh"
+#include <groupsock/NetCommon.h>
+#include <UsageEnvironment/Boolean.hh>
 #include <stdio.h>
 
 #define EBML_NUMBER_MAX_LEN 8

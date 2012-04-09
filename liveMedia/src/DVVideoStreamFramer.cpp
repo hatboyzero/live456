@@ -19,8 +19,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Implementation
 // (Thanks to Ben Hutchings for his help, including a prototype implementation.)
 
-#include "DVVideoStreamFramer.hh"
-#include "GroupsockHelper.hh"
+#include "../DVVideoStreamFramer.hh"
+#include <groupsock/GroupsockHelper.hh>
 
 ////////// DVVideoStreamFramer implementation //////////
 

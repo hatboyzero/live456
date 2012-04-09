@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // RTP sink for MPEG video (RFC 2250)
 // Implementation
 
-#include "MPEG1or2VideoRTPSink.hh"
-#include "MPEG1or2VideoStreamFramer.hh"
+#include "../MPEG1or2VideoRTPSink.hh"
+#include "../MPEG1or2VideoStreamFramer.hh"
 
 MPEG1or2VideoRTPSink::MPEG1or2VideoRTPSink(UsageEnvironment& env, Groupsock* RTPgs)
   : VideoRTPSink(env, RTPgs, 32, 90000, "MPV") {

@@ -28,8 +28,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // "live555MediaServer" application (in the "mediaServer") directory.
 //////////////////////////
 
-#include "liveMedia.hh"
-#include "BasicUsageEnvironment.hh"
+#include <liveMedia/liveMedia.hh>
+#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
 
 UsageEnvironment* env;
 char const* inputFileName = "test.mpg";

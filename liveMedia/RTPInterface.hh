@@ -24,10 +24,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #define _RTP_INTERFACE_HH
 
 #ifndef _MEDIA_HH
-#include <Media.hh>
+#include "../Media.hh"
 #endif
 #ifndef _GROUPSOCK_HH
-#include "Groupsock.hh"
+#include <groupsock/Groupsock.hh>
 #endif
 
 // Typedef for an optional auxilliary handler function, to be called

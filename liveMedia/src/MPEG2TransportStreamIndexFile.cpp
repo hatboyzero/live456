@@ -21,8 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 //
 // Implementation
 
-#include "MPEG2TransportStreamIndexFile.hh"
-#include "InputFile.hh"
+#include "../MPEG2TransportStreamIndexFile.hh"
+#include "../InputFile.hh"
 
 MPEG2TransportStreamIndexFile
 ::MPEG2TransportStreamIndexFile(UsageEnvironment& env, char const* indexFileName)

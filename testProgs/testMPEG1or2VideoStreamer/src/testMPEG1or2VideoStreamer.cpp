@@ -18,9 +18,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // and streams it using RTP
 // main program
 
-#include "liveMedia.hh"
-#include "BasicUsageEnvironment.hh"
-#include "GroupsockHelper.hh"
+#include <liveMedia/liveMedia.hh>
+#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
+#include <groupsock/GroupsockHelper.hh>
 
 // Uncomment the following if the input file is a MPEG Program Stream
 // rather than a MPEG Video Elementary Stream

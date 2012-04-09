@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // H.263+ Video RTP Sources
 // Implementation
 
-#include "H263plusVideoRTPSource.hh"
+#include "../H263plusVideoRTPSource.hh"
 
 H263plusVideoRTPSource*
 H263plusVideoRTPSource::createNew(UsageEnvironment& env, Groupsock* RTPgs,

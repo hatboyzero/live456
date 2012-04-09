@@ -23,9 +23,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // - VOP frame
 // Implementation
 
-#include "MPEG4VideoStreamFramer.hh"
+#include "../MPEG4VideoStreamFramer.hh"
 #include "MPEGVideoStreamParser.hh"
-#include "MPEG4LATMAudioRTPSource.hh" // for "parseGeneralConfigStr()"
+#include "../MPEG4LATMAudioRTPSource.hh" // for "parseGeneralConfigStr()"
 #include <string.h>
 
 ////////// MPEG4VideoStreamParser definition //////////

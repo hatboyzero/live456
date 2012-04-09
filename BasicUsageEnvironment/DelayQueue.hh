@@ -21,7 +21,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #define _DELAY_QUEUE_HH
 
 #ifndef _NET_COMMON_H
-#include "NetCommon.h"
+#include <groupsock/NetCommon.h>
 #endif
 
 #ifdef TIME_BASE

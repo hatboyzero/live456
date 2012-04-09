@@ -18,9 +18,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // MPEG4-GENERIC ("audio", "video", or "application") RTP stream sources
 // Implementation
 
-#include "MPEG4GenericRTPSource.hh"
+#include "../MPEG4GenericRTPSource.hh"
 #include "BitVector.hh"
-#include "MPEG4LATMAudioRTPSource.hh" // for parseGeneralConfigStr()
+#include "../MPEG4LATMAudioRTPSource.hh" // for parseGeneralConfigStr()
 
 ////////// MPEG4GenericBufferedPacket and MPEG4GenericBufferedPacketFactory
 

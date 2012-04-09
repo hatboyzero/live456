@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // RTP sink for GSM audio
 // Implementation
 
-#include "GSMAudioRTPSink.hh"
+#include "../GSMAudioRTPSink.hh"
 
 GSMAudioRTPSink::GSMAudioRTPSink(UsageEnvironment& env, Groupsock* RTPgs)
   : AudioRTPSink(env, RTPgs, 3, 8000, "GSM") {

@@ -18,9 +18,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A source object for AAC audio files in ADTS format
 // Implementation
 
-#include "ADTSAudioFileSource.hh"
-#include "InputFile.hh"
-#include <GroupsockHelper.hh>
+#include "../ADTSAudioFileSource.hh"
+#include "../InputFile.hh"
+#include <groupsock/GroupsockHelper.hh>
 
 ////////// ADTSAudioFileSource //////////
 

@@ -18,9 +18,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A WAV audio file source
 // Implementation
 
-#include "WAVAudioFileSource.hh"
-#include "InputFile.hh"
-#include "GroupsockHelper.hh"
+#include "../WAVAudioFileSource.hh"
+#include "../InputFile.hh"
+#include <groupsock/GroupsockHelper.hh>
 
 ////////// WAVAudioFileSource //////////
 

@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Network Interfaces
 // Implementation
 
-#include "NetInterface.hh"
-#include "GroupsockHelper.hh"
+#include "../NetInterface.hh"
+#include "../GroupsockHelper.hh"
 
 #ifndef NO_SSTREAM
 #include <sstream>

@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // RTP Sinks
 // Implementation
 
-#include "RTPSink.hh"
-#include "GroupsockHelper.hh"
+#include "../RTPSink.hh"
+#include <groupsock/GroupsockHelper.hh>
 
 ////////// RTPSink //////////
 

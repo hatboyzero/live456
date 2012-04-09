@@ -19,7 +19,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Implementation
 
 #include "MatroskaDemuxedTrack.hh"
-#include "MatroskaFile.hh"
+#include "../MatroskaFile.hh"
 
 void MatroskaDemuxedTrack::seekToTime(double& seekNPT) {
   fOurSourceDemux.seekToTime(seekNPT);

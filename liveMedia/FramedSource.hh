@@ -22,7 +22,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #define _FRAMED_SOURCE_HH
 
 #ifndef _NET_COMMON_H
-#include "NetCommon.h"
+#include <groupsock/NetCommon.h>
 #endif
 #ifndef _MEDIA_SOURCE_HH
 #include "MediaSource.hh"

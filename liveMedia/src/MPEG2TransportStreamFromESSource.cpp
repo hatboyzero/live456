@@ -19,7 +19,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // to a MPEG-2 Transport Stream
 // Implementation
 
-#include "MPEG2TransportStreamFromESSource.hh"
+#include "../MPEG2TransportStreamFromESSource.hh"
 
 #define MAX_INPUT_ES_FRAME_SIZE 50000
 #define SIMPLE_PES_HEADER_SIZE 14

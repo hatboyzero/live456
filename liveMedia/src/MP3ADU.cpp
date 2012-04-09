@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // 'ADU' MP3 streams (for improved loss-tolerance)
 // Implementation
 
-#include "MP3ADU.hh"
+#include "../MP3ADU.hh"
 #include "MP3ADUdescriptor.hh"
 #include "MP3Internals.hh"
 #include <string.h>

@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Transcoder for ADUized MP3 frames
 // Implementation
 
-#include "MP3ADUTranscoder.hh"
+#include "../MP3ADUTranscoder.hh"
 #include "MP3Internals.hh"
 #include <string.h>
 

@@ -22,7 +22,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #define _DYNAMIC_RTSP_SERVER_HH
 
 #ifndef _RTSP_SERVER_SUPPORTING_HTTP_STREAMING_HH
-#include "RTSPServerSupportingHTTPStreaming.hh"
+#include <liveMedia/RTSPServerSupportingHTTPStreaming.hh>
 #endif
 
 class DynamicRTSPServer: public RTSPServerSupportingHTTPStreaming {

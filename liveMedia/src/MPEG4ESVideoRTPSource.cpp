@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // MP4V-ES video RTP stream sources
 // Implementation
 
-#include "MPEG4ESVideoRTPSource.hh"
+#include "../MPEG4ESVideoRTPSource.hh"
 
 ///////// MPEG4ESVideoRTPSource implementation ////////
 

@@ -18,9 +18,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // and retransmits it to another (multicast or unicast) address & port
 // main program
 
-#include <liveMedia.hh>
-#include "BasicUsageEnvironment.hh"
-#include "GroupsockHelper.hh"
+#include <liveMedia/liveMedia.hh>
+#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
+#include <groupsock/GroupsockHelper.hh>
 
 UsageEnvironment* env;
 

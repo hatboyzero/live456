@@ -17,10 +17,10 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // 'Group sockets'
 // Implementation
 
-#include "Groupsock.hh"
-#include "GroupsockHelper.hh"
+#include "../Groupsock.hh"
+#include "../GroupsockHelper.hh"
 //##### Eventually fix the following #include; we shouldn't know about tunnels
-#include "TunnelEncaps.hh"
+#include "../TunnelEncaps.hh"
 
 #ifndef NO_SSTREAM
 #include <sstream>

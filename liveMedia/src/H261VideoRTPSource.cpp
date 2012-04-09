@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // H.261 Video RTP Sources
 // Implementation
 
-#include "H261VideoRTPSource.hh"
+#include "../H261VideoRTPSource.hh"
 
 H261VideoRTPSource*
 H261VideoRTPSource::createNew(UsageEnvironment& env, Groupsock* RTPgs,

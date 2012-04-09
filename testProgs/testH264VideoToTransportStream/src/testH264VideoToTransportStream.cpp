@@ -17,8 +17,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A program that converts a H.264 (Elementary Stream) video file into a Transport Stream file.
 // main program
 
-#include "liveMedia.hh"
-#include "BasicUsageEnvironment.hh"
+#include <liveMedia/liveMedia.hh>
+#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
 
 char const* inputFileName = "in.264";
 char const* outputFileName = "out.ts";

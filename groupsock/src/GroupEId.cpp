@@ -17,8 +17,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // "Group Endpoint Id"
 // Implementation
 
-#include "GroupEId.hh"
-#include "strDup.hh"
+#include "../GroupEId.hh"
+#include <UsageEnvironment/strDup.hh>
 #include <string.h>
 
 ////////// Scope //////////

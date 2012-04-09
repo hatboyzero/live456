@@ -18,7 +18,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // RTP sink for VP8 video
 // Implementation
 
-#include "VP8VideoRTPSink.hh"
+#include "../VP8VideoRTPSink.hh"
 
 VP8VideoRTPSink
 ::VP8VideoRTPSink(UsageEnvironment& env, Groupsock* RTPgs, unsigned char rtpPayloadFormat)

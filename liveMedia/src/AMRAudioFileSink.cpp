@@ -18,9 +18,9 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // AMR Audio File sinks
 // Implementation
 
-#include "AMRAudioFileSink.hh"
-#include "AMRAudioSource.hh"
-#include "OutputFile.hh"
+#include "../AMRAudioFileSink.hh"
+#include "../AMRAudioSource.hh"
+#include "../OutputFile.hh"
 
 ////////// AMRAudioFileSink //////////
 

@@ -20,8 +20,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // an updated estimate of the time gap between chunks.
 // Implementation
 
-#include "MPEG2TransportStreamFramer.hh"
-#include <GroupsockHelper.hh> // for "gettimeofday()"
+#include "../MPEG2TransportStreamFramer.hh"
+#include <groupsock/GroupsockHelper.hh> // for "gettimeofday()"
 
 #define TRANSPORT_PACKET_SIZE 188
 

@@ -26,11 +26,11 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #endif
 
 #ifndef _HASH_TABLE_HH
-#include "HashTable.hh"
+#include <UsageEnvironment/HashTable.hh>
 #endif
 
 #ifndef _USAGE_ENVIRONMENT_HH
-#include "UsageEnvironment.hh"
+#include <UsageEnvironment/UsageEnvironment.hh>
 #endif
 
 // Lots of files end up needing the following, so just #include them here:

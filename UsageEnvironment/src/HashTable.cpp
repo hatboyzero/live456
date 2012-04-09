@@ -17,7 +17,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Generic Hash Table
 // Implementation
 
-#include "HashTable.hh"
+#include "../HashTable.hh"
 
 HashTable::HashTable() {
 }

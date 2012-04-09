@@ -22,7 +22,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #define _STREAM_PARSER_HH
 
 #ifndef _FRAMED_SOURCE_HH
-#include "FramedSource.hh"
+#include "../FramedSource.hh"
 #endif
 
 class StreamParser {

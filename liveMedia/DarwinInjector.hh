@@ -24,11 +24,11 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #define _DARWIN_INJECTOR_HH
 
 #ifndef _RTSP_CLIENT_HH
-#include <RTSPClient.hh>
+#include "RTSPClient.hh"
 #endif
 
 #ifndef _RTCP_HH
-#include <RTCP.hh>
+#include "RTCP.hh"
 #endif
 
 /*

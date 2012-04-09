@@ -22,7 +22,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #define _BASE64_HH
 
 #ifndef _BOOLEAN_HH
-#include "Boolean.hh"
+#include <UsageEnvironment/Boolean.hh>
 #endif
 
 unsigned char* base64Decode(char const* in, unsigned& resultSize,

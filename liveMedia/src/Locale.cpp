@@ -19,8 +19,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // floating-point numbers in protocol headers, or calling toupper()/tolower() on human-input strings.
 // Implementation
 
-#include "Locale.hh"
-#include <strDup.hh>
+#include "../Locale.hh"
+#include <UsageEnvironment/strDup.hh>
 
 Locale::Locale(char const* newLocale, LocaleCategory category) {
 #ifndef LOCALE_NOT_USED

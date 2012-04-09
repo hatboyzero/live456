@@ -20,8 +20,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // client application.  For a full-featured RTSP client application - with much more functionality, and many options - see
 // "openRTSP": http://www.live555.com/openRTSP/
 
-#include "liveMedia.hh"
-#include "BasicUsageEnvironment.hh"
+#include <liveMedia/liveMedia.hh>
+#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
 
 // Forward function definitions:
 

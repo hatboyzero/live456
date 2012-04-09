@@ -18,8 +18,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // A simple UDP sink (i.e., without RTP or other headers added); one frame per packet
 // Implementation
 
-#include "BasicUDPSink.hh"
-#include <GroupsockHelper.hh>
+#include "../BasicUDPSink.hh"
+#include <groupsock/GroupsockHelper.hh>
 
 BasicUDPSink* BasicUDPSink::createNew(UsageEnvironment& env, Groupsock* gs,
 				      unsigned maxPayloadSize) {
