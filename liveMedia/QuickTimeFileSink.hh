@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _QUICKTIME_FILE_SINK_HH
 #define _QUICKTIME_FILE_SINK_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MEDIA_SESSION_HH
 #include "MediaSession.hh"
 #endif
 
-class QuickTimeFileSink: public Medium {
+class LIVEMEDIA_DLL_LINK QuickTimeFileSink: public Medium {
 public:
   static QuickTimeFileSink* createNew(UsageEnvironment& env,
 				      MediaSession& inputSession,

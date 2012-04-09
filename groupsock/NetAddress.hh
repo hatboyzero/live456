@@ -21,6 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _NET_ADDRESS_HH
 #define _NET_ADDRESS_HH
 
+#include "Configuration.hpp"
+
 #ifndef _HASH_TABLE_HH
 #include <UsageEnvironment/HashTable.hh>
 #endif
@@ -38,7 +40,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // to allow for IPv6.
 typedef u_int32_t netAddressBits;
 
-class NetAddress {
+class GROUPSOCK_DLL_LINK NetAddress {
     public:
 	NetAddress(u_int8_t const* data,
 		   unsigned length = 4 /* default: 32 bits */);
@@ -59,7 +61,7 @@ class NetAddress {
 	u_int8_t* fData;
 };
 
-class NetAddressList {
+class GROUPSOCK_DLL_LINK NetAddressList {
     public:
 	NetAddressList(char const* hostname);
 	NetAddressList(NetAddressList const& orig);
@@ -91,7 +93,7 @@ class NetAddressList {
 
 typedef u_int16_t portNumBits;
 
-class Port {
+class GROUPSOCK_DLL_LINK Port {
     public:
 	Port(portNumBits num /* in host byte order */);
 
@@ -105,11 +107,11 @@ class Port {
 #endif
 };
 
-UsageEnvironment& operator<<(UsageEnvironment& s, const Port& p);
+GROUPSOCK_DLL_LINK UsageEnvironment& operator<<(UsageEnvironment& s, const Port& p);
 
 
 // A generic table for looking up objects by (address1, address2, port)
-class AddressPortLookupTable {
+class GROUPSOCK_DLL_LINK AddressPortLookupTable {
     public:
 	AddressPortLookupTable();
 	virtual ~AddressPortLookupTable();
@@ -124,7 +126,7 @@ class AddressPortLookupTable {
 		// Returns 0 if not found
 
 	// Used to iterate through the entries in the table
-	class Iterator {
+	class GROUPSOCK_DLL_LINK Iterator {
 	    public:
 		Iterator(AddressPortLookupTable& table);
 		virtual ~Iterator();
@@ -141,11 +143,11 @@ class AddressPortLookupTable {
 };
 
 
-Boolean IsMulticastAddress(netAddressBits address);
+GROUPSOCK_DLL_LINK Boolean IsMulticastAddress(netAddressBits address);
 
 
 // A mechanism for displaying an IPv4 address in ASCII.  This is intended to replace "inet_ntoa()", which is not thread-safe.
-class AddressString {
+class GROUPSOCK_DLL_LINK AddressString {
 public:
   AddressString(struct sockaddr_in const& addr);
   AddressString(struct in_addr const& addr);

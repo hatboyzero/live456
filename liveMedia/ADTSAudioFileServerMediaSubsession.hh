@@ -22,11 +22,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _ADTS_AUDIO_FILE_SERVER_MEDIA_SUBSESSION_HH
 #define _ADTS_AUDIO_FILE_SERVER_MEDIA_SUBSESSION_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FILE_SERVER_MEDIA_SUBSESSION_HH
 #include "FileServerMediaSubsession.hh"
 #endif
 
-class ADTSAudioFileServerMediaSubsession: public FileServerMediaSubsession{
+class LIVEMEDIA_DLL_LINK ADTSAudioFileServerMediaSubsession: public FileServerMediaSubsession{
 public:
   static ADTSAudioFileServerMediaSubsession*
   createNew(UsageEnvironment& env, char const* fileName, Boolean reuseFirstSource);

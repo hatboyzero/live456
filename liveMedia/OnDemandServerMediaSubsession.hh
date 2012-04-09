@@ -22,6 +22,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _ON_DEMAND_SERVER_MEDIA_SUBSESSION_HH
 #define _ON_DEMAND_SERVER_MEDIA_SUBSESSION_HH
 
+#include "Configuration.hpp"
+
 #ifndef _SERVER_MEDIA_SESSION_HH
 #include "ServerMediaSession.hh"
 #endif
@@ -35,7 +37,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "RTCP.hh"
 #endif
 
-class OnDemandServerMediaSubsession: public ServerMediaSubsession {
+class LIVEMEDIA_DLL_LINK OnDemandServerMediaSubsession: public ServerMediaSubsession {
 protected: // we're a virtual base class
   OnDemandServerMediaSubsession(UsageEnvironment& env, Boolean reuseFirstSource,
 				portNumBits initialPortNum = 6970);
@@ -106,7 +108,7 @@ private:
 // A class that represents the state of an ongoing stream.  This is used only internally, in the implementation of
 // "OnDemandServerMediaSubsession", but we expose the definition here, in case subclasses of "OnDemandServerMediaSubsession"
 // want to access it.
-class Destinations {
+class LIVEMEDIA_DLL_LINK Destinations {
 public:
   Destinations(struct in_addr const& destAddr,
                Port const& rtpDestPort,
@@ -127,7 +129,7 @@ public:
   unsigned char rtpChannelId, rtcpChannelId;
 };
 
-class StreamState {
+class LIVEMEDIA_DLL_LINK StreamState {
 public:
   StreamState(OnDemandServerMediaSubsession& master,
               Port const& serverRTPPort, Port const& serverRTCPPort,

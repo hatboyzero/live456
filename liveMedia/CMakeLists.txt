@@ -28,6 +28,7 @@ set (liveMedia_HEADERS
 	ByteStreamFileSource.hh
 	ByteStreamMemoryBufferSource.hh
 	ByteStreamMultiFileSource.hh
+	Configuration.hpp
 	DarwinInjector.hh
 	DeviceSource.hh
 	DigestAuthentication.hh

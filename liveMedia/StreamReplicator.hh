@@ -21,13 +21,15 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _STREAM_REPLICATOR_HH
 #define _STREAM_REPLICATOR_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FRAMED_SOURCE_HH
 #include "FramedSource.hh"
 #endif
 
 class StreamReplica; // forward
 
-class StreamReplicator: public Medium {
+class LIVEMEDIA_DLL_LINK StreamReplicator: public Medium {
 public:
   static StreamReplicator* createNew(UsageEnvironment& env, FramedSource* inputSource, Boolean deleteWhenLastReplicaDies = True);
     // If "deleteWhenLastReplicaDies" is True (the default), then the "StreamReplicator" object is deleted when (and only when)

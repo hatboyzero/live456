@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _FRAMED_FILTER_HH
 #define _FRAMED_FILTER_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FRAMED_SOURCE_HH
 #include "FramedSource.hh"
 #endif
 
-class FramedFilter: public FramedSource {
+class LIVEMEDIA_DLL_LINK FramedFilter: public FramedSource {
 public:
   FramedSource* inputSource() const { return fInputSource; }
 

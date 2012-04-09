@@ -18,12 +18,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Implementation
 
 #include "../BasicUsageEnvironment.hh"
+#include <groupsock/GroupsockHelper.hh>
 #include <stdio.h>
 
 ////////// BasicUsageEnvironment //////////
 
 #if defined(__WIN32__) || defined(_WIN32)
-extern "C" int initializeWinsockIfNecessary();
+//extern "C" int initializeWinsockIfNecessary();
 #endif
 
 BasicUsageEnvironment::BasicUsageEnvironment(TaskScheduler& taskScheduler)

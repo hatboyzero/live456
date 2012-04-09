@@ -21,6 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _INPUT_FILE_HH
 #define _INPUT_FILE_HH
 
+#include "Configuration.hpp"
+
 #include <UsageEnvironment/UsageEnvironment.hh>
 #include <stdio.h>
 
@@ -42,21 +44,21 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include <sys/stat.h>
 #endif
 
-FILE* OpenInputFile(UsageEnvironment& env, char const* fileName);
+LIVEMEDIA_DLL_LINK FILE* OpenInputFile(UsageEnvironment& env, char const* fileName);
 
-void CloseInputFile(FILE* fid);
+LIVEMEDIA_DLL_LINK void CloseInputFile(FILE* fid);
 
-u_int64_t GetFileSize(char const* fileName, FILE* fid);
+LIVEMEDIA_DLL_LINK u_int64_t GetFileSize(char const* fileName, FILE* fid);
     // 0 means zero-length, unbounded, or unknown
 
-int64_t SeekFile64(FILE *fid, int64_t offset, int whence);
+LIVEMEDIA_DLL_LINK int64_t SeekFile64(FILE *fid, int64_t offset, int whence);
     // A platform-independent routine for seeking within (possibly) large files
 
-int64_t TellFile64(FILE *fid);
+LIVEMEDIA_DLL_LINK int64_t TellFile64(FILE *fid);
     // A platform-independent routine for reporting the position within
     // (possibly) large files
 
-Boolean FileIsSeekable(FILE *fid);
+LIVEMEDIA_DLL_LINK Boolean FileIsSeekable(FILE *fid);
     // Tests whether "fid" is seekable, by trying to seek within it.
 
 #endif

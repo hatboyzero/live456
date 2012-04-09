@@ -22,7 +22,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 #if defined(__WIN32__) || defined(_WIN32)
 #include <time.h>
-extern "C" int initializeWinsockIfNecessary();
+//extern "C" int initializeWinsockIfNecessary();
 #else
 #include <stdarg.h>
 #include <time.h>
@@ -34,6 +34,16 @@ extern "C" int initializeWinsockIfNecessary();
 // By default, use INADDR_ANY for the sending and receiving interfaces:
 netAddressBits SendingInterfaceAddr = INADDR_ANY;
 netAddressBits ReceivingInterfaceAddr = INADDR_ANY;
+
+netAddressBits& getSendingInterfaceAddr()
+{
+    return SendingInterfaceAddr;
+}
+
+netAddressBits& getReceivingInterfaceAddr()
+{
+    return ReceivingInterfaceAddr;
+}
 
 static void socketErr(UsageEnvironment& env, char const* errorMsg) {
   env.setResultErrMsg(errorMsg);

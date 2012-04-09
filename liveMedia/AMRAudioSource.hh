@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _AMR_AUDIO_SOURCE_HH
 #define _AMR_AUDIO_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FRAMED_SOURCE_HH
 #include "FramedSource.hh"
 #endif
 
-class AMRAudioSource: public FramedSource {
+class LIVEMEDIA_DLL_LINK AMRAudioSource: public FramedSource {
 public:
   Boolean isWideband() const { return fIsWideband; }
   unsigned numChannels() const { return fNumChannels; }

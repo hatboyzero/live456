@@ -22,11 +22,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _H264_VIDEO_FILE_SERVER_MEDIA_SUBSESSION_HH
 #define _H264_VIDEO_FILE_SERVER_MEDIA_SUBSESSION_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FILE_SERVER_MEDIA_SUBSESSION_HH
 #include "FileServerMediaSubsession.hh"
 #endif
 
-class H264VideoFileServerMediaSubsession: public FileServerMediaSubsession {
+class LIVEMEDIA_DLL_LINK H264VideoFileServerMediaSubsession: public FileServerMediaSubsession {
 public:
   static H264VideoFileServerMediaSubsession*
   createNew(UsageEnvironment& env, char const* fileName, Boolean reuseFirstSource);

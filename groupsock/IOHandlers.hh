@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _IO_HANDLERS_HH
 #define _IO_HANDLERS_HH
 
+#include "Configuration.hpp"
+
 #ifndef _NET_INTERFACE_HH
 #include "NetInterface.hh"
 #endif
 
 // Handles incoming data on sockets:
-void socketReadHandler(Socket* sock, int mask);
+GROUPSOCK_DLL_LINK void socketReadHandler(Socket* sock, int mask);
 
 #endif

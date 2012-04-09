@@ -134,7 +134,7 @@ int main(int argc, char** argv) {
 
 void play() {
   // Open the input source:
-  extern FramedSource* createNewGSMAudioSource(UsageEnvironment&);
+  FramedSource* createNewGSMAudioSource(UsageEnvironment&);
   sessionState.source = createNewGSMAudioSource(*env);
   if (sessionState.source == NULL) {
     *env << "Failed to create GSM source\n";

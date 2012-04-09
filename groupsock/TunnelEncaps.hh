@@ -21,13 +21,15 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _TUNNEL_ENCAPS_HH
 #define _TUNNEL_ENCAPS_HH
 
+#include "Configuration.hpp"
+
 #ifndef _NET_ADDRESS_HH
 #include "NetAddress.hh"
 #endif
 
 typedef u_int16_t Cookie;
 
-class TunnelEncapsulationTrailer {
+class GROUPSOCK_DLL_LINK TunnelEncapsulationTrailer {
 	// The trailer is layed out as follows:
 	// bytes 0-1:	source 'cookie'
 	// bytes 2-3:	destination 'cookie'

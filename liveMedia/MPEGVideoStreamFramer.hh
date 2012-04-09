@@ -22,11 +22,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MPEG_VIDEO_STREAM_FRAMER_HH
 #define _MPEG_VIDEO_STREAM_FRAMER_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FRAMED_FILTER_HH
 #include "FramedFilter.hh"
 #endif
 
-class TimeCode {
+class LIVEMEDIA_DLL_LINK TimeCode {
 public:
   TimeCode();
   virtual ~TimeCode();
@@ -35,7 +37,7 @@ public:
   unsigned days, hours, minutes, seconds, pictures;
 };
 
-class MPEGVideoStreamFramer: public FramedFilter {
+class LIVEMEDIA_DLL_LINK MPEGVideoStreamFramer: public FramedFilter {
 public:
   Boolean& pictureEndMarker() { return fPictureEndMarker; }
       // a hack for implementing the RTP 'M' bit

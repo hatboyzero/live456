@@ -22,6 +22,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _DV_VIDEO_RTP_SINK_HH
 #define _DV_VIDEO_RTP_SINK_HH
 
+#include "Configuration.hpp"
+
 #ifndef _VIDEO_RTP_SINK_HH
 #include "VideoRTPSink.hh"
 #endif
@@ -29,7 +31,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "DVVideoStreamFramer.hh"
 #endif
 
-class DVVideoRTPSink: public VideoRTPSink {
+class LIVEMEDIA_DLL_LINK DVVideoRTPSink: public VideoRTPSink {
 public:
   static DVVideoRTPSink* createNew(UsageEnvironment& env, Groupsock* RTPgs, unsigned char rtpPayloadFormat);
   char const* auxSDPLineFromFramer(DVVideoStreamFramer* framerSource);

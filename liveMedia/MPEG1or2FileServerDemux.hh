@@ -21,6 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MPEG_1OR2_FILE_SERVER_DEMUX_HH
 #define _MPEG_1OR2_FILE_SERVER_DEMUX_HH
 
+#include "Configuration.hpp"
+
 #ifndef _SERVER_MEDIA_SESSION_HH
 #include "ServerMediaSession.hh"
 #endif
@@ -28,7 +30,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "MPEG1or2DemuxedElementaryStream.hh"
 #endif
 
-class MPEG1or2FileServerDemux: public Medium {
+class LIVEMEDIA_DLL_LINK MPEG1or2FileServerDemux: public Medium {
 public:
   static MPEG1or2FileServerDemux*
   createNew(UsageEnvironment& env, char const* fileName, Boolean reuseFirstSource);

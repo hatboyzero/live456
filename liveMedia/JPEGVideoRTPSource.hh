@@ -21,13 +21,15 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _JPEG_VIDEO_RTP_SOURCE_HH
 #define _JPEG_VIDEO_RTP_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MULTI_FRAMED_RTP_SOURCE_HH
 #include "MultiFramedRTPSource.hh"
 #endif
 
 #define MAX_JPEG_HEADER_SIZE 1024
 
-class JPEGVideoRTPSource: public MultiFramedRTPSource {
+class LIVEMEDIA_DLL_LINK JPEGVideoRTPSource: public MultiFramedRTPSource {
 public:
   static JPEGVideoRTPSource*
   createNew(UsageEnvironment& env, Groupsock* RTPgs,

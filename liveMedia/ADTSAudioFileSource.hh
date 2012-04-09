@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _ADTS_AUDIO_FILE_SOURCE_HH
 #define _ADTS_AUDIO_FILE_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FRAMED_FILE_SOURCE_HH
 #include "FramedFileSource.hh"
 #endif
 
-class ADTSAudioFileSource: public FramedFileSource {
+class LIVEMEDIA_DLL_LINK ADTSAudioFileSource: public FramedFileSource {
 public:
   static ADTSAudioFileSource* createNew(UsageEnvironment& env,
 				       char const* fileName);

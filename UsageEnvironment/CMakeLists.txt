@@ -8,6 +8,7 @@ endif (NOT LIB_TYPE)
 
 set (UsageEnvironment_HEADERS
 	Boolean.hh
+	Configuration.hpp
 	HashTable.hh
 	strDup.hh
 	UsageEnvironment.hh

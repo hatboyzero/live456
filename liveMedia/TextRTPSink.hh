@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _TEXT_RTP_SINK_HH
 #define _TEXT_RTP_SINK_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MULTI_FRAMED_RTP_SINK_HH
 #include "MultiFramedRTPSink.hh"
 #endif
 
-class TextRTPSink: public MultiFramedRTPSink {
+class LIVEMEDIA_DLL_LINK TextRTPSink: public MultiFramedRTPSink {
 protected:
   TextRTPSink(UsageEnvironment& env,
 	      Groupsock* rtpgs, unsigned char rtpPayloadType,

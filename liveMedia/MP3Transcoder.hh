@@ -21,6 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MP3_TRANSCODER_HH
 #define _MP3_TRANSCODER_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MP3_ADU_HH
 #include "MP3ADU.hh"
 #endif
@@ -28,7 +30,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "MP3ADUTranscoder.hh"
 #endif
 
-class MP3Transcoder: public MP3FromADUSource {
+class LIVEMEDIA_DLL_LINK MP3Transcoder: public MP3FromADUSource {
 public:
   static MP3Transcoder* createNew(UsageEnvironment& env,
 				  unsigned outBitrate /* in kbps */,

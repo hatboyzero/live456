@@ -46,6 +46,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MEDIA_SESSION_HH
 #define _MEDIA_SESSION_HH
 
+#include "Configuration.hpp"
+
 #ifndef _RTCP_HH
 #include "RTCP.hh"
 #endif
@@ -55,7 +57,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 class MediaSubsession; // forward
 
-class MediaSession: public Medium {
+class LIVEMEDIA_DLL_LINK MediaSession: public Medium {
 public:
   static MediaSession* createNew(UsageEnvironment& env,
 				 char const* sdpDescription);
@@ -128,7 +130,7 @@ protected:
 };
 
 
-class MediaSubsessionIterator {
+class LIVEMEDIA_DLL_LINK MediaSubsessionIterator {
 public:
   MediaSubsessionIterator(MediaSession& session);
   virtual ~MediaSubsessionIterator();
@@ -142,7 +144,7 @@ private:
 };
 
 
-class MediaSubsession {
+class LIVEMEDIA_DLL_LINK MediaSubsession {
 public:
   MediaSession& parentSession() { return fParent; }
   MediaSession const& parentSession() const { return fParent; }

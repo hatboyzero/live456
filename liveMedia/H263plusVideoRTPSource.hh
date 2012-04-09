@@ -21,13 +21,15 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _H263_PLUS_VIDEO_RTP_SOURCE_HH
 #define _H263_PLUS_VIDEO_RTP_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MULTI_FRAMED_RTP_SOURCE_HH
 #include "MultiFramedRTPSource.hh"
 #endif
 
 #define SPECIAL_HEADER_BUFFER_SIZE 1000
 
-class H263plusVideoRTPSource: public MultiFramedRTPSource {
+class LIVEMEDIA_DLL_LINK H263plusVideoRTPSource: public MultiFramedRTPSource {
 public:
   static H263plusVideoRTPSource*
   createNew(UsageEnvironment& env, Groupsock* RTPgs,

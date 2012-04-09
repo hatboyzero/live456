@@ -21,6 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _DIGEST_AUTHENTICATION_HH
 #define _DIGEST_AUTHENTICATION_HH
 
+#include "Configuration.hpp"
+
 #ifndef _BOOLEAN_HH
 #include <UsageEnvironment/Boolean.hh>
 #endif
@@ -29,7 +31,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // The "realm", and "nonce" fields are supplied by the server
 // (in a "401 Unauthorized" response).
 // The "username" and "password" fields are supplied by the client.
-class Authenticator {
+class LIVEMEDIA_DLL_LINK Authenticator {
 public:
   Authenticator();
   Authenticator(char const* username, char const* password, Boolean passwordIsMD5 = False);

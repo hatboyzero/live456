@@ -21,6 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _RTSP_COMMON_HH
 #define _RTSP_COMMON_HH
 
+#include "Configuration.hpp"
+
 #ifndef _BOOLEAN_HH
 #include <UsageEnvironment/Boolean.hh>
 #endif
@@ -38,7 +40,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 #define RTSP_PARAM_STRING_MAX 200
 
-Boolean parseRTSPRequestString(char const *reqStr, unsigned reqStrSize,
+LIVEMEDIA_DLL_LINK Boolean parseRTSPRequestString(char const *reqStr, unsigned reqStrSize,
 			       char *resultCmdName,
 			       unsigned resultCmdNameMaxSize,
 			       char* resultURLPreSuffix,
@@ -49,9 +51,9 @@ Boolean parseRTSPRequestString(char const *reqStr, unsigned reqStrSize,
 			       unsigned resultCSeqMaxSize,
 			       unsigned& contentLength);
 
-Boolean parseRangeParam(char const* paramStr, double& rangeStart, double& rangeEnd);
-Boolean parseRangeHeader(char const* buf, double& rangeStart, double& rangeEnd);
+LIVEMEDIA_DLL_LINK Boolean parseRangeParam(char const* paramStr, double& rangeStart, double& rangeEnd);
+LIVEMEDIA_DLL_LINK Boolean parseRangeHeader(char const* buf, double& rangeStart, double& rangeEnd);
 
-char const* dateHeader(); // A "Date:" header that can be used in a RTSP (or HTTP) response 
+LIVEMEDIA_DLL_LINK char const* dateHeader(); // A "Date:" header that can be used in a RTSP (or HTTP) response 
 
 #endif

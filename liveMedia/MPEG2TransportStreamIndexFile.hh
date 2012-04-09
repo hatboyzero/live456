@@ -24,13 +24,15 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MPEG2_TRANSPORT_STREAM_INDEX_FILE_HH
 #define _MPEG2_TRANSPORT_STREAM_INDEX_FILE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MEDIA_HH
 #include "Media.hh"
 #endif
 
 #define INDEX_RECORD_SIZE 11
 
-class MPEG2TransportStreamIndexFile: public Medium {
+class LIVEMEDIA_DLL_LINK MPEG2TransportStreamIndexFile: public Medium {
 public:
   static MPEG2TransportStreamIndexFile* createNew(UsageEnvironment& env,
 						  char const* indexFileName);

@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _FRAMED_FILE_SOURCE_HH
 #define _FRAMED_FILE_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FRAMED_SOURCE_HH
 #include "FramedSource.hh"
 #endif
 
-class FramedFileSource: public FramedSource {
+class LIVEMEDIA_DLL_LINK FramedFileSource: public FramedSource {
 protected:
   FramedFileSource(UsageEnvironment& env, FILE* fid); // abstract base class
   virtual ~FramedFileSource();

@@ -33,9 +33,5 @@ extern void startPlayingSession(MediaSession* session, double start, double end,
 
 extern void tearDownSession(MediaSession* session, RTSPClient::responseHandler* afterFunc);
 
-extern Authenticator* ourAuthenticator;
-extern Boolean allowProxyServers;
-extern Boolean controlConnectionUsesTCP;
-extern Boolean supportCodecSelection;
-extern char const* clientProtocolName;
-extern unsigned statusCode;
+Authenticator* ourAuthenticator;
+unsigned statusCode;

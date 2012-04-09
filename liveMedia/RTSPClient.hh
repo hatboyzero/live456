@@ -21,6 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _RTSP_CLIENT_HH
 #define _RTSP_CLIENT_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MEDIA_SESSION_HH
 #include "MediaSession.hh"
 #endif
@@ -31,7 +33,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "DigestAuthentication.hh"
 #endif
 
-class RTSPClient: public Medium {
+class LIVEMEDIA_DLL_LINK RTSPClient: public Medium {
 public:
   static RTSPClient* createNew(UsageEnvironment& env, char const* rtspURL,
 			       int verbosityLevel = 0,

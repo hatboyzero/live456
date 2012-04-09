@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _NET_INTERFACE_HH
 #define _NET_INTERFACE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _NET_ADDRESS_HH
 #include "NetAddress.hh"
 #endif
 
-class NetInterface {
+class GROUPSOCK_DLL_LINK NetInterface {
 public:
   virtual ~NetInterface();
 
@@ -36,7 +38,7 @@ protected:
   NetInterface(); // virtual base class
 };
 
-class DirectedNetInterface: public NetInterface {
+class GROUPSOCK_DLL_LINK DirectedNetInterface: public NetInterface {
 public:
   virtual ~DirectedNetInterface();
 
@@ -49,7 +51,7 @@ protected:
   DirectedNetInterface(); // virtual base class
 };
 
-class DirectedNetInterfaceSet {
+class GROUPSOCK_DLL_LINK DirectedNetInterfaceSet {
 public:
   DirectedNetInterfaceSet();
   virtual ~DirectedNetInterfaceSet();
@@ -77,7 +79,7 @@ private:
   HashTable* fTable;
 };
 
-class Socket: public NetInterface {
+class GROUPSOCK_DLL_LINK Socket: public NetInterface {
 public:
   virtual ~Socket();
 
@@ -107,11 +109,11 @@ private:
   Port fPort;
 };
 
-UsageEnvironment& operator<<(UsageEnvironment& s, const Socket& sock);
+GROUPSOCK_DLL_LINK UsageEnvironment& operator<<(UsageEnvironment& s, const Socket& sock);
 
 // A data structure for looking up a Socket by port:
 
-class SocketLookupTable {
+class GROUPSOCK_DLL_LINK SocketLookupTable {
 public:
   virtual ~SocketLookupTable();
 
@@ -129,7 +131,7 @@ private:
 
 // A data structure for counting traffic:
 
-class NetInterfaceTrafficStats {
+class GROUPSOCK_DLL_LINK NetInterfaceTrafficStats {
 public:
   NetInterfaceTrafficStats();
 

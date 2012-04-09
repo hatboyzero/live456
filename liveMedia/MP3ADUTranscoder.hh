@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MP3_ADU_TRANSCODER_HH
 #define _MP3_ADU_TRANSCODER_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FRAMED_FILTER_HH
 #include "FramedFilter.hh"
 #endif
 
-class MP3ADUTranscoder: public FramedFilter {
+class LIVEMEDIA_DLL_LINK MP3ADUTranscoder: public FramedFilter {
 public:
   static MP3ADUTranscoder* createNew(UsageEnvironment& env,
 				  unsigned outBitrate /* in kbps */,

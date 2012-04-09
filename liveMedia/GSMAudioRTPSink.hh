@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _GSM_AUDIO_RTP_SINK_HH
 #define _GSM_AUDIO_RTP_SINK_HH
 
+#include "Configuration.hpp"
+
 #ifndef _AUDIO_RTP_SINK_HH
 #include "AudioRTPSink.hh"
 #endif
 
-class GSMAudioRTPSink: public AudioRTPSink {
+class LIVEMEDIA_DLL_LINK GSMAudioRTPSink: public AudioRTPSink {
 public:
   static GSMAudioRTPSink* createNew(UsageEnvironment& env, Groupsock* RTPgs);
 

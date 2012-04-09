@@ -20,11 +20,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _AUDIO_INPUT_DEVICE_HH
 #define _AUDIO_INPUT_DEVICE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FRAMED_SOURCE_HH
 #include "FramedSource.hh"
 #endif
 
-class AudioPortNames {
+class LIVEMEDIA_DLL_LINK AudioPortNames {
 public:
   AudioPortNames();
   virtual ~AudioPortNames();
@@ -33,7 +35,7 @@ public:
   char** portName;
 };
 
-class AudioInputDevice: public FramedSource {
+class LIVEMEDIA_DLL_LINK AudioInputDevice: public FramedSource {
 public:
   unsigned char bitsPerSample() const { return fBitsPerSample; }
   unsigned char numChannels() const { return fNumChannels; }

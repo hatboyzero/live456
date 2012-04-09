@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _BYTE_STREAM_MEMORY_BUFFER_SOURCE_HH
 #define _BYTE_STREAM_MEMORY_BUFFER_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FRAMED_SOURCE_HH
 #include "FramedSource.hh"
 #endif
 
-class ByteStreamMemoryBufferSource: public FramedSource {
+class LIVEMEDIA_DLL_LINK ByteStreamMemoryBufferSource: public FramedSource {
 public:
   static ByteStreamMemoryBufferSource* createNew(UsageEnvironment& env,
 						 u_int8_t* buffer, u_int64_t bufferSize,

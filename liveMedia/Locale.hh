@@ -22,6 +22,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _LOCALE_HH
 #define _LOCALE_HH
 
+#include "Configuration.hpp"
+
 // If you're on a system that (for whatever reason) doesn't have either the "setlocale()" or the "newlocale()" function, then
 // add "-DLOCALE_NOT_USED" to your "config.*" file.
 
@@ -51,7 +53,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 typedef enum LocaleCategory { All, Numeric }; // define and implement more categories later, as needed
 
-class Locale {
+class LIVEMEDIA_DLL_LINK Locale {
 public:
   Locale(char const* newLocale, LocaleCategory category = All);
   virtual ~Locale();

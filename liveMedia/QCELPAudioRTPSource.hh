@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _QCELP_AUDIO_RTP_SOURCE_HH
 #define _QCELP_AUDIO_RTP_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _RTP_SOURCE_HH
 #include "RTPSource.hh"
 #endif
 
-class QCELPAudioRTPSource {
+class LIVEMEDIA_DLL_LINK QCELPAudioRTPSource {
 public:
   static FramedSource* createNew(UsageEnvironment& env,
 				 Groupsock* RTPgs,

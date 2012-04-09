@@ -1,3 +1,5 @@
+#include "../GroupsockHelper.hh"
+
 #ifndef _NET_COMMON_H
 #include "../NetCommon.h"
 #endif
@@ -12,8 +14,8 @@
  * This confuses C++.  To overcome this, we use our own routine, implemented in C.
  */
 
-unsigned our_inet_addr(cp)
-	char const* cp;
+unsigned our_inet_addr(char const* cp)
+//	char const* cp;
 {
 	return inet_addr(cp);
 }
@@ -226,7 +228,7 @@ static long* end_ptr = &randtbl[DEG_3 + 1];
  * introduced by the L.C.R.N.G.  Note that the initialization of randtbl[]
  * for default usage relies on values produced by this routine.
  */
-long our_random(void); /*forward*/
+//long our_random(void); /*forward*/
 void
 our_srandom(unsigned int x)
 {
@@ -265,10 +267,10 @@ our_srandom(unsigned int x)
  * Returns a pointer to the old state.
  */
 char *
-our_initstate(seed, arg_state, n)
-	unsigned int seed;		/* seed for R.N.G. */
-	char *arg_state;		/* pointer to state array */
-	int n;				/* # bytes of state info */
+our_initstate(unsigned int seed, char* arg_state, int n)
+//	unsigned int seed;		/* seed for R.N.G. */
+//	char *arg_state;		/* pointer to state array */
+//	int n;				/* # bytes of state info */
 {
 	register char *ostate = (char *)(&state[-1]);
 
@@ -330,8 +332,8 @@ our_initstate(seed, arg_state, n)
  * Returns a pointer to the old state information.
  */
 char *
-our_setstate(arg_state)
-	char *arg_state;
+our_setstate(char* arg_state)
+//	char *arg_state;
 {
 	register long *new_state = (long *)arg_state;
 	register int type = new_state[0] % MAX_TYPES;

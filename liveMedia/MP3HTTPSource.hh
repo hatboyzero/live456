@@ -21,6 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MP3_HTTP_SOURCE_HH
 #define _MP3_HTTP_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MP3_FILE_SOURCE_HH
 #include "MP3FileSource.hh"
 #endif
@@ -28,7 +30,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include <groupsock/NetAddress.hh>
 #endif
 
-class MP3HTTPSource: public MP3FileSource {
+class LIVEMEDIA_DLL_LINK MP3HTTPSource: public MP3FileSource {
 public:
   static MP3HTTPSource* createNew(UsageEnvironment& env,
 				  NetAddress const& address, Port port,

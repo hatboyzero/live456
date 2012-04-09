@@ -32,8 +32,8 @@ Medium* createClient(UsageEnvironment& env, char const* /*url*/, int verbosityLe
     --suffix;
   }
 
-  extern unsigned char desiredAudioRTPPayloadFormat;
-  extern char* mimeSubtype;
+  unsigned char desiredAudioRTPPayloadFormat;
+  char* mimeSubtype;
   return ourSIPClient = SIPClient::createNew(env, desiredAudioRTPPayloadFormat, mimeSubtype, verbosityLevel, applicationName);
 }
 
@@ -43,7 +43,7 @@ void getOptions(RTSPClient::responseHandler* afterFunc) {
 }
 
 void getSDPDescription(RTSPClient::responseHandler* afterFunc) {
-  extern char* proxyServerName;
+  char* proxyServerName;
   if (proxyServerName != NULL) {
     // Tell the SIP client about the proxy:
     NetAddressList addresses(proxyServerName);
@@ -53,19 +53,19 @@ void getSDPDescription(RTSPClient::responseHandler* afterFunc) {
       NetAddress address = *(addresses.firstAddress());
       unsigned proxyServerAddress // later, allow for IPv6 #####
 	= *(unsigned*)(address.data());
-      extern unsigned short proxyServerPortNum;
+      unsigned short proxyServerPortNum;
       if (proxyServerPortNum == 0) proxyServerPortNum = 5060; // default
 
       ourSIPClient->setProxyServer(proxyServerAddress, proxyServerPortNum);
     }
   }
 
-  extern unsigned short desiredPortNum;
+  unsigned short desiredPortNum;
   unsigned short clientStartPortNum = desiredPortNum;
   if (clientStartPortNum == 0) clientStartPortNum = 8000; // default
   ourSIPClient->setClientStartPortNum(clientStartPortNum);
 
-  extern char const* streamURL;
+  char const* streamURL;
   char const* username = ourAuthenticator->username();
   char const* password = ourAuthenticator->password();
   char* result;

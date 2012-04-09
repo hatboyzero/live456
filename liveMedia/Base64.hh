@@ -21,16 +21,18 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _BASE64_HH
 #define _BASE64_HH
 
+#include "Configuration.hpp"
+
 #ifndef _BOOLEAN_HH
 #include <UsageEnvironment/Boolean.hh>
 #endif
 
-unsigned char* base64Decode(char const* in, unsigned& resultSize,
+LIVEMEDIA_DLL_LINK unsigned char* base64Decode(char const* in, unsigned& resultSize,
 			    Boolean trimTrailingZeros = True);
     // returns a newly allocated array - of size "resultSize" - that
     // the caller is responsible for delete[]ing.
 
-char* base64Encode(char const* orig, unsigned origLength);
+LIVEMEDIA_DLL_LINK char* base64Encode(char const* orig, unsigned origLength);
     // returns a 0-terminated string that
     // the caller is responsible for delete[]ing.
 

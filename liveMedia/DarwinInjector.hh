@@ -23,6 +23,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _DARWIN_INJECTOR_HH
 #define _DARWIN_INJECTOR_HH
 
+#include "Configuration.hpp"
+
 #ifndef _RTSP_CLIENT_HH
 #include "RTSPClient.hh"
 #endif
@@ -54,7 +56,7 @@ To use a "DarwinInjector":
 
 class SubstreamDescriptor; // forward
 
-class DarwinInjector: public Medium {
+class LIVEMEDIA_DLL_LINK DarwinInjector: public Medium {
 public:
   static DarwinInjector* createNew(UsageEnvironment& env,
 				   char const* applicationName = "DarwinInjector",

@@ -17,15 +17,17 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _STRDUP_HH
 #define _STRDUP_HH
 
+#include "Configuration.hpp"
+
 // Copyright (c) 1996-2012 Live Networks, Inc.  All rights reserved.
 // A C++ equivalent to the standard C routine "strdup()".
 // This generates a char* that can be deleted using "delete[]"
 // Header
 
-char* strDup(char const* str);
+USAGEENVIRONMENT_DLL_LINK char* strDup(char const* str);
 // Note: strDup(NULL) returns NULL
 
-char* strDupSize(char const* str);
+USAGEENVIRONMENT_DLL_LINK char* strDupSize(char const* str);
 // Like "strDup()", except that it *doesn't* copy the original.
 // (Instead, it just allocates a string of the same size as the original.)
 

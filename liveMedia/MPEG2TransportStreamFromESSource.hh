@@ -22,11 +22,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MPEG2_TRANSPORT_STREAM_FROM_ES_SOURCE_HH
 #define _MPEG2_TRANSPORT_STREAM_FROM_ES_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MPEG2_TRANSPORT_STREAM_MULTIPLEXOR_HH
 #include "MPEG2TransportStreamMultiplexor.hh"
 #endif
 
-class MPEG2TransportStreamFromESSource: public MPEG2TransportStreamMultiplexor {
+class LIVEMEDIA_DLL_LINK MPEG2TransportStreamFromESSource: public MPEG2TransportStreamMultiplexor {
 public:
   static MPEG2TransportStreamFromESSource* createNew(UsageEnvironment& env);
 

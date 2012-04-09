@@ -25,7 +25,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 RTSPClient* ourRTSPClient = NULL;
 Medium* createClient(UsageEnvironment& env, char const* url, int verbosityLevel, char const* applicationName) {
-  extern portNumBits tunnelOverHTTPPortNum;
+  portNumBits tunnelOverHTTPPortNum;
   return ourRTSPClient = RTSPClient::createNew(env, url, verbosityLevel, applicationName, tunnelOverHTTPPortNum);
 }
 

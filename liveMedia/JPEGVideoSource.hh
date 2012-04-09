@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _JPEG_VIDEO_SOURCE_HH
 #define _JPEG_VIDEO_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FRAMED_SOURCE_HH
 #include "FramedSource.hh"
 #endif
 
-class JPEGVideoSource: public FramedSource {
+class LIVEMEDIA_DLL_LINK JPEGVideoSource: public FramedSource {
 public:
   virtual u_int8_t type() = 0;
   virtual u_int8_t qFactor() = 0;

@@ -21,6 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _GROUPEID_HH
 #define _GROUPEID_HH
 
+#include "Configuration.hpp"
+
 #ifndef _BOOLEAN_HH
 #include <UsageEnvironment/Boolean.hh>
 #endif
@@ -31,7 +33,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 const u_int8_t MAX_TTL = 255;
 
-class Scope {
+class GROUPSOCK_DLL_LINK Scope {
     public:
     	Scope(u_int8_t ttl = 0, const char* publicKey = NULL);
     	Scope(const Scope& orig);
@@ -53,7 +55,7 @@ class Scope {
     	char* fPublicKey;
 };
 
-class GroupEId {
+class GROUPSOCK_DLL_LINK GroupEId {
 public:
   GroupEId(struct in_addr const& groupAddr,
 	   portNumBits portNum, Scope const& scope,

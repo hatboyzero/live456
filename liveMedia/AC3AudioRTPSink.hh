@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _AC3_AUDIO_RTP_SINK_HH
 #define _AC3_AUDIO_RTP_SINK_HH
 
+#include "Configuration.hpp"
+
 #ifndef _AUDIO_RTP_SINK_HH
 #include "AudioRTPSink.hh"
 #endif
 
-class AC3AudioRTPSink: public AudioRTPSink {
+class LIVEMEDIA_DLL_LINK AC3AudioRTPSink: public AudioRTPSink {
 public:
   static AC3AudioRTPSink* createNew(UsageEnvironment& env,
 				    Groupsock* RTPgs,

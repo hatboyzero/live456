@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MEDIA_SOURCE_HH
 #define _MEDIA_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MEDIA_HH
 #include "Media.hh"
 #endif
 
-class MediaSource: public Medium {
+class LIVEMEDIA_DLL_LINK MediaSource: public Medium {
 public:
   static Boolean lookupByName(UsageEnvironment& env, char const* sourceName,
 			      MediaSource*& resultSource);

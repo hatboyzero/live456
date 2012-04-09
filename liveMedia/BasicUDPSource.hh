@@ -21,6 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _BASIC_UDP_SOURCE_HH
 #define _BASIC_UDP_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FRAMED_SOURCE_HH
 #include "FramedSource.hh"
 #endif
@@ -28,7 +30,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include <groupsock/Groupsock.hh>
 #endif
 
-class BasicUDPSource: public FramedSource {
+class LIVEMEDIA_DLL_LINK BasicUDPSource: public FramedSource {
 public:
   static BasicUDPSource* createNew(UsageEnvironment& env, Groupsock* inputGS);
 

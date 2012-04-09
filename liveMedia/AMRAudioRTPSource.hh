@@ -21,6 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _AMR_AUDIO_RTP_SOURCE_HH
 #define _AMR_AUDIO_RTP_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _RTP_SOURCE_HH
 #include "RTPSource.hh"
 #endif
@@ -28,7 +30,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "AMRAudioSource.hh"
 #endif
 
-class AMRAudioRTPSource {
+class LIVEMEDIA_DLL_LINK AMRAudioRTPSource {
 public:
   static AMRAudioSource* createNew(UsageEnvironment& env,
 				   Groupsock* RTPgs,

@@ -21,12 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _H263PLUS_VIDEO_STREAM_FRAMER_HH
 #define _H263PLUS_VIDEO_STREAM_FRAMER_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FRAMED_FILTER_HH
 #include "FramedFilter.hh"
 #endif
 
-
-class H263plusVideoStreamFramer: public FramedFilter {
+class LIVEMEDIA_DLL_LINK H263plusVideoStreamFramer: public FramedFilter {
 public:
 
   static H263plusVideoStreamFramer* createNew(UsageEnvironment& env, FramedSource* inputSource);

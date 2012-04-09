@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _AC3_AUDIO_RTP_SOURCE_HH
 #define _AC3_AUDIO_RTP_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MULTI_FRAMED_RTP_SOURCE_HH
 #include "MultiFramedRTPSource.hh"
 #endif
 
-class AC3AudioRTPSource: public MultiFramedRTPSource {
+class LIVEMEDIA_DLL_LINK AC3AudioRTPSource: public MultiFramedRTPSource {
 public:
   static AC3AudioRTPSource*
   createNew(UsageEnvironment& env, Groupsock* RTPgs,

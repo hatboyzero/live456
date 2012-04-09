@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _VORBIS_AUDIO_RTP_SOURCE_HH
 #define _VORBIS_AUDIO_RTP_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MULTI_FRAMED_RTP_SOURCE_HH
 #include "MultiFramedRTPSource.hh"
 #endif
 
-class VorbisAudioRTPSource: public MultiFramedRTPSource {
+class LIVEMEDIA_DLL_LINK VorbisAudioRTPSource: public MultiFramedRTPSource {
 public:
   static VorbisAudioRTPSource*
   createNew(UsageEnvironment& env, Groupsock* RTPgs,

@@ -22,11 +22,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _AMR_AUDIO_FILE_SERVER_MEDIA_SUBSESSION_HH
 #define _AMR_AUDIO_FILE_SERVER_MEDIA_SUBSESSION_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FILE_SERVER_MEDIA_SUBSESSION_HH
 #include "FileServerMediaSubsession.hh"
 #endif
 
-class AMRAudioFileServerMediaSubsession: public FileServerMediaSubsession{
+class LIVEMEDIA_DLL_LINK AMRAudioFileServerMediaSubsession: public FileServerMediaSubsession{
 public:
   static AMRAudioFileServerMediaSubsession*
   createNew(UsageEnvironment& env, char const* fileName, Boolean reuseFirstSource);

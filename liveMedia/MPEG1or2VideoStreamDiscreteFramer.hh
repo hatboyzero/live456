@@ -24,13 +24,15 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MPEG1or2_VIDEO_STREAM_DISCRETE_FRAMER_HH
 #define _MPEG1or2_VIDEO_STREAM_DISCRETE_FRAMER_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MPEG1or2_VIDEO_STREAM_FRAMER_HH
 #include "MPEG1or2VideoStreamFramer.hh"
 #endif
 
 #define VSH_MAX_SIZE 1000
 
-class MPEG1or2VideoStreamDiscreteFramer: public MPEG1or2VideoStreamFramer {
+class LIVEMEDIA_DLL_LINK MPEG1or2VideoStreamDiscreteFramer: public MPEG1or2VideoStreamFramer {
 public:
   static MPEG1or2VideoStreamDiscreteFramer*
   createNew(UsageEnvironment& env, FramedSource* inputSource,

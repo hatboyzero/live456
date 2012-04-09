@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _AVI_FILE_SINK_HH
 #define _AVI_FILE_SINK_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MEDIA_SESSION_HH
 #include "MediaSession.hh"
 #endif
 
-class AVIFileSink: public Medium {
+class LIVEMEDIA_DLL_LINK AVIFileSink: public Medium {
 public:
   static AVIFileSink* createNew(UsageEnvironment& env,
 				MediaSession& inputSession,

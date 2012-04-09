@@ -19,10 +19,18 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 #include "../HashTable.hh"
 
+#include <exception>
+
 HashTable::HashTable() {
 }
 
 HashTable::~HashTable() {
+}
+
+HashTable*
+HashTable::create(int keyType) {
+    // Should never get here.
+    throw std::exception("Not implemented.");
 }
 
 HashTable::Iterator::Iterator() {
@@ -38,4 +46,10 @@ void* HashTable::RemoveNext() {
 
   delete iter;
   return removedValue;
+}
+
+HashTable::Iterator*
+HashTable::Iterator::create(HashTable const& hashTable) {
+    // Should never get here.
+    throw std::exception("Not implemented.");
 }

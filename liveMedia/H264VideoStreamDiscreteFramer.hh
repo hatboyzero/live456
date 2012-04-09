@@ -24,11 +24,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _H264_VIDEO_STREAM_DISCRETE_FRAMER_HH
 #define _H264_VIDEO_STREAM_DISCRETE_FRAMER_HH
 
+#include "Configuration.hpp"
+
 #ifndef _H264_VIDEO_STREAM_FRAMER_HH
 #include "H264VideoStreamFramer.hh"
 #endif
 
-class H264VideoStreamDiscreteFramer: public H264VideoStreamFramer {
+class LIVEMEDIA_DLL_LINK H264VideoStreamDiscreteFramer: public H264VideoStreamFramer {
 public:
   static H264VideoStreamDiscreteFramer*
   createNew(UsageEnvironment& env, FramedSource* inputSource);

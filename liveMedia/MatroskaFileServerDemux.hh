@@ -21,6 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MATROSKA_FILE_SERVER_DEMUX_HH
 #define _MATROSKA_FILE_SERVER_DEMUX_HH
 
+#include "Configuration.hpp"
+
 #ifndef _SERVER_MEDIA_SESSION_HH
 #include "ServerMediaSession.hh"
 #endif
@@ -29,7 +31,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "MatroskaFile.hh"
 #endif
 
-class MatroskaFileServerDemux: public Medium {
+class LIVEMEDIA_DLL_LINK MatroskaFileServerDemux: public Medium {
 public:
   typedef void (onCreationFunc)(MatroskaFileServerDemux* newDemux, void* clientData);
   static void createNew(UsageEnvironment& env, char const* fileName, onCreationFunc* onCreation, void* onCreationClientData);

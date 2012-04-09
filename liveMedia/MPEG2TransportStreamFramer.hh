@@ -23,6 +23,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MPEG2_TRANSPORT_STREAM_FRAMER_HH
 #define _MPEG2_TRANSPORT_STREAM_FRAMER_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FRAMED_FILTER_HH
 #include "FramedFilter.hh"
 #endif
@@ -31,7 +33,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "HashTable.hh"
 #endif
 
-class MPEG2TransportStreamFramer: public FramedFilter {
+class LIVEMEDIA_DLL_LINK MPEG2TransportStreamFramer: public FramedFilter {
 public:
   static MPEG2TransportStreamFramer*
   createNew(UsageEnvironment& env, FramedSource* inputSource);

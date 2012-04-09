@@ -20,11 +20,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _HASH_TABLE_HH
 #define _HASH_TABLE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _BOOLEAN_HH
 #include "Boolean.hh"
 #endif
 
-class HashTable {
+class USAGEENVIRONMENT_DLL_LINK HashTable {
     public:
 	virtual ~HashTable();
 
@@ -41,7 +43,7 @@ class HashTable {
         Boolean IsEmpty() const { return numEntries() == 0; }
 
 	// Used to iterate through the members of the table:
-        class Iterator {
+        class USAGEENVIRONMENT_DLL_LINK Iterator {
 	    public:
 		// The following must be implemented by a particular
 		// implementation (subclass):

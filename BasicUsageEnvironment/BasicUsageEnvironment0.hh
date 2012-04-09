@@ -20,6 +20,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _BASIC_USAGE_ENVIRONMENT0_HH
 #define _BASIC_USAGE_ENVIRONMENT0_HH
 
+#include "Configuration.hpp"
+
 #ifndef _BASICUSAGEENVIRONMENT_VERSION_HH
 #include "BasicUsageEnvironment_version.hh"
 #endif
@@ -36,7 +38,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 // An abstract base class, useful for subclassing
 // (e.g., to redefine the implementation of "operator<<")
-class BasicUsageEnvironment0: public UsageEnvironment {
+class BASICUSAGEENVIRONMENT_DLL_LINK BasicUsageEnvironment0: public UsageEnvironment {
 public:
   // redefined virtual functions:
   virtual MsgString getResultMsg() const;
@@ -71,7 +73,7 @@ class HandlerSet; // forward
 
 // An abstract base class, useful for subclassing
 // (e.g., to redefine the implementation of socket event handling)
-class BasicTaskScheduler0: public TaskScheduler {
+class BASICUSAGEENVIRONMENT_DLL_LINK BasicTaskScheduler0: public TaskScheduler {
 public:
   virtual ~BasicTaskScheduler0();
 

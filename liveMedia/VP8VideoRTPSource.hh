@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _VP8_VIDEO_RTP_SOURCE_HH
 #define _VP8_VIDEO_RTP_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MULTI_FRAMED_RTP_SOURCE_HH
 #include "MultiFramedRTPSource.hh"
 #endif
 
-class VP8VideoRTPSource: public MultiFramedRTPSource {
+class LIVEMEDIA_DLL_LINK VP8VideoRTPSource: public MultiFramedRTPSource {
 public:
   static VP8VideoRTPSource*
   createNew(UsageEnvironment& env, Groupsock* RTPgs,

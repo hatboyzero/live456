@@ -21,6 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MPEG2_IFRAME_INDEX_FROM_TRANSPORT_STREAM_HH
 #define _MPEG2_IFRAME_INDEX_FROM_TRANSPORT_STREAM_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FRAMED_FILTER_HH
 #include "FramedFilter.hh"
 #endif
@@ -35,7 +37,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 class IndexRecord; // forward
 
-class MPEG2IFrameIndexFromTransportStream: public FramedFilter {
+class LIVEMEDIA_DLL_LINK MPEG2IFrameIndexFromTransportStream: public FramedFilter {
 public:
   static MPEG2IFrameIndexFromTransportStream*
   createNew(UsageEnvironment& env, FramedSource* inputSource);

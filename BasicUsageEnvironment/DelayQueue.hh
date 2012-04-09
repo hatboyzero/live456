@@ -20,6 +20,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _DELAY_QUEUE_HH
 #define _DELAY_QUEUE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _NET_COMMON_H
 #include <groupsock/NetCommon.h>
 #endif
@@ -32,7 +34,7 @@ typedef long time_base_seconds;
 
 ///// A "Timeval" can be either an absolute time, or a time interval /////
 
-class Timeval {
+class BASICUSAGEENVIRONMENT_DLL_LINK Timeval {
 public:
   time_base_seconds seconds() const {
     return fTv.tv_sec;
@@ -95,29 +97,29 @@ inline Timeval min(Timeval const& arg1, Timeval const& arg2) {
 }
 #endif
 
-class DelayInterval operator-(Timeval const& arg1, Timeval const& arg2);
+BASICUSAGEENVIRONMENT_DLL_LINK class DelayInterval operator-(Timeval const& arg1, Timeval const& arg2);
 // returns ZERO iff arg2 >= arg1
 
 
 ///// DelayInterval /////
 
-class DelayInterval: public Timeval {
+class BASICUSAGEENVIRONMENT_DLL_LINK DelayInterval: public Timeval {
 public:
   DelayInterval(time_base_seconds seconds, time_base_seconds useconds)
     : Timeval(seconds, useconds) {}
 };
 
-DelayInterval operator*(short arg1, DelayInterval const& arg2);
+BASICUSAGEENVIRONMENT_DLL_LINK DelayInterval operator*(short arg1, DelayInterval const& arg2);
 
-extern DelayInterval const DELAY_ZERO;
-extern DelayInterval const DELAY_SECOND;
+const DelayInterval DELAY_ZERO(0, 0);
+const DelayInterval DELAY_SECOND(1, 0);
 DelayInterval const DELAY_MINUTE = 60*DELAY_SECOND;
 DelayInterval const DELAY_HOUR = 60*DELAY_MINUTE;
 DelayInterval const DELAY_DAY = 24*DELAY_HOUR;
 
 ///// EventTime /////
 
-class EventTime: public Timeval {
+class BASICUSAGEENVIRONMENT_DLL_LINK EventTime: public Timeval {
 public:
   EventTime(unsigned secondsSinceEpoch = 0,
 	    unsigned usecondsSinceEpoch = 0)
@@ -132,7 +134,7 @@ extern EventTime const THE_END_OF_TIME;
 
 ///// DelayQueueEntry /////
 
-class DelayQueueEntry {
+class BASICUSAGEENVIRONMENT_DLL_LINK DelayQueueEntry {
 public:
   virtual ~DelayQueueEntry();
 
@@ -157,7 +159,7 @@ private:
 
 ///// DelayQueue /////
 
-class DelayQueue: public DelayQueueEntry {
+class BASICUSAGEENVIRONMENT_DLL_LINK DelayQueue: public DelayQueueEntry {
 public:
   DelayQueue();
   virtual ~DelayQueue();

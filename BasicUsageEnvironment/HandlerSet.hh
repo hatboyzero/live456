@@ -20,13 +20,15 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _HANDLER_SET_HH
 #define _HANDLER_SET_HH
 
+#include "Configuration.hpp"
+
 #ifndef _BOOLEAN_HH
 #include "Boolean.hh"
 #endif
 
 ////////// HandlerSet (etc.) definition //////////
 
-class HandlerDescriptor {
+class BASICUSAGEENVIRONMENT_DLL_LINK HandlerDescriptor {
   HandlerDescriptor(HandlerDescriptor* nextHandler);
   virtual ~HandlerDescriptor();
 
@@ -44,7 +46,7 @@ private:
   HandlerDescriptor* fPrevHandler;
 };
 
-class HandlerSet {
+class BASICUSAGEENVIRONMENT_DLL_LINK HandlerSet {
 public:
   HandlerSet();
   virtual ~HandlerSet();
@@ -61,7 +63,7 @@ private:
   HandlerDescriptor fHandlers;
 };
 
-class HandlerIterator {
+class BASICUSAGEENVIRONMENT_DLL_LINK HandlerIterator {
 public:
   HandlerIterator(HandlerSet& handlerSet);
   virtual ~HandlerIterator();

@@ -21,6 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _RTSP_SERVER_HH
 #define _RTSP_SERVER_HH
 
+#include "Configuration.hpp"
+
 #ifndef _SERVER_MEDIA_SESSION_HH
 #include "ServerMediaSession.hh"
 #endif
@@ -33,7 +35,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 // A data structure used for optional user/password authentication:
 
-class UserAuthenticationDatabase {
+class LIVEMEDIA_DLL_LINK UserAuthenticationDatabase {
 public:
   UserAuthenticationDatabase(char const* realm = NULL,
 			     Boolean passwordsAreMD5 = False);
@@ -59,7 +61,7 @@ protected:
 
 #define RTSP_BUFFER_SIZE 10000 // for incoming requests, and outgoing responses
 
-class RTSPServer: public Medium {
+class LIVEMEDIA_DLL_LINK RTSPServer: public Medium {
 public:
   static RTSPServer* createNew(UsageEnvironment& env, Port ourPort = 554,
 			       UserAuthenticationDatabase* authDatabase = NULL,
@@ -121,7 +123,7 @@ private: // redefined virtual functions
 
 public: // should be protected, but some old compilers complain otherwise
   // The state of each individual session handled by a RTSP server:
-  class RTSPClientSession {
+  class LIVEMEDIA_DLL_LINK RTSPClientSession {
   public:
     RTSPClientSession(RTSPServer& ourServer, unsigned sessionId,
 		      int clientSocket, struct sockaddr_in clientAddr);

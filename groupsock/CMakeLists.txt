@@ -7,6 +7,7 @@ if (NOT LIB_TYPE)
 endif (NOT LIB_TYPE)
 
 set (groupsock_HEADERS
+	Configuration.hpp
 	GroupEId.hh
 	Groupsock.hh
 	groupsock_version.hh
@@ -23,7 +24,7 @@ set (groupsock_SRC
 	src/GroupEId.cpp
 	src/Groupsock.cpp
 	src/GroupsockHelper.cpp
-	src/inet.c
+	src/inet.cpp
 	src/IOHandlers.cpp
 	src/NetAddress.cpp
 	src/NetInterface.cpp

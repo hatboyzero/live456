@@ -20,11 +20,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _BASIC_USAGE_ENVIRONMENT_HH
 #define _BASIC_USAGE_ENVIRONMENT_HH
 
+#include "Configuration.hpp"
+
 #ifndef _BASIC_USAGE_ENVIRONMENT0_HH
 #include "BasicUsageEnvironment0.hh"
 #endif
 
-class BasicUsageEnvironment: public BasicUsageEnvironment0 {
+class BASICUSAGEENVIRONMENT_DLL_LINK BasicUsageEnvironment: public BasicUsageEnvironment0 {
 public:
   static BasicUsageEnvironment* createNew(TaskScheduler& taskScheduler);
 
@@ -44,7 +46,7 @@ protected:
 };
 
 
-class BasicTaskScheduler: public BasicTaskScheduler0 {
+class BASICUSAGEENVIRONMENT_DLL_LINK BasicTaskScheduler: public BasicTaskScheduler0 {
 public:
   static BasicTaskScheduler* createNew();
   virtual ~BasicTaskScheduler();

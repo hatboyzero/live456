@@ -21,6 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _RTP_SINK_HH
 #define _RTP_SINK_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MEDIA_SINK_HH
 #include "MediaSink.hh"
 #endif
@@ -30,7 +32,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 class RTPTransmissionStatsDB; // forward
 
-class RTPSink: public MediaSink {
+class LIVEMEDIA_DLL_LINK RTPSink: public MediaSink {
 public:
   static Boolean lookupByName(UsageEnvironment& env, char const* sinkName,
 			      RTPSink*& resultSink);
@@ -124,7 +126,7 @@ private:
 
 class RTPTransmissionStats; // forward
 
-class RTPTransmissionStatsDB {
+class LIVEMEDIA_DLL_LINK RTPTransmissionStatsDB {
 public:
   unsigned numReceivers() const { return fNumReceivers; }
 
@@ -165,7 +167,7 @@ private:
   HashTable* fTable;
 };
 
-class RTPTransmissionStats {
+class LIVEMEDIA_DLL_LINK RTPTransmissionStats {
 public:
   u_int32_t SSRC() const {return fSSRC;}
   struct sockaddr_in const& lastFromAddress() const {return fLastFromAddress;}

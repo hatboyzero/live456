@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _AMR_AUDIO_FILE_SINK_HH
 #define _AMR_AUDIO_FILE_SINK_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FILE_SINK_HH
 #include "FileSink.hh"
 #endif
 
-class AMRAudioFileSink: public FileSink {
+class LIVEMEDIA_DLL_LINK AMRAudioFileSink: public FileSink {
 public:
   static AMRAudioFileSink* createNew(UsageEnvironment& env, char const* fileName,
 				     unsigned bufferSize = 10000,

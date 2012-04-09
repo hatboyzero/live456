@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _BYTE_STREAM_MULTI_FILE_SOURCE_HH
 #define _BYTE_STREAM_MULTI_FILE_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _BYTE_STREAM_FILE_SOURCE_HH
 #include "ByteStreamFileSource.hh"
 #endif
 
-class ByteStreamMultiFileSource: public FramedSource {
+class LIVEMEDIA_DLL_LINK ByteStreamMultiFileSource: public FramedSource {
 public:
   static ByteStreamMultiFileSource*
   createNew(UsageEnvironment& env, char const** fileNameArray,

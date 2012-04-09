@@ -11,6 +11,7 @@ set (BasicUsageEnvironment_HEADERS
 	BasicUsageEnvironment.hh
 	BasicUsageEnvironment_version.hh
 	BasicUsageEnvironment0.hh
+	Configuration.hpp
 	DelayQueue.hh
 	HandlerSet.hh
 )

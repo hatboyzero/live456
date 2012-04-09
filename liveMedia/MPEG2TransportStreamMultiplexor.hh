@@ -22,6 +22,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MPEG2_TRANSPORT_STREAM_MULTIPLEXOR_HH
 #define _MPEG2_TRANSPORT_STREAM_MULTIPLEXOR_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FRAMED_SOURCE_HH
 #include "FramedSource.hh"
 #endif
@@ -31,7 +33,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 #define PID_TABLE_SIZE 256
 
-class MPEG2TransportStreamMultiplexor: public FramedSource {
+class LIVEMEDIA_DLL_LINK MPEG2TransportStreamMultiplexor: public FramedSource {
 protected:
   MPEG2TransportStreamMultiplexor(UsageEnvironment& env);
   virtual ~MPEG2TransportStreamMultiplexor();

@@ -18,8 +18,8 @@
 //-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
 /// @author  John S. Givler, Ph.D.(Computer Science)
 
-#ifndef LIVE456_BASICUSAGEENVIRONMENT_CONFIGURATION_HPP_INCLUDED
-#define LIVE456_BASICUSAGEENVIRONMENT_CONFIGURATION_HPP_INCLUDED
+#ifndef LIVE456_USAGEENVIRONMENT_CONFIGURATION_HPP_INCLUDED
+#define LIVE456_USAGEENVIRONMENT_CONFIGURATION_HPP_INCLUDED
 
 #ifdef  _MSC_VER
 #    pragma once
@@ -45,10 +45,10 @@
 
 // Microsoft C++ compiler
 #if defined(_MSC_VER) && !defined(__INTEL_COMPILER)
-#    ifdef  BASICUSAGEENVIRONMENT_EXPORTS
-#        define BASICUSAGEENVIRONMENT_DLL_LINK __declspec(dllexport)
+#    ifdef  USAGEENVIRONMENT_EXPORTS
+#        define USAGEENVIRONMENT_DLL_LINK __declspec(dllexport)
 #    else
-#        define BASICUSAGEENVIRONMENT_DLL_LINK __declspec(dllimport)
+#        define USAGEENVIRONMENT_DLL_LINK __declspec(dllimport)
 #    endif
 #endif  // _MSC_VER
 
@@ -56,16 +56,16 @@
 // GNU C++ compiler
 #if defined(__GNUG__) && !defined(__INTEL_COMPILER)
 #    if 0 // (__GNUC__ >= 4) && !defined(HOST_CYGWIN) && !defined(HOST_SOLARIS)
-#        ifdef  BASICUSAGEENVIRONMENT_EXPORTS
-#            define BASICUSAGEENVIRONMENT_DLL_LINK __attribute__ ((visibility ("default")))
+#        ifdef  USAGEENVIRONMENT_EXPORTS
+#            define USAGEENVIRONMENT_DLL_LINK __attribute__ ((visibility ("default")))
 #        else
-#            define BASICUSAGEENVIRONMENT_DLL_LINK __attribute__ ((visibility ("hidden")))
+#            define USAGEENVIRONMENT_DLL_LINK __attribute__ ((visibility ("hidden")))
 #        endif
 #    else
-#        ifdef  BASICUSAGEENVIRONMENT_EXPORTS
-#            define BASICUSAGEENVIRONMENT_DLL_LINK // __declspec(dllexport)
+#        ifdef  USAGEENVIRONMENT_EXPORTS
+#            define USAGEENVIRONMENT_DLL_LINK // __declspec(dllexport)
 #        else
-#            define BASICUSAGEENVIRONMENT_DLL_LINK // __declspec(dllimport)
+#            define USAGEENVIRONMENT_DLL_LINK // __declspec(dllimport)
 #        endif
 #    endif
 #endif  // __GNUG__
@@ -73,28 +73,28 @@
 
 // Sun C++ compiler
 #if defined(__SUNPRO_CC)
-#    ifdef  BASICUSAGEENVIRONMENT_EXPORTS
-#        define BASICUSAGEENVIRONMENT_DLL_LINK   // ?
+#    ifdef  USAGEENVIRONMENT_EXPORTS
+#        define USAGEENVIRONMENT_DLL_LINK   // ?
 #    else
-#        define BASICUSAGEENVIRONMENT_DLL_LINK   // ?
+#        define USAGEENVIRONMENT_DLL_LINK   // ?
 #    endif
 #endif  // __SUNPRO_CC
 
 
 // Intel C++ compiler
 #if defined(__INTEL_COMPILER)
-#    ifdef  BASICUSAGEENVIRONMENT_EXPORTS
-#        define BASICUSAGEENVIRONMENT_DLL_LINK __declspec(dllexport)
+#    ifdef  USAGEENVIRONMENT_EXPORTS
+#        define USAGEENVIRONMENT_DLL_LINK __declspec(dllexport)
 #    else
-#        define BASICUSAGEENVIRONMENT_DLL_LINK __declspec(dllimport)
+#        define USAGEENVIRONMENT_DLL_LINK __declspec(dllimport)
 #    endif
 #endif  // __INTEL_COMPILER
 
 
-#ifndef BASICUSAGEENVIRONMENT_DLL_LINK
-#    define BASICUSAGEENVIRONMENT_DLL_LINK
-#endif  // ! BASICUSAGEENVIRONMENT_DLL_LINK
+#ifndef USAGEENVIRONMENT_DLL_LINK
+#    define USAGEENVIRONMENT_DLL_LINK
+#endif  // ! USAGEENVIRONMENT_DLL_LINK
 
 
-#endif  // LIVE456_BASICUSAGEENVIRONMENT_CONFIGURATION_HPP_INCLUDED
+#endif  // LIVE456_USAGEENVIRONMENT_CONFIGURATION_HPP_INCLUDED
 

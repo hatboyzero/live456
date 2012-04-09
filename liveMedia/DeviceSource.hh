@@ -24,16 +24,18 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _DEVICE_SOURCE_HH
 #define _DEVICE_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FRAMED_SOURCE_HH
 #include "FramedSource.hh"
 #endif
 
 // The following class can be used to define specific encoder parameters
-class DeviceParameters {
+class LIVEMEDIA_DLL_LINK DeviceParameters {
   //%%% TO BE WRITTEN %%%
 };
 
-class DeviceSource: public FramedSource {
+class LIVEMEDIA_DLL_LINK DeviceSource: public FramedSource {
 public:
   static DeviceSource* createNew(UsageEnvironment& env,
 				 DeviceParameters params);

@@ -21,6 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _T140_TEXT_RTP_SINK_HH
 #define _T140_TEXT_RTP_SINK_HH
 
+#include "Configuration.hpp"
+
 #ifndef _TEXT_RTP_SINK_HH
 #include "TextRTPSink.hh"
 #endif
@@ -30,7 +32,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 class T140IdleFilter;
 
-class T140TextRTPSink: public TextRTPSink {
+class LIVEMEDIA_DLL_LINK T140TextRTPSink: public TextRTPSink {
 public:
   static T140TextRTPSink* createNew(UsageEnvironment& env, Groupsock* RTPgs, unsigned char rtpPayloadFormat);
 
@@ -64,7 +66,7 @@ protected:
 // -  that delivers, to the "T140TextRTPSink", a continuous sequence of (possibly) empty frames.
 // (Note: This class should be used only by "T140TextRTPSink", or a subclass.)
 
-class T140IdleFilter: public FramedFilter {
+class LIVEMEDIA_DLL_LINK T140IdleFilter: public FramedFilter {
 public:
   T140IdleFilter(UsageEnvironment& env, FramedSource* inputSource);
   virtual ~T140IdleFilter();

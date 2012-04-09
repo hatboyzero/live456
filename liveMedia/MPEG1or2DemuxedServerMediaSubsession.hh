@@ -22,6 +22,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MPEG_1OR2_DEMUXED_SERVER_MEDIA_SUBSESSION_HH
 #define _MPEG_1OR2_DEMUXED_SERVER_MEDIA_SUBSESSION_HH
 
+#include "Configuration.hpp"
+
 #ifndef _ON_DEMAND_SERVER_MEDIA_SUBSESSION_HH
 #include "OnDemandServerMediaSubsession.hh"
 #endif
@@ -29,7 +31,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "MPEG1or2FileServerDemux.hh"
 #endif
 
-class MPEG1or2DemuxedServerMediaSubsession: public OnDemandServerMediaSubsession{
+class LIVEMEDIA_DLL_LINK MPEG1or2DemuxedServerMediaSubsession: public OnDemandServerMediaSubsession{
 public:
   static MPEG1or2DemuxedServerMediaSubsession*
   createNew(MPEG1or2FileServerDemux& demux, u_int8_t streamIdTag,

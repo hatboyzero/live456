@@ -81,8 +81,8 @@ DelayInterval operator*(short arg1, const DelayInterval& arg2) {
 #ifndef INT_MAX
 #define INT_MAX	0x7FFFFFFF
 #endif
-const DelayInterval DELAY_ZERO(0, 0);
-const DelayInterval DELAY_SECOND(1, 0);
+//const DelayInterval DELAY_ZERO(0, 0);
+//const DelayInterval DELAY_SECOND(1, 0);
 const DelayInterval ETERNITY(INT_MAX, MILLION-1);
 // used internally to make the implementation work
 

@@ -24,6 +24,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _SERVER_MEDIA_SESSION_HH
 #define _SERVER_MEDIA_SESSION_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MEDIA_HH
 #include "Media.hh"
 #endif
@@ -39,7 +41,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 class ServerMediaSubsession; // forward
 
-class ServerMediaSession: public Medium {
+class LIVEMEDIA_DLL_LINK ServerMediaSession: public Medium {
 public:
   static ServerMediaSession* createNew(UsageEnvironment& env,
 				       char const* streamName = NULL,
@@ -101,7 +103,7 @@ private:
 };
 
 
-class ServerMediaSubsessionIterator {
+class LIVEMEDIA_DLL_LINK ServerMediaSubsessionIterator {
 public:
   ServerMediaSubsessionIterator(ServerMediaSession& session);
   virtual ~ServerMediaSubsessionIterator();
@@ -115,7 +117,7 @@ private:
 };
 
 
-class ServerMediaSubsession: public Medium {
+class LIVEMEDIA_DLL_LINK ServerMediaSubsession: public Medium {
 public:
   virtual ~ServerMediaSubsession();
 

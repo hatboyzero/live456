@@ -21,6 +21,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MATROSKA_FILE_HH
 #define _MATROSKA_FILE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MEDIA_HH
 #include "Media.hh"
 #endif
@@ -31,7 +33,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 class MatroskaTrack; // forward
 class MatroskaDemux; // forward
 
-class MatroskaFile: public Medium {
+class LIVEMEDIA_DLL_LINK MatroskaFile: public Medium {
 public:
   typedef void (onCreationFunc)(MatroskaFile* newFile, void* clientData);
   static void createNew(UsageEnvironment& env, char const* fileName, onCreationFunc* onCreation, void* onCreationClientData,
@@ -124,7 +126,7 @@ private:
 #define MATROSKA_TRACK_TYPE_SUBTITLE 0x04
 #define MATROSKA_TRACK_TYPE_OTHER 0x08
 
-class MatroskaTrack {
+class LIVEMEDIA_DLL_LINK MatroskaTrack {
 public:
   MatroskaTrack();
   virtual ~MatroskaTrack();
@@ -152,7 +154,7 @@ public:
   int durationImbalance; // the difference between the presentation times that we've delivered, and frame durations (in useconds)
 };
 
-class MatroskaDemux: public Medium {
+class LIVEMEDIA_DLL_LINK MatroskaDemux: public Medium {
 public:
   FramedSource* newDemuxedTrack(unsigned trackNumber);
     // Note: We assume that:

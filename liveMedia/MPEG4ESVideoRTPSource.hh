@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MPEG4_ES_VIDEO_RTP_SOURCE_HH
 #define _MPEG4_ES_VIDEO_RTP_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MULTI_FRAMED_RTP_SOURCE_HH
 #include "MultiFramedRTPSource.hh"
 #endif
 
-class MPEG4ESVideoRTPSource: public MultiFramedRTPSource {
+class LIVEMEDIA_DLL_LINK MPEG4ESVideoRTPSource: public MultiFramedRTPSource {
 public:
   static MPEG4ESVideoRTPSource*
   createNew(UsageEnvironment& env, Groupsock* RTPgs,

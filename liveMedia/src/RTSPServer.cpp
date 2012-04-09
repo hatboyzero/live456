@@ -103,8 +103,8 @@ char* RTSPServer::rtspURLPrefix(int clientSocket) const {
   struct sockaddr_in ourAddress;
   if (clientSocket < 0) {
     // Use our default IP address in the URL:
-    ourAddress.sin_addr.s_addr = ReceivingInterfaceAddr != 0
-      ? ReceivingInterfaceAddr
+    ourAddress.sin_addr.s_addr = getReceivingInterfaceAddr() != 0
+      ? getReceivingInterfaceAddr()
       : ourIPAddress(envir()); // hack
   } else {
     SOCKLEN_T namelen = sizeof ourAddress;
@@ -885,8 +885,8 @@ void RTSPServer::RTSPClientSession
     // Make sure that we transmit on the same interface that's used by the client (in case we're a multi-homed server):
     struct sockaddr_in sourceAddr; SOCKLEN_T namelen = sizeof sourceAddr;
     getsockname(fClientInputSocket, (struct sockaddr*)&sourceAddr, &namelen);
-    netAddressBits origSendingInterfaceAddr = SendingInterfaceAddr;
-    netAddressBits origReceivingInterfaceAddr = ReceivingInterfaceAddr;
+    netAddressBits origSendingInterfaceAddr = getSendingInterfaceAddr();
+    netAddressBits origReceivingInterfaceAddr = getReceivingInterfaceAddr();
     // NOTE: The following might not work properly, so we ifdef it out for now:
 #ifdef HACK_FOR_MULTIHOMED_SERVERS
     ReceivingInterfaceAddr = SendingInterfaceAddr = sourceAddr.sin_addr.s_addr;
@@ -898,8 +898,8 @@ void RTSPServer::RTSPClientSession
 				    destinationAddress, destinationTTL, fIsMulticast,
 				    serverRTPPort, serverRTCPPort,
 				    fStreamStates[streamNum].streamToken);
-    SendingInterfaceAddr = origSendingInterfaceAddr;
-    ReceivingInterfaceAddr = origReceivingInterfaceAddr;
+    getSendingInterfaceAddr() = origSendingInterfaceAddr;
+    getReceivingInterfaceAddr() = origReceivingInterfaceAddr;
     
     AddressString destAddrStr(destinationAddress);
     AddressString sourceAddrStr(sourceAddr);

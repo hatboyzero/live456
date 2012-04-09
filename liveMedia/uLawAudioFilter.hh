@@ -21,13 +21,15 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _ULAW_AUDIO_FILTER_HH
 #define _ULAW_AUDIO_FILTER_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FRAMED_FILTER_HH
 #include "FramedFilter.hh"
 #endif
 
 ////////// 16-bit PCM (in various byte orderings) -> 8-bit u-Law //////////
 
-class uLawFromPCMAudioSource: public FramedFilter {
+class LIVEMEDIA_DLL_LINK uLawFromPCMAudioSource: public FramedFilter {
 public:
   static uLawFromPCMAudioSource*
   createNew(UsageEnvironment& env, FramedSource* inputSource,
@@ -65,7 +67,7 @@ private:
 
 ////////// u-Law -> 16-bit PCM (in host order) //////////
 
-class PCMFromuLawAudioSource: public FramedFilter {
+class LIVEMEDIA_DLL_LINK PCMFromuLawAudioSource: public FramedFilter {
 public:
   static PCMFromuLawAudioSource*
   createNew(UsageEnvironment& env, FramedSource* inputSource);
@@ -98,7 +100,7 @@ private:
 
 ////////// 16-bit values (in host order) -> 16-bit network order //////////
 
-class NetworkFromHostOrder16: public FramedFilter {
+class LIVEMEDIA_DLL_LINK NetworkFromHostOrder16: public FramedFilter {
 public:
   static NetworkFromHostOrder16*
   createNew(UsageEnvironment& env, FramedSource* inputSource);
@@ -126,7 +128,7 @@ private:
 
 ////////// 16-bit values (in network order) -> 16-bit host order //////////
 
-class HostFromNetworkOrder16: public FramedFilter {
+class LIVEMEDIA_DLL_LINK HostFromNetworkOrder16: public FramedFilter {
 public:
   static HostFromNetworkOrder16*
   createNew(UsageEnvironment& env, FramedSource* inputSource);
@@ -154,7 +156,7 @@ private:
 
 ////////// 16-bit values: little-endian <-> big-endian //////////
 
-class EndianSwap16: public FramedFilter {
+class LIVEMEDIA_DLL_LINK EndianSwap16: public FramedFilter {
 public:
   static EndianSwap16* createNew(UsageEnvironment& env, FramedSource* inputSource);
 

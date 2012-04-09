@@ -20,6 +20,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _BASIC_HASH_TABLE_HH
 #define _BASIC_HASH_TABLE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _HASH_TABLE_HH
 #include <UsageEnvironment/HashTable.hh>
 #endif
@@ -32,7 +34,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 #define SMALL_HASH_TABLE_SIZE 4
 
-class BasicHashTable: public HashTable {
+class BASICUSAGEENVIRONMENT_DLL_LINK BasicHashTable: public HashTable {
 private:
 	class TableEntry; // forward
 

@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MPEG4_LATM_AUDIO_RTP_SOURCE_HH
 #define _MPEG4_LATM_AUDIO_RTP_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MULTI_FRAMED_RTP_SOURCE_HH
 #include "MultiFramedRTPSource.hh"
 #endif
 
-class MPEG4LATMAudioRTPSource: public MultiFramedRTPSource {
+class LIVEMEDIA_DLL_LINK MPEG4LATMAudioRTPSource: public MultiFramedRTPSource {
 public:
   static MPEG4LATMAudioRTPSource*
   createNew(UsageEnvironment& env, Groupsock* RTPgs,
@@ -59,6 +61,7 @@ private:
 
 
 // A utility for parsing a "StreamMuxConfig" string
+LIVEMEDIA_DLL_LINK 
 Boolean
 parseStreamMuxConfigStr(char const* configStr,
 			// result parameters:
@@ -85,14 +88,14 @@ parseStreamMuxConfigStr(char const* configStr,
     // Also, any 'other data' or CRC info will be included at
     // the end of "audioSpecificConfig".
 
-unsigned char* parseStreamMuxConfigStr(char const* configStr,
+LIVEMEDIA_DLL_LINK unsigned char* parseStreamMuxConfigStr(char const* configStr,
 				       // result parameter:
 				       unsigned& audioSpecificConfigSize);
     // A variant of the above that returns just the "AudioSpecificConfig" data
     // (or NULL) if the parsing failed, without bothering with the other
     // result parameters.
 
-unsigned char* parseGeneralConfigStr(char const* configStr,
+LIVEMEDIA_DLL_LINK unsigned char* parseGeneralConfigStr(char const* configStr,
 				     // result parameter:
 				     unsigned& configSize);
     // A routine that parses an arbitrary config string, returning

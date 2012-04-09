@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MPEG_1OR2_DEMUXED_ELEMENTARY_STREAM_HH
 #define _MPEG_1OR2_DEMUXED_ELEMENTARY_STREAM_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MPEG_1OR2_DEMUX_HH
 #include "MPEG1or2Demux.hh"
 #endif
 
-class MPEG1or2DemuxedElementaryStream: public FramedSource {
+class LIVEMEDIA_DLL_LINK MPEG1or2DemuxedElementaryStream: public FramedSource {
 public:
   MPEG1or2Demux::SCR lastSeenSCR() const { return fLastSeenSCR; }
 

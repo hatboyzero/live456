@@ -22,11 +22,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _QUICKTIME_GENERIC_RTP_SOURCE_HH
 #define _QUICKTIME_GENERIC_RTP_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MULTI_FRAMED_RTP_SOURCE_HH
 #include "MultiFramedRTPSource.hh"
 #endif
 
-class QuickTimeGenericRTPSource: public MultiFramedRTPSource {
+class LIVEMEDIA_DLL_LINK QuickTimeGenericRTPSource: public MultiFramedRTPSource {
 public:
   static QuickTimeGenericRTPSource*
   createNew(UsageEnvironment& env, Groupsock* RTPgs,

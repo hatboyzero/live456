@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _VP8_VIDEO_RTP_SINK_HH
 #define _VP8_VIDEO_RTP_SINK_HH
 
+#include "Configuration.hpp"
+
 #ifndef _VIDEO_RTP_SINK_HH
 #include "VideoRTPSink.hh"
 #endif
 
-class VP8VideoRTPSink: public VideoRTPSink {
+class LIVEMEDIA_DLL_LINK VP8VideoRTPSink: public VideoRTPSink {
 public:
   static VP8VideoRTPSink* createNew(UsageEnvironment& env, Groupsock* RTPgs, unsigned char rtpPayloadFormat);
 

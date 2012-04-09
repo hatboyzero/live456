@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _DV_VIDEOO_RTP_SOURCE_HH
 #define _DV_VIDEO_RTP_SOURCE_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MULTI_FRAMED_RTP_SOURCE_HH
 #include "MultiFramedRTPSource.hh"
 #endif
 
-class DVVideoRTPSource: public MultiFramedRTPSource {
+class LIVEMEDIA_DLL_LINK DVVideoRTPSource: public MultiFramedRTPSource {
 public:
   static DVVideoRTPSource*
   createNew(UsageEnvironment& env, Groupsock* RTPgs,

@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _OUTPUT_FILE_HH
 #define _OUTPUT_FILE_HH
 
+#include "Configuration.hpp"
+
 #include <UsageEnvironment/UsageEnvironment.hh>
 #include <stdio.h>
 
-FILE* OpenOutputFile(UsageEnvironment& env, char const* fileName);
+LIVEMEDIA_DLL_LINK FILE* OpenOutputFile(UsageEnvironment& env, char const* fileName);
 
-void CloseOutputFile(FILE* fid);
+LIVEMEDIA_DLL_LINK void CloseOutputFile(FILE* fid);
 
 #endif

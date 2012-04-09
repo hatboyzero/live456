@@ -22,6 +22,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MPEG2_TRANSPORT_FILE_SERVER_MEDIA_SUBSESSION_HH
 #define _MPEG2_TRANSPORT_FILE_SERVER_MEDIA_SUBSESSION_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FILE_SERVER_MEDIA_SUBSESSION_HH
 #include "FileServerMediaSubsession.hh"
 #endif
@@ -40,7 +42,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 class ClientTrickPlayState; // forward
 
-class MPEG2TransportFileServerMediaSubsession: public FileServerMediaSubsession{
+class LIVEMEDIA_DLL_LINK MPEG2TransportFileServerMediaSubsession: public FileServerMediaSubsession{
 public:
   static MPEG2TransportFileServerMediaSubsession*
   createNew(UsageEnvironment& env,
@@ -99,7 +101,7 @@ private:
 // It is used only within the implementation of "MPEG2TransportFileServerMediaSubsession", but is included here,
 // in case subclasses of "MPEG2TransportFileServerMediaSubsession" want to use it.
 
-class ClientTrickPlayState {
+class LIVEMEDIA_DLL_LINK ClientTrickPlayState {
 public:
   ClientTrickPlayState(MPEG2TransportStreamIndexFile* indexFile);
 

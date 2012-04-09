@@ -22,11 +22,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MULTI_FRAMED_RTP_SINK_HH
 #define _MULTI_FRAMED_RTP_SINK_HH
 
+#include "Configuration.hpp"
+
 #ifndef _RTP_SINK_HH
 #include "RTPSink.hh"
 #endif
 
-class MultiFramedRTPSink: public RTPSink {
+class LIVEMEDIA_DLL_LINK MultiFramedRTPSink: public RTPSink {
 public:
   void setPacketSizes(unsigned preferredPacketSize, unsigned maxPacketSize);
 

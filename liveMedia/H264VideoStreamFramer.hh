@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _H264_VIDEO_STREAM_FRAMER_HH
 #define _H264_VIDEO_STREAM_FRAMER_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MPEG_VIDEO_STREAM_FRAMER_HH
 #include "MPEGVideoStreamFramer.hh"
 #endif
 
-class H264VideoStreamFramer: public MPEGVideoStreamFramer {
+class LIVEMEDIA_DLL_LINK H264VideoStreamFramer: public MPEGVideoStreamFramer {
 public:
   static H264VideoStreamFramer* createNew(UsageEnvironment& env, FramedSource* inputSource,
 					  Boolean includeStartCodeInOutput = False);

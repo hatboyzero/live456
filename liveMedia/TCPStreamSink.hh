@@ -21,13 +21,15 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _TCP_STREAM_SINK_HH
 #define _TCP_STREAM_SINK_HH
 
+#include "Configuration.hpp"
+
 #ifndef _MEDIA_SINK_HH
 #include "MediaSink.hh"
 #endif
 
 #define TCP_STREAM_SINK_BUFFER_SIZE 10000
 
-class TCPStreamSink: public MediaSink {
+class LIVEMEDIA_DLL_LINK TCPStreamSink: public MediaSink {
 public:
   static TCPStreamSink* createNew(UsageEnvironment& env, int socketNum);
   // "socketNum" is the socket number of an existing, writable TCP socket (which should be non-blocking).

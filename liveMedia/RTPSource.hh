@@ -30,7 +30,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 class RTPReceptionStatsDB; // forward
 
-class RTPSource: public FramedSource {
+class LIVEMEDIA_DLL_LINK RTPSource: public FramedSource {
 public:
   static Boolean lookupByName(UsageEnvironment& env, char const* sourceName,
 			      RTPSource*& resultSource);
@@ -109,7 +109,7 @@ private:
 
 class RTPReceptionStats; // forward
 
-class RTPReceptionStatsDB {
+class LIVEMEDIA_DLL_LINK RTPReceptionStatsDB {
 public:
   unsigned totNumPacketsReceived() const { return fTotNumPacketsReceived; }
   unsigned numActiveSourcesSinceLastReset() const {
@@ -168,7 +168,7 @@ private:
   unsigned fTotNumPacketsReceived; // for all SSRCs
 };
 
-class RTPReceptionStats {
+class LIVEMEDIA_DLL_LINK RTPReceptionStats {
 public:
   u_int32_t SSRC() const { return fSSRC; }
   unsigned numPacketsReceivedSinceLastReset() const {
@@ -253,7 +253,7 @@ private:
 };
 
 
-Boolean seqNumLT(u_int16_t s1, u_int16_t s2);
+LIVEMEDIA_DLL_LINK Boolean seqNumLT(u_int16_t s1, u_int16_t s2);
   // a 'less-than' on 16-bit sequence numbers
 
 #endif

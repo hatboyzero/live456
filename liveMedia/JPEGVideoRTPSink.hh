@@ -21,11 +21,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _JPEG_VIDEO_RTP_SINK_HH
 #define _JPEG_VIDEO_RTP_SINK_HH
 
+#include "Configuration.hpp"
+
 #ifndef _VIDEO_RTP_SINK_HH
 #include "VideoRTPSink.hh"
 #endif
 
-class JPEGVideoRTPSink: public VideoRTPSink {
+class LIVEMEDIA_DLL_LINK JPEGVideoRTPSink: public VideoRTPSink {
 public:
   static JPEGVideoRTPSink* createNew(UsageEnvironment& env, Groupsock* RTPgs);
 

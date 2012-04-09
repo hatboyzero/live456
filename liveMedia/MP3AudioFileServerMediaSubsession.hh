@@ -23,6 +23,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MP3_AUDIO_FILE_SERVER_MEDIA_SUBSESSION_HH
 #define _MP3_AUDIO_FILE_SERVER_MEDIA_SUBSESSION_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FILE_SERVER_MEDIA_SUBSESSION_HH
 #include "FileServerMediaSubsession.hh"
 #endif
@@ -33,7 +35,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "MP3ADU.hh"
 #endif
 
-class MP3AudioFileServerMediaSubsession: public FileServerMediaSubsession{
+class LIVEMEDIA_DLL_LINK MP3AudioFileServerMediaSubsession: public FileServerMediaSubsession{
 public:
   static MP3AudioFileServerMediaSubsession*
   createNew(UsageEnvironment& env, char const* fileName, Boolean reuseFirstSource,

@@ -22,11 +22,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MPEG2_TRANSPORT_UDP_SERVER_MEDIA_SUBSESSION_HH
 #define _MPEG2_TRANSPORT_UDP_SERVER_MEDIA_SUBSESSION_HH
 
+#include "Configuration.hpp"
+
 #ifndef _ON_DEMAND_SERVER_MEDIA_SUBSESSION_HH
 #include "OnDemandServerMediaSubsession.hh"
 #endif
 
-class MPEG2TransportUDPServerMediaSubsession: public OnDemandServerMediaSubsession {
+class LIVEMEDIA_DLL_LINK MPEG2TransportUDPServerMediaSubsession: public OnDemandServerMediaSubsession {
 public:
   static MPEG2TransportUDPServerMediaSubsession*
   createNew(UsageEnvironment& env,

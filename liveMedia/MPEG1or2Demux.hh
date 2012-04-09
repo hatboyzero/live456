@@ -21,13 +21,15 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _MPEG_1OR2_DEMUX_HH
 #define _MPEG_1OR2_DEMUX_HH
 
+#include "Configuration.hpp"
+
 #ifndef _FRAMED_SOURCE_HH
 #include "FramedSource.hh"
 #endif
 
 class MPEG1or2DemuxedElementaryStream; // forward
 
-class MPEG1or2Demux: public Medium {
+class LIVEMEDIA_DLL_LINK MPEG1or2Demux: public Medium {
 public:
   static MPEG1or2Demux* createNew(UsageEnvironment& env,
 				  FramedSource* inputSource,
