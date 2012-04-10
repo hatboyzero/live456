@@ -13,8 +13,8 @@ include_directories (${LIVE456_HOME})
 
 add_executable (testMP3Streamer ${testMP3Streamer_SRC})
 
-add_dependencies (testMP3Streamer UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+add_dependencies (testMP3Streamer UsageEnvironment liveMedia)
 
-target_link_libraries (testMP3Streamer UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+target_link_libraries (testMP3Streamer UsageEnvironment liveMedia)
 
 set_target_properties (testMP3Streamer PROPERTIES DEBUG_POSTFIX "_d")

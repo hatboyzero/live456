@@ -21,7 +21,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "../AVIFileSink.hh"
 #include "../InputFile.hh"
 #include "../OutputFile.hh"
-#include <groupsock/GroupsockHelper.hh>
+#include <UsageEnvironment/GroupsockHelper.hh>
 
 #define fourChar(x,y,z,w) ( ((w)<<24)|((z)<<16)|((y)<<8)|(x) )/*little-endian*/
 

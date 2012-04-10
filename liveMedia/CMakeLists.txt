@@ -321,9 +321,9 @@ include_directories (${LIVE456_HOME})
 
 add_library (liveMedia ${LIB_TYPE} ${liveMedia_SRC})
 
-add_dependencies (liveMedia UsageEnvironment groupsock)
+add_dependencies (liveMedia UsageEnvironment)
 
-target_link_libraries (liveMedia UsageEnvironment groupsock)
+target_link_libraries (liveMedia UsageEnvironment)
 
 set_target_properties (liveMedia PROPERTIES DEBUG_POSTFIX "_d")
 

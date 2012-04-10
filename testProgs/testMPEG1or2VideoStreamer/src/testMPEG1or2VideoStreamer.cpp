@@ -19,8 +19,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // main program
 
 #include <liveMedia/liveMedia.hh>
-#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
-#include <groupsock/GroupsockHelper.hh>
+#include <UsageEnvironment/BasicUsageEnvironment.hh>
+#include <UsageEnvironment/GroupsockHelper.hh>
 
 // Uncomment the following if the input file is a MPEG Program Stream
 // rather than a MPEG Video Elementary Stream

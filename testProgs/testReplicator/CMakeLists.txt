@@ -13,8 +13,8 @@ include_directories (${LIVE456_HOME})
 
 add_executable (testReplicator ${testReplicator_SRC})
 
-add_dependencies (testReplicator UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+add_dependencies (testReplicator UsageEnvironment liveMedia)
 
-target_link_libraries (testReplicator UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+target_link_libraries (testReplicator UsageEnvironment liveMedia)
 
 set_target_properties (testReplicator PROPERTIES DEBUG_POSTFIX "_d")

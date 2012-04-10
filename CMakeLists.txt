@@ -10,8 +10,7 @@ set (LIVE456_VERSION "${LIVE456_VERSION_MAJOR}.${LIVE456_VERSION_MINOR}.${LIVE45
 set (LIVE456_HOME ${CMAKE_CURRENT_SOURCE_DIR})
 
 set (LIVE456_PROJECTS
-	BasicUsageEnvironment
-	groupsock
+	#groupsock
 	liveMedia
 	mediaServer
 	testProgs

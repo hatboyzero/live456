@@ -21,7 +21,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Implementation
 
 #include "../RTPInterface.hh"
-#include <groupsock/GroupsockHelper.hh>
+#include <UsageEnvironment/GroupsockHelper.hh>
 #include <stdio.h>
 
 ////////// Helper Functions - Definition //////////

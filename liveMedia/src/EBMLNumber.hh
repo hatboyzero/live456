@@ -21,7 +21,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #ifndef _EBML_NUMBER_HH
 #define _EBML_NUMBER_HH
 
-#include <groupsock/NetCommon.h>
+#include <UsageEnvironment/NetCommon.h>
 #include <UsageEnvironment/Boolean.hh>
 #include <stdio.h>
 

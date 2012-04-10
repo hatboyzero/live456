@@ -13,8 +13,8 @@ include_directories (${LIVE456_HOME})
 
 add_executable (testMPEG1or2ProgramToTransportStream ${testMPEG1or2ProgramToTransportStream_SRC})
 
-add_dependencies (testMPEG1or2ProgramToTransportStream UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+add_dependencies (testMPEG1or2ProgramToTransportStream UsageEnvironment liveMedia)
 
-target_link_libraries (testMPEG1or2ProgramToTransportStream UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+target_link_libraries (testMPEG1or2ProgramToTransportStream UsageEnvironment liveMedia)
 
 set_target_properties (testMPEG1or2ProgramToTransportStream PROPERTIES DEBUG_POSTFIX "_d")

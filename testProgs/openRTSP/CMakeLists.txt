@@ -15,8 +15,8 @@ include_directories (${LIVE456_HOME})
 
 add_executable (openRTSP ${openRTSP_SRC})
 
-add_dependencies (openRTSP UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+add_dependencies (openRTSP UsageEnvironment liveMedia)
 
-target_link_libraries (openRTSP UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+target_link_libraries (openRTSP UsageEnvironment liveMedia)
 
 set_target_properties (openRTSP PROPERTIES DEBUG_POSTFIX "_d")

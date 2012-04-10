@@ -21,7 +21,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // "openRTSP": http://www.live555.com/openRTSP/
 
 #include <liveMedia/liveMedia.hh>
-#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
+#include <UsageEnvironment/BasicUsageEnvironment.hh>
 
 // Forward function definitions:
 

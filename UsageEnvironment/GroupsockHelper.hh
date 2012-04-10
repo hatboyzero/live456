@@ -27,62 +27,62 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "NetAddress.hh"
 #endif
 
-GROUPSOCK_DLL_LINK int setupDatagramSocket(UsageEnvironment& env, Port port);
-GROUPSOCK_DLL_LINK int setupStreamSocket(UsageEnvironment& env,
+USAGEENVIRONMENT_DLL_LINK int setupDatagramSocket(UsageEnvironment& env, Port port);
+USAGEENVIRONMENT_DLL_LINK int setupStreamSocket(UsageEnvironment& env,
 		      Port port, Boolean makeNonBlocking = True);
 
-GROUPSOCK_DLL_LINK int readSocket(UsageEnvironment& env,
+USAGEENVIRONMENT_DLL_LINK int readSocket(UsageEnvironment& env,
 	       int socket, unsigned char* buffer, unsigned bufferSize,
 	       struct sockaddr_in& fromAddress);
 
-GROUPSOCK_DLL_LINK Boolean writeSocket(UsageEnvironment& env,
+USAGEENVIRONMENT_DLL_LINK Boolean writeSocket(UsageEnvironment& env,
 		    int socket, struct in_addr address, Port port,
 		    u_int8_t ttlArg,
 		    unsigned char* buffer, unsigned bufferSize);
 
-GROUPSOCK_DLL_LINK unsigned getSendBufferSize(UsageEnvironment& env, int socket);
-GROUPSOCK_DLL_LINK unsigned getReceiveBufferSize(UsageEnvironment& env, int socket);
-GROUPSOCK_DLL_LINK unsigned setSendBufferTo(UsageEnvironment& env,
+USAGEENVIRONMENT_DLL_LINK unsigned getSendBufferSize(UsageEnvironment& env, int socket);
+USAGEENVIRONMENT_DLL_LINK unsigned getReceiveBufferSize(UsageEnvironment& env, int socket);
+USAGEENVIRONMENT_DLL_LINK unsigned setSendBufferTo(UsageEnvironment& env,
 			 int socket, unsigned requestedSize);
-GROUPSOCK_DLL_LINK unsigned setReceiveBufferTo(UsageEnvironment& env,
+USAGEENVIRONMENT_DLL_LINK unsigned setReceiveBufferTo(UsageEnvironment& env,
 			    int socket, unsigned requestedSize);
-GROUPSOCK_DLL_LINK unsigned increaseSendBufferTo(UsageEnvironment& env,
+USAGEENVIRONMENT_DLL_LINK unsigned increaseSendBufferTo(UsageEnvironment& env,
 			      int socket, unsigned requestedSize);
-GROUPSOCK_DLL_LINK unsigned increaseReceiveBufferTo(UsageEnvironment& env,
+USAGEENVIRONMENT_DLL_LINK unsigned increaseReceiveBufferTo(UsageEnvironment& env,
 				 int socket, unsigned requestedSize);
 
-GROUPSOCK_DLL_LINK Boolean makeSocketNonBlocking(int sock);
-GROUPSOCK_DLL_LINK Boolean makeSocketBlocking(int sock);
+USAGEENVIRONMENT_DLL_LINK Boolean makeSocketNonBlocking(int sock);
+USAGEENVIRONMENT_DLL_LINK Boolean makeSocketBlocking(int sock);
 
-GROUPSOCK_DLL_LINK Boolean socketJoinGroup(UsageEnvironment& env, int socket,
+USAGEENVIRONMENT_DLL_LINK Boolean socketJoinGroup(UsageEnvironment& env, int socket,
 			netAddressBits groupAddress);
-GROUPSOCK_DLL_LINK Boolean socketLeaveGroup(UsageEnvironment&, int socket,
+USAGEENVIRONMENT_DLL_LINK Boolean socketLeaveGroup(UsageEnvironment&, int socket,
 			 netAddressBits groupAddress);
 
 // source-specific multicast join/leave
-GROUPSOCK_DLL_LINK Boolean socketJoinGroupSSM(UsageEnvironment& env, int socket,
+USAGEENVIRONMENT_DLL_LINK Boolean socketJoinGroupSSM(UsageEnvironment& env, int socket,
 			   netAddressBits groupAddress,
 			   netAddressBits sourceFilterAddr);
-GROUPSOCK_DLL_LINK Boolean socketLeaveGroupSSM(UsageEnvironment&, int socket,
+USAGEENVIRONMENT_DLL_LINK Boolean socketLeaveGroupSSM(UsageEnvironment&, int socket,
 			    netAddressBits groupAddress,
 			    netAddressBits sourceFilterAddr);
 
-GROUPSOCK_DLL_LINK Boolean getSourcePort(UsageEnvironment& env, int socket, Port& port);
+USAGEENVIRONMENT_DLL_LINK Boolean getSourcePort(UsageEnvironment& env, int socket, Port& port);
 
-GROUPSOCK_DLL_LINK netAddressBits ourIPAddress(UsageEnvironment& env); // in network order
+USAGEENVIRONMENT_DLL_LINK netAddressBits ourIPAddress(UsageEnvironment& env); // in network order
 
 // IP addresses of our sending and receiving interfaces.  (By default, these
 // are INADDR_ANY (i.e., 0), specifying the default interface.)
 //extern netAddressBits SendingInterfaceAddr;
-GROUPSOCK_DLL_LINK netAddressBits& getSendingInterfaceAddr();
+USAGEENVIRONMENT_DLL_LINK netAddressBits& getSendingInterfaceAddr();
 //extern netAddressBits ReceivingInterfaceAddr;
-GROUPSOCK_DLL_LINK netAddressBits& getReceivingInterfaceAddr();
+USAGEENVIRONMENT_DLL_LINK netAddressBits& getReceivingInterfaceAddr();
 
 // Allocates a randomly-chosen IPv4 SSM (multicast) address:
-GROUPSOCK_DLL_LINK netAddressBits chooseRandomIPv4SSMAddress(UsageEnvironment& env);
+USAGEENVIRONMENT_DLL_LINK netAddressBits chooseRandomIPv4SSMAddress(UsageEnvironment& env);
 
 // Returns a simple "hh:mm:ss" string, for use in debugging output (e.g.)
-GROUPSOCK_DLL_LINK char const* timestampString();
+USAGEENVIRONMENT_DLL_LINK char const* timestampString();
 
 
 #ifdef HAVE_SOCKADDR_LEN
@@ -106,7 +106,7 @@ GROUPSOCK_DLL_LINK char const* timestampString();
 //            NoReuse dummy;
 //            ...
 //          }
-class GROUPSOCK_DLL_LINK NoReuse {
+class USAGEENVIRONMENT_DLL_LINK NoReuse {
 public:
   NoReuse(UsageEnvironment& env);
   ~NoReuse();
@@ -122,20 +122,20 @@ struct _groupsockPriv { // There should be only one of these allocated
   HashTable* socketTable;
   int reuseFlag;
 };
-GROUPSOCK_DLL_LINK _groupsockPriv* groupsockPriv(UsageEnvironment& env); // allocates it if necessary
-GROUPSOCK_DLL_LINK void reclaimGroupsockPriv(UsageEnvironment& env);
+USAGEENVIRONMENT_DLL_LINK _groupsockPriv* groupsockPriv(UsageEnvironment& env); // allocates it if necessary
+USAGEENVIRONMENT_DLL_LINK void reclaimGroupsockPriv(UsageEnvironment& env);
 
 
 #if defined(__WIN32__) || defined(_WIN32)
 // For Windoze, we need to implement our own gettimeofday()
-GROUPSOCK_DLL_LINK int gettimeofday(struct timeval*, int*);
-GROUPSOCK_DLL_LINK int initializeWinsockIfNecessary(void);
+USAGEENVIRONMENT_DLL_LINK int gettimeofday(struct timeval*, int*);
+USAGEENVIRONMENT_DLL_LINK int initializeWinsockIfNecessary(void);
 #endif
 
 // The following are implemented in inet.c:
-GROUPSOCK_DLL_LINK netAddressBits our_inet_addr(char const*);
-GROUPSOCK_DLL_LINK void our_srandom(unsigned int x);
-GROUPSOCK_DLL_LINK long our_random();
-GROUPSOCK_DLL_LINK u_int32_t our_random32(); // because "our_random()" returns a 31-bit number
+USAGEENVIRONMENT_DLL_LINK netAddressBits our_inet_addr(char const*);
+USAGEENVIRONMENT_DLL_LINK void our_srandom(unsigned int x);
+USAGEENVIRONMENT_DLL_LINK long our_random();
+USAGEENVIRONMENT_DLL_LINK u_int32_t our_random32(); // because "our_random()" returns a 31-bit number
 
 #endif

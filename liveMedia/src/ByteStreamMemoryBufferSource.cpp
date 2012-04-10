@@ -19,7 +19,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Implementation
 
 #include "../ByteStreamMemoryBufferSource.hh"
-#include <groupsock/GroupsockHelper.hh>
+#include <UsageEnvironment/GroupsockHelper.hh>
 
 ////////// ByteStreamMemoryBufferSource //////////
 

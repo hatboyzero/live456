@@ -13,8 +13,8 @@ include_directories (${LIVE456_HOME})
 
 add_executable (MPEG2TransportStreamIndexer ${MPEG2TransportStreamIndexer_SRC})
 
-add_dependencies (MPEG2TransportStreamIndexer UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+add_dependencies (MPEG2TransportStreamIndexer UsageEnvironment liveMedia)
 
-target_link_libraries (MPEG2TransportStreamIndexer UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+target_link_libraries (MPEG2TransportStreamIndexer UsageEnvironment liveMedia)
 
 set_target_properties (MPEG2TransportStreamIndexer PROPERTIES DEBUG_POSTFIX "_d")

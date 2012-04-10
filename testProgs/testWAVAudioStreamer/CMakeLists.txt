@@ -13,8 +13,8 @@ include_directories (${LIVE456_HOME})
 
 add_executable (testWAVAudioStreamer ${testWAVAudioStreamer_SRC})
 
-add_dependencies (testWAVAudioStreamer UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+add_dependencies (testWAVAudioStreamer UsageEnvironment liveMedia)
 
-target_link_libraries (testWAVAudioStreamer UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+target_link_libraries (testWAVAudioStreamer UsageEnvironment liveMedia)
 
 set_target_properties (testWAVAudioStreamer PROPERTIES DEBUG_POSTFIX "_d")

@@ -19,7 +19,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Implementation
 
 #include "../DelayQueue.hh"
-#include <groupsock/GroupsockHelper.hh>
+#include <UsageEnvironment/GroupsockHelper.hh>
 
 static const int MILLION = 1000000;
 

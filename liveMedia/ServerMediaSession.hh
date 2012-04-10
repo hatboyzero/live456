@@ -33,7 +33,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "FramedSource.hh"
 #endif
 #ifndef _GROUPEID_HH
-#include <groupsock/GroupEId.hh>
+#include <UsageEnvironment/GroupEId.hh>
 #endif
 #ifndef _RTP_INTERFACE_HH
 #include "RTPInterface.hh" // for ServerRequestAlternativeByteHandler

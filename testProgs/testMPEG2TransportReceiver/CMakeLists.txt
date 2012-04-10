@@ -13,8 +13,8 @@ include_directories (${LIVE456_HOME})
 
 add_executable (testMPEG2TransportReceiver ${testMPEG2TransportReceiver_SRC})
 
-add_dependencies (testMPEG2TransportReceiver UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+add_dependencies (testMPEG2TransportReceiver UsageEnvironment liveMedia)
 
-target_link_libraries (testMPEG2TransportReceiver UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+target_link_libraries (testMPEG2TransportReceiver UsageEnvironment liveMedia)
 
 set_target_properties (testMPEG2TransportReceiver PROPERTIES DEBUG_POSTFIX "_d")

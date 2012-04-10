@@ -20,8 +20,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // main program
 
 #include <liveMedia/liveMedia.hh>
-#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
-#include <groupsock/GroupsockHelper.hh>
+#include <UsageEnvironment/BasicUsageEnvironment.hh>
+#include <UsageEnvironment/GroupsockHelper.hh>
 #include <liveMedia/AC3AudioStreamFramer.hh>
 
 char const* programName;

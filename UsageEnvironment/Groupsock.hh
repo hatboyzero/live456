@@ -38,7 +38,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // An "OutputSocket" is (by default) used only to send packets.
 // No packets are received on it (unless a subclass arranges this)
 
-class GROUPSOCK_DLL_LINK OutputSocket: public Socket {
+class USAGEENVIRONMENT_DLL_LINK OutputSocket: public Socket {
 public:
   OutputSocket(UsageEnvironment& env);
   virtual ~OutputSocket();
@@ -77,7 +77,7 @@ public:
 // As the name suggests, it was originally designed to send/receive
 // multicast, but it can send/receive unicast as well.
 
-class GROUPSOCK_DLL_LINK Groupsock: public OutputSocket {
+class USAGEENVIRONMENT_DLL_LINK Groupsock: public OutputSocket {
 public:
   Groupsock(UsageEnvironment& env, struct in_addr const& groupAddr,
 	    Port port, u_int8_t ttl);
@@ -157,11 +157,11 @@ private:
   DirectedNetInterfaceSet fMembers;
 };
 
-GROUPSOCK_DLL_LINK UsageEnvironment& operator<<(UsageEnvironment& s, const Groupsock& g);
+USAGEENVIRONMENT_DLL_LINK UsageEnvironment& operator<<(UsageEnvironment& s, const Groupsock& g);
 
 // A data structure for looking up a 'groupsock'
 // by (multicast address, port), or by socket number
-class GROUPSOCK_DLL_LINK GroupsockLookupTable {
+class USAGEENVIRONMENT_DLL_LINK GroupsockLookupTable {
 public:
   Groupsock* Fetch(UsageEnvironment& env, netAddressBits groupAddress,
 		   Port port, u_int8_t ttl, Boolean& isNew);

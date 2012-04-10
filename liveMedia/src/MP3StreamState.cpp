@@ -20,7 +20,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 #include "MP3StreamState.hh"
 #include "../InputFile.hh"
-#include <groupsock/GroupsockHelper.hh>
+#include <UsageEnvironment/GroupsockHelper.hh>
 
 #if defined(__WIN32__) || defined(_WIN32)
 #define snprintf _snprintf

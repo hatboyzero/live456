@@ -13,8 +13,8 @@ include_directories (${LIVE456_HOME})
 
 add_executable (sapWatch ${sapWatch_SRC})
 
-add_dependencies (sapWatch UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+add_dependencies (sapWatch UsageEnvironment liveMedia)
 
-target_link_libraries (sapWatch UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+target_link_libraries (sapWatch UsageEnvironment liveMedia)
 
 set_target_properties (sapWatch PROPERTIES DEBUG_POSTFIX "_d")

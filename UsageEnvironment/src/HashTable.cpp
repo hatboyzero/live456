@@ -27,12 +27,6 @@ HashTable::HashTable() {
 HashTable::~HashTable() {
 }
 
-HashTable*
-HashTable::create(int keyType) {
-    // Should never get here.
-    throw std::exception("Not implemented.");
-}
-
 HashTable::Iterator::Iterator() {
 }
 
@@ -48,8 +42,3 @@ void* HashTable::RemoveNext() {
   return removedValue;
 }
 
-HashTable::Iterator*
-HashTable::Iterator::create(HashTable const& hashTable) {
-    // Should never get here.
-    throw std::exception("Not implemented.");
-}

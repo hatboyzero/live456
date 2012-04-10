@@ -33,7 +33,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 const u_int8_t MAX_TTL = 255;
 
-class GROUPSOCK_DLL_LINK Scope {
+class USAGEENVIRONMENT_DLL_LINK Scope {
     public:
     	Scope(u_int8_t ttl = 0, const char* publicKey = NULL);
     	Scope(const Scope& orig);
@@ -55,7 +55,7 @@ class GROUPSOCK_DLL_LINK Scope {
     	char* fPublicKey;
 };
 
-class GROUPSOCK_DLL_LINK GroupEId {
+class USAGEENVIRONMENT_DLL_LINK GroupEId {
 public:
   GroupEId(struct in_addr const& groupAddr,
 	   portNumBits portNum, Scope const& scope,

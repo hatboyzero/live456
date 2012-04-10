@@ -21,7 +21,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "../DigestAuthentication.hh"
 #include "our_md5.h"
 #include <UsageEnvironment/strDup.hh>
-#include <groupsock/GroupsockHelper.hh> // for gettimeofday()
+#include <UsageEnvironment/GroupsockHelper.hh> // for gettimeofday()
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

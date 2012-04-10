@@ -13,8 +13,8 @@ include_directories (${LIVE456_HOME})
 
 add_executable (testAMRAudioStreamer ${testAMRAudioStreamer_SRC})
 
-add_dependencies (testAMRAudioStreamer UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+add_dependencies (testAMRAudioStreamer UsageEnvironment liveMedia)
 
-target_link_libraries (testAMRAudioStreamer UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+target_link_libraries (testAMRAudioStreamer UsageEnvironment liveMedia)
 
 set_target_properties (testAMRAudioStreamer PROPERTIES DEBUG_POSTFIX "_d")

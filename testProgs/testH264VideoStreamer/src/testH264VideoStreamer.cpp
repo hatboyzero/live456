@@ -25,8 +25,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // RTSP client (such as "openRTSP")
 
 #include <liveMedia/liveMedia.hh>
-#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
-#include <groupsock/GroupsockHelper.hh>
+#include <UsageEnvironment/BasicUsageEnvironment.hh>
+#include <UsageEnvironment/GroupsockHelper.hh>
 
 UsageEnvironment* env;
 char const* inputFileName = "test.264";

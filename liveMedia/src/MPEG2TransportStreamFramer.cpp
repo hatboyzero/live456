@@ -21,7 +21,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Implementation
 
 #include "../MPEG2TransportStreamFramer.hh"
-#include <groupsock/GroupsockHelper.hh> // for "gettimeofday()"
+#include <UsageEnvironment/GroupsockHelper.hh> // for "gettimeofday()"
 
 #define TRANSPORT_PACKET_SIZE 188
 

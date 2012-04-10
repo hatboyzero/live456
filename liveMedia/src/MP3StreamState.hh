@@ -31,7 +31,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "MP3Internals.hh"
 #endif
 #ifndef _NET_COMMON_H
-#include <groupsock/NetCommon.h>
+#include <UsageEnvironment/NetCommon.h>
 #endif
 
 #include <stdio.h>

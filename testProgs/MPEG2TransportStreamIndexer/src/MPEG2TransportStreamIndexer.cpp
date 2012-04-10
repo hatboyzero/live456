@@ -21,7 +21,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // main program
 
 #include <liveMedia/liveMedia.hh>
-#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
+#include <UsageEnvironment/BasicUsageEnvironment.hh>
 
 void afterPlaying(void* clientData); // forward
 

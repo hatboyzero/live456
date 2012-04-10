@@ -38,7 +38,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 // An abstract base class, useful for subclassing
 // (e.g., to redefine the implementation of "operator<<")
-class BASICUSAGEENVIRONMENT_DLL_LINK BasicUsageEnvironment0: public UsageEnvironment {
+class USAGEENVIRONMENT_DLL_LINK BasicUsageEnvironment0: public UsageEnvironment {
 public:
   // redefined virtual functions:
   virtual MsgString getResultMsg() const;
@@ -73,7 +73,7 @@ class HandlerSet; // forward
 
 // An abstract base class, useful for subclassing
 // (e.g., to redefine the implementation of socket event handling)
-class BASICUSAGEENVIRONMENT_DLL_LINK BasicTaskScheduler0: public TaskScheduler {
+class USAGEENVIRONMENT_DLL_LINK BasicTaskScheduler0: public TaskScheduler {
 public:
   virtual ~BasicTaskScheduler0();
 

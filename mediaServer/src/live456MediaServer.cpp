@@ -17,7 +17,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // LIVE555 Media Server
 // main program
 
-#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
+#include <UsageEnvironment/BasicUsageEnvironment.hh>
 #include "DynamicRTSPServer.hh"
 #include "version.hh"
 

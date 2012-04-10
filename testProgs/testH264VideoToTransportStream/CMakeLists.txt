@@ -13,8 +13,8 @@ include_directories (${LIVE456_HOME})
 
 add_executable (testH264VideoToTransportStream ${testH264VideoToTransportStream_SRC})
 
-add_dependencies (testH264VideoToTransportStream UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+add_dependencies (testH264VideoToTransportStream UsageEnvironment liveMedia)
 
-target_link_libraries (testH264VideoToTransportStream UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+target_link_libraries (testH264VideoToTransportStream UsageEnvironment liveMedia)
 
 set_target_properties (testH264VideoToTransportStream PROPERTIES DEBUG_POSTFIX "_d")

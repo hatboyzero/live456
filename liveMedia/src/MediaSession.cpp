@@ -21,7 +21,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 #include "../liveMedia.hh"
 #include "../Locale.hh"
-#include <groupsock/GroupsockHelper.hh>
+#include <UsageEnvironment/GroupsockHelper.hh>
 #include <ctype.h>
 
 ////////// MediaSession //////////

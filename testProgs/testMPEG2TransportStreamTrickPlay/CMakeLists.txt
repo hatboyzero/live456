@@ -13,8 +13,8 @@ include_directories (${LIVE456_HOME})
 
 add_executable (testMPEG2TransportStreamTrickPlay ${testMPEG2TransportStreamTrickPlay_SRC})
 
-add_dependencies (testMPEG2TransportStreamTrickPlay UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+add_dependencies (testMPEG2TransportStreamTrickPlay UsageEnvironment liveMedia)
 
-target_link_libraries (testMPEG2TransportStreamTrickPlay UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+target_link_libraries (testMPEG2TransportStreamTrickPlay UsageEnvironment liveMedia)
 
 set_target_properties (testMPEG2TransportStreamTrickPlay PROPERTIES DEBUG_POSTFIX "_d")

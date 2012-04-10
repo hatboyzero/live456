@@ -28,7 +28,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 ////////// HandlerSet (etc.) definition //////////
 
-class BASICUSAGEENVIRONMENT_DLL_LINK HandlerDescriptor {
+class USAGEENVIRONMENT_DLL_LINK HandlerDescriptor {
   HandlerDescriptor(HandlerDescriptor* nextHandler);
   virtual ~HandlerDescriptor();
 
@@ -46,7 +46,7 @@ private:
   HandlerDescriptor* fPrevHandler;
 };
 
-class BASICUSAGEENVIRONMENT_DLL_LINK HandlerSet {
+class USAGEENVIRONMENT_DLL_LINK HandlerSet {
 public:
   HandlerSet();
   virtual ~HandlerSet();
@@ -63,7 +63,7 @@ private:
   HandlerDescriptor fHandlers;
 };
 
-class BASICUSAGEENVIRONMENT_DLL_LINK HandlerIterator {
+class USAGEENVIRONMENT_DLL_LINK HandlerIterator {
 public:
   HandlerIterator(HandlerSet& handlerSet);
   virtual ~HandlerIterator();

@@ -20,7 +20,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 #include "../ADTSAudioFileSource.hh"
 #include "../InputFile.hh"
-#include <groupsock/GroupsockHelper.hh>
+#include <UsageEnvironment/GroupsockHelper.hh>
 
 ////////// ADTSAudioFileSource //////////
 

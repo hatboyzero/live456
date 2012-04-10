@@ -13,8 +13,8 @@ include_directories (${LIVE456_HOME})
 
 add_executable (testMPEG4VideoStreamer ${testMPEG4VideoStreamer_SRC})
 
-add_dependencies (testMPEG4VideoStreamer UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+add_dependencies (testMPEG4VideoStreamer UsageEnvironment liveMedia)
 
-target_link_libraries (testMPEG4VideoStreamer UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+target_link_libraries (testMPEG4VideoStreamer UsageEnvironment liveMedia)
 
 set_target_properties (testMPEG4VideoStreamer PROPERTIES DEBUG_POSTFIX "_d")

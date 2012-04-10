@@ -22,8 +22,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Instead, we recommend using the "testRTSPClient" application code as a model.
 
 #include "playCommon.hh"
-#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
-#include <groupsock/GroupsockHelper.hh>
+#include <UsageEnvironment/BasicUsageEnvironment.hh>
+#include <UsageEnvironment/GroupsockHelper.hh>
 
 #if defined(__WIN32__) || defined(_WIN32)
 #define snprintf _snprintf

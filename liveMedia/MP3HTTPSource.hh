@@ -27,7 +27,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "MP3FileSource.hh"
 #endif
 #ifndef _NET_ADDRESS_HH
-#include <groupsock/NetAddress.hh>
+#include <UsageEnvironment/NetAddress.hh>
 #endif
 
 class LIVEMEDIA_DLL_LINK MP3HTTPSource: public MP3FileSource {

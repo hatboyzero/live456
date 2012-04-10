@@ -29,7 +29,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "../Media.hh"
 #endif
 #ifndef _GROUPSOCK_HH
-#include <groupsock/Groupsock.hh>
+#include <UsageEnvironment/Groupsock.hh>
 #endif
 
 // Typedef for an optional auxilliary handler function, to be called

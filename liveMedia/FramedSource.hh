@@ -24,7 +24,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "Configuration.hpp"
 
 #ifndef _NET_COMMON_H
-#include <groupsock/NetCommon.h>
+#include <UsageEnvironment/NetCommon.h>
 #endif
 #ifndef _MEDIA_SOURCE_HH
 #include "MediaSource.hh"

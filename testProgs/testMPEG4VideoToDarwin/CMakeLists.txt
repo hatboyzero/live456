@@ -13,8 +13,8 @@ include_directories (${LIVE456_HOME})
 
 add_executable (testMPEG4VideoToDarwin ${testMPEG4VideoToDarwin_SRC})
 
-add_dependencies (testMPEG4VideoToDarwin UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+add_dependencies (testMPEG4VideoToDarwin UsageEnvironment liveMedia)
 
-target_link_libraries (testMPEG4VideoToDarwin UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+target_link_libraries (testMPEG4VideoToDarwin UsageEnvironment liveMedia)
 
 set_target_properties (testMPEG4VideoToDarwin PROPERTIES DEBUG_POSTFIX "_d")

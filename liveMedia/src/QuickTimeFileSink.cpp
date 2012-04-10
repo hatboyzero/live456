@@ -20,7 +20,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 #include "../QuickTimeFileSink.hh"
 #include "../QuickTimeGenericRTPSource.hh"
-#include <groupsock/GroupsockHelper.hh>
+#include <UsageEnvironment/GroupsockHelper.hh>
 #include "../InputFile.hh"
 #include "../OutputFile.hh"
 #include "../H263plusVideoRTPSource.hh" // for the special header

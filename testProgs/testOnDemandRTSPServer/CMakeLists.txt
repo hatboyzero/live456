@@ -13,8 +13,8 @@ include_directories (${LIVE456_HOME})
 
 add_executable (testOnDemandRTSPServer ${testOnDemandRTSPServer_SRC})
 
-add_dependencies (testOnDemandRTSPServer UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+add_dependencies (testOnDemandRTSPServer UsageEnvironment liveMedia)
 
-target_link_libraries (testOnDemandRTSPServer UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+target_link_libraries (testOnDemandRTSPServer UsageEnvironment liveMedia)
 
 set_target_properties (testOnDemandRTSPServer PROPERTIES DEBUG_POSTFIX "_d")

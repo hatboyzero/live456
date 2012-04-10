@@ -27,7 +27,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "MediaSink.hh"
 #endif
 #ifndef _GROUPSOCK_HH
-#include <groupsock/Groupsock.hh>
+#include <UsageEnvironment/Groupsock.hh>
 #endif
 
 class LIVEMEDIA_DLL_LINK BasicUDPSink: public MediaSink {

@@ -28,6 +28,6 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #endif
 
 // Handles incoming data on sockets:
-GROUPSOCK_DLL_LINK void socketReadHandler(Socket* sock, int mask);
+USAGEENVIRONMENT_DLL_LINK void socketReadHandler(Socket* sock, int mask);
 
 #endif

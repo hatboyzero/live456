@@ -24,7 +24,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "../SimpleRTPSource.hh"
 #include "../MPEG2TransportStreamFramer.hh"
 #include "../SimpleRTPSink.hh"
-#include <groupsock/GroupsockHelper.hh>
+#include <UsageEnvironment/GroupsockHelper.hh>
 
 
 MPEG2TransportUDPServerMediaSubsession*

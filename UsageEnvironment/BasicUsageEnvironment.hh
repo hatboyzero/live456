@@ -26,7 +26,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "BasicUsageEnvironment0.hh"
 #endif
 
-class BASICUSAGEENVIRONMENT_DLL_LINK BasicUsageEnvironment: public BasicUsageEnvironment0 {
+class USAGEENVIRONMENT_DLL_LINK BasicUsageEnvironment: public BasicUsageEnvironment0 {
 public:
   static BasicUsageEnvironment* createNew(TaskScheduler& taskScheduler);
 
@@ -46,7 +46,7 @@ protected:
 };
 
 
-class BASICUSAGEENVIRONMENT_DLL_LINK BasicTaskScheduler: public BasicTaskScheduler0 {
+class USAGEENVIRONMENT_DLL_LINK BasicTaskScheduler: public BasicTaskScheduler0 {
 public:
   static BasicTaskScheduler* createNew();
   virtual ~BasicTaskScheduler();

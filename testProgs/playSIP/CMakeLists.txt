@@ -15,8 +15,8 @@ include_directories (${LIVE456_HOME})
 
 add_executable (playSIP ${playSIP_SRC})
 
-add_dependencies (playSIP UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+add_dependencies (playSIP UsageEnvironment liveMedia)
 
-target_link_libraries (playSIP UsageEnvironment groupsock liveMedia BasicUsageEnvironment)
+target_link_libraries (playSIP UsageEnvironment liveMedia)
 
 set_target_properties (playSIP PROPERTIES DEBUG_POSTFIX "_d")
