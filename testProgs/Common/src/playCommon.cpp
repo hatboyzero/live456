@@ -22,8 +22,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Instead, we recommend using the "testRTSPClient" application code as a model.
 
 #include "playCommon.hh"
-#include "BasicUsageEnvironment.hh"
-#include "GroupsockHelper.hh"
+#include <BasicUsageEnvironment/BasicUsageEnvironment.hh>
+#include <groupsock/GroupsockHelper.hh>
 
 #if defined(__WIN32__) || defined(_WIN32)
 #define snprintf _snprintf
@@ -184,7 +184,7 @@ int main(int argc, char** argv) {
 	*env << "Failed to find network address for \"" << argv[2] << "\"";
 	break;
       }
-      ReceivingInterfaceAddr = *(unsigned*)(addresses.firstAddress()->data());
+      getReceivingInterfaceAddr() = *(unsigned*)(addresses.firstAddress()->data());
       ++argv; --argc;
       break;
     }

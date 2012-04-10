@@ -120,7 +120,7 @@ public:
       // resets periodic stats (called each time they're used to
       // generate a reception report)
 
-  class Iterator {
+  class LIVEMEDIA_DLL_LINK Iterator {
   public:
     Iterator(RTPReceptionStatsDB& receptionStatsDB);
     virtual ~Iterator();

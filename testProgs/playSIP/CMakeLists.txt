@@ -3,6 +3,8 @@ cmake_minimum_required (VERSION 2.6)
 project (playSIP)
 
 set (playSIP_SRC
+    ../Common/src/playCommon.hh
+	../Common/src/playCommon.cpp
 	src/playSIP.cpp
 )
 

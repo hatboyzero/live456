@@ -16,7 +16,7 @@ set (LIVE456_PROJECTS
 	mediaServer
 	testProgs
 	UsageEnvironment
-	WindowsAudioInputDevice
+	#WindowsAudioInputDevice
 )
 
 foreach (PROJECT_PATH ${LIVE456_PROJECTS})

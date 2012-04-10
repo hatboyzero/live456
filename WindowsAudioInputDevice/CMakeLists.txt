@@ -6,8 +6,8 @@ set (WindowsAudioInputDevice_SRC
 	src/showAudioInputPorts.cpp 
 	src/WindowsAudioInputDevice_common.cpp 
 	src/WindowsAudioInputDevice_common.hh 
-	src/WindowsAudioInputDevice_mixer.cpp 
-	src/WindowsAudioInputDevice_mixer.hh 
+	#src/WindowsAudioInputDevice_mixer.cpp 
+	#src/WindowsAudioInputDevice_mixer.hh 
 	src/WindowsAudioInputDevice_noMixer.cpp 
 	src/WindowsAudioInputDevice_noMixer.hh 
 )

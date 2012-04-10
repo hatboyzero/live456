@@ -32,8 +32,8 @@ Medium* createClient(UsageEnvironment& env, char const* /*url*/, int verbosityLe
     --suffix;
   }
 
-  unsigned char desiredAudioRTPPayloadFormat;
-  char* mimeSubtype;
+  extern unsigned char desiredAudioRTPPayloadFormat;
+  extern char* mimeSubtype;
   return ourSIPClient = SIPClient::createNew(env, desiredAudioRTPPayloadFormat, mimeSubtype, verbosityLevel, applicationName);
 }
 
