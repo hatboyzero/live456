@@ -314,7 +314,7 @@ set (liveMedia_SRC
 	src/WAVAudioFileSource.cpp 
 )
 
-set (liveMedia_DEFINITIONS -DLIVEMEDIA_EXPORTS)
+set (liveMedia_DEFINITIONS ${LIVE456_DEFINITIONS} -DLIVEMEDIA_EXPORTS)
 add_definitions (${liveMedia_DEFINITIONS})
 
 include_directories (${LIVE456_HOME})
@@ -331,4 +331,11 @@ install (FILES
 	${liveMedia_HEADERS}
 	DESTINATION
 	"${CMAKE_INSTALL_PREFIX}/include/liveMedia"
+)
+
+install ( TARGETS
+	liveMedia
+	RUNTIME DESTINATION bin
+	LIBRARY DESTINATION lib
+	ARCHIVE DESTINATION lib
 )

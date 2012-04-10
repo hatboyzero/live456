@@ -50,7 +50,7 @@ set (UsageEnvironment_SRC
 	src/UsageEnvironment.cpp
 )
 
-set (UsageEnvironment_DEFINITIONS -DUSAGEENVIRONMENT_EXPORTS)
+set (UsageEnvironment_DEFINITIONS ${LIVE456_DEFINITIONS} -DUSAGEENVIRONMENT_EXPORTS -DWINNT)
 add_definitions (${UsageEnvironment_DEFINITIONS})
 
 include_directories (${LIVE456_HOME})
@@ -69,4 +69,11 @@ install (FILES
 	${UsageEnvironment_HEADERS}
 	DESTINATION
 	"${CMAKE_INSTALL_PREFIX}/include/UsageEnvironment"
+)
+
+install ( TARGETS
+	UsageEnvironment
+	RUNTIME DESTINATION bin
+	LIBRARY DESTINATION lib
+	ARCHIVE DESTINATION lib
 )
