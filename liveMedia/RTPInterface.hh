@@ -25,12 +25,8 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 #include "Configuration.hpp"
 
-#ifndef _MEDIA_HH
-#include "../Media.hh"
-#endif
-#ifndef _GROUPSOCK_HH
+#include <liveMedia/Media.hh>
 #include <UsageEnvironment/Groupsock.hh>
-#endif
 
 // Typedef for an optional auxilliary handler function, to be called
 // when each new packet is read:
