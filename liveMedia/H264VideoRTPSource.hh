@@ -61,7 +61,7 @@ public:
   unsigned char* sPropBytes;
 };
 
-SPropRecord* parseSPropParameterSets(char const* sPropParameterSetsStr,
+LIVEMEDIA_DLL_LINK SPropRecord* parseSPropParameterSets(char const* sPropParameterSetsStr,
 				     // result parameter:
 				     unsigned& numSPropRecords);
     // Returns the binary value of each 'parameter set' specified in a
