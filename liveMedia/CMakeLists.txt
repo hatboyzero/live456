@@ -53,6 +53,7 @@ set (liveMedia_HEADERS
 	H264VideoRTPSource.hh
 	H264VideoStreamDiscreteFramer.hh
 	H264VideoStreamFramer.hh
+    H264VideoStreamServerMediaSubsession.hh
 	InputFile.hh
 	JPEGVideoRTPSink.hh
 	JPEGVideoRTPSource.hh
@@ -127,6 +128,7 @@ set (liveMedia_HEADERS
 	SimpleRTPSource.hh
 	SIPClient.hh
 	StreamReplicator.hh
+    StreamServerMediaSubsession.hh
 	T140TextRTPSink.hh
 	TCPStreamSink.hh
 	TextRTPSink.hh
@@ -199,6 +201,7 @@ set (liveMedia_SRC
 	src/H264VideoRTPSource.cpp 
 	src/H264VideoStreamDiscreteFramer.cpp 
 	src/H264VideoStreamFramer.cpp 
+    src/H264VideoStreamServerMediaSubsession.cpp
 	src/InputFile.cpp 
 	src/JPEGVideoRTPSink.cpp 
 	src/JPEGVideoRTPSource.cpp 
@@ -295,6 +298,7 @@ set (liveMedia_SRC
 	src/StreamParser.cpp 
 	src/StreamParser.hh 
 	src/StreamReplicator.cpp 
+    src/StreamServerMediaSubsession.cpp
 	src/T140TextMatroskaFileServerMediaSubsession.cpp 
 	src/T140TextMatroskaFileServerMediaSubsession.hh 
 	src/T140TextRTPSink.cpp 
