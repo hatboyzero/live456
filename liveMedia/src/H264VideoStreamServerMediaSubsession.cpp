@@ -103,7 +103,6 @@ char const* H264VideoStreamServerMediaSubsession::getAuxSDPLine(RTPSink* rtpSink
 
 FramedSource* H264VideoStreamServerMediaSubsession::createNewStreamSource(unsigned /*clientSessionId*/, unsigned& estBitrate) {
   estBitrate = 500;
-  return fInputSource;
 
   if (fInputSource != NULL)
   {
