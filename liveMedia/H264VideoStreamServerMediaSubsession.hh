@@ -33,8 +33,6 @@ public:
     static H264VideoStreamServerMediaSubsession*
     createNew(UsageEnvironment& env, Boolean reuseFirstSource);
 
-    void setFramedSource(FramedSource* inputSource);
-
     // Used to implement "getAuxSDPLine()":
     void checkForAuxSDPLine1();
     void afterPlayingDummy1();
@@ -46,12 +44,10 @@ protected:
     void setDoneFlag() { fDoneFlag = ~0; }
 
 protected: // redefined virtual functions
-    virtual char const* sdpLines();
     virtual char const* getAuxSDPLine(RTPSink* rtpSink,
                     FramedSource* inputSource);
     virtual FramedSource* createNewStreamSource(unsigned clientSessionId,
                     unsigned& estBitrate);
-    virtual void closeStreamSource(FramedSource* inputSource);
     virtual RTPSink* createNewRTPSink(Groupsock* rtpGroupsock,
                     unsigned char rtpPayloadTypeIfDynamic,
                     FramedSource* inputSource);

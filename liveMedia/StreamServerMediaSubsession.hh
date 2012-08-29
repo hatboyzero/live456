@@ -33,7 +33,11 @@ protected: // we're a virtual base class
   StreamServerMediaSubsession(UsageEnvironment& _env, Boolean reuseFirstSource);
   virtual ~StreamServerMediaSubsession();
 
+public:
+    void setFramedSource(FramedSource* inputSource);
+
 protected:
+  FramedSource* fInputSource;
 };
 
 #endif

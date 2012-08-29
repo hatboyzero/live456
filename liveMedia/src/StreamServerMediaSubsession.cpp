@@ -23,10 +23,16 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 StreamServerMediaSubsession
 ::StreamServerMediaSubsession(UsageEnvironment& env, Boolean reuseFirstSource)
-  : OnDemandServerMediaSubsession(env, reuseFirstSource)
+  : OnDemandServerMediaSubsession(env, reuseFirstSource), fInputSource(NULL)
 {
 }
 
 StreamServerMediaSubsession::~StreamServerMediaSubsession()
 {
 }
+
+void StreamServerMediaSubsession::setFramedSource(FramedSource* inputSource)
+{
+    fInputSource = inputSource;
+}
+

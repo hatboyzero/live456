@@ -106,6 +106,7 @@ set (liveMedia_HEADERS
 	MPEG4VideoFileServerMediaSubsession.hh
 	MPEG4VideoStreamDiscreteFramer.hh
 	MPEG4VideoStreamFramer.hh
+    MPEG4VideoStreamServerMediaSubsession.hh
 	MPEGVideoStreamFramer.hh
 	MultiFramedRTPSink.hh
 	MultiFramedRTPSource.hh
@@ -266,7 +267,8 @@ set (liveMedia_SRC
 	src/MPEG4LATMAudioRTPSource.cpp 
 	src/MPEG4VideoFileServerMediaSubsession.cpp 
 	src/MPEG4VideoStreamDiscreteFramer.cpp 
-	src/MPEG4VideoStreamFramer.cpp 
+	src/MPEG4VideoStreamFramer.cpp
+    src/MPEG4VideoStreamServerMediaSubsession.cpp 
 	src/MPEGVideoStreamFramer.cpp 
 	src/MPEGVideoStreamParser.cpp 
 	src/MPEGVideoStreamParser.hh 
