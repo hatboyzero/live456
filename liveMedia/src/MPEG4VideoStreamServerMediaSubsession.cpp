@@ -22,7 +22,7 @@
 #include "../MPEG4VideoStreamServerMediaSubsession.hh"
 #include "../MPEG4ESVideoRTPSink.hh"
 #include "../ByteStreamFileSource.hh"
-#include "../MPEG4VideoStreamFramer.hh"
+#include "../MPEG4VideoStreamDiscreteFramer.hh"
 
 //-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
 MPEG4VideoStreamServerMediaSubsession*
@@ -35,7 +35,8 @@ MPEG4VideoStreamServerMediaSubsession::createNew(UsageEnvironment& env,
         env, 
         reuseFirstSource,
         _factory,
-        configStr);
+        configStr
+    );
 }
 
 //-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
@@ -149,7 +150,7 @@ MPEG4VideoStreamServerMediaSubsession::createNewStreamSource(unsigned /*clientSe
 {
     estBitrate = 500; // kbps, estimate
 
-    return MPEG4VideoStreamFramer::createNew(envir(), m_factory.create());
+    return MPEG4VideoStreamDiscreteFramer::createNew(envir(), m_factory.create());
 }
 
 //-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~

@@ -28,6 +28,8 @@
 #include "StreamServerMediaSubsession.hh"
 #endif
 
+#include <string>
+
 //-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
 
 class LIVEMEDIA_DLL_LINK H264VideoStreamServerMediaSubsession
@@ -38,7 +40,8 @@ class LIVEMEDIA_DLL_LINK H264VideoStreamServerMediaSubsession
 public:
     static H264VideoStreamServerMediaSubsession* createNew(UsageEnvironment& env,
                                                            Boolean reuseFirstSource,
-                                                           I_StreamSourceFactory& _factory);
+                                                           I_StreamSourceFactory& _factory,
+                                                           char const* spropStr = NULL);
 
     // Used to implement "getAuxSDPLine()":
     void checkForAuxSDPLine1();
@@ -62,7 +65,8 @@ protected:
 protected:
              H264VideoStreamServerMediaSubsession(UsageEnvironment& _env,
                                                   Boolean reuseFirstSource,
-                                                  I_StreamSourceFactory& _factory);
+                                                  I_StreamSourceFactory& _factory,
+                                                  char const* spropStr);
     virtual ~H264VideoStreamServerMediaSubsession();
     /// @}
 
@@ -72,6 +76,7 @@ private:
     char* fAuxSDPLine;
     char fDoneFlag; // used when setting up "fAuxSDPLine"
     RTPSink* fDummyRTPSink; // ditto
+    std::string fSPropStr;
     /// @}
 
 };  // class H264VideoStreamServerMediaSubsession

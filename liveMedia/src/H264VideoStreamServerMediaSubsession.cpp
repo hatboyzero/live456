@@ -21,29 +21,34 @@
 //-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
 #include "../H264VideoStreamServerMediaSubsession.hh"
 #include "../H264VideoRTPSink.hh"
-#include "../H264VideoStreamFramer.hh"
+#include "../ByteStreamFileSource.hh"
+#include "../H264VideoStreamDiscreteFramer.hh"
 
 //-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
 H264VideoStreamServerMediaSubsession*
 H264VideoStreamServerMediaSubsession::createNew(UsageEnvironment& env,
                                                 Boolean reuseFirstSource,
-                                                I_StreamSourceFactory& _factory)
+                                                I_StreamSourceFactory& _factory,
+                                                char const* spropStr)
 {
     return new H264VideoStreamServerMediaSubsession(
         env,
         reuseFirstSource,
-        _factory
+        _factory,
+        spropStr
     );
 }
 
 //-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
 H264VideoStreamServerMediaSubsession::H264VideoStreamServerMediaSubsession(UsageEnvironment& env,
                                                                            Boolean reuseFirstSource,
-                                                                           I_StreamSourceFactory& _factory)
+                                                                           I_StreamSourceFactory& _factory,
+                                                                           const char* spropStr)
 :   StreamServerMediaSubsession(env, reuseFirstSource, _factory)
 ,   fAuxSDPLine(NULL)
 ,   fDoneFlag(0)
 ,   fDummyRTPSink(NULL)
+,   fSPropStr(spropStr)
 {
 }
 
@@ -146,7 +151,7 @@ H264VideoStreamServerMediaSubsession::createNewStreamSource(unsigned /*clientSes
 {
     estBitrate = 500;
 
-    return H264VideoStreamFramer::createNew(envir(), m_factory.create());
+    return H264VideoStreamDiscreteFramer::createNew(envir(), m_factory.create());
 }
 
 //-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
@@ -155,7 +160,12 @@ H264VideoStreamServerMediaSubsession::createNewRTPSink(Groupsock* rtpGroupsock,
                                                        unsigned char rtpPayloadTypeIfDynamic,
                                                        FramedSource* /*inputSource*/)
 {
-    return H264VideoRTPSink::createNew(envir(), rtpGroupsock, rtpPayloadTypeIfDynamic);
+    return H264VideoRTPSink::createNew(
+        envir(), 
+        rtpGroupsock, 
+        rtpPayloadTypeIfDynamic,
+        fSPropStr.c_str()
+    );
 }
 
 //-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
