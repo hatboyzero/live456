@@ -47,6 +47,8 @@ public:
     void checkForAuxSDPLine1();
     void afterPlayingDummy1();
 
+    void setSProp(char const* spropStr);
+
 protected:
 
     void setDoneFlag() { fDoneFlag = ~0; }

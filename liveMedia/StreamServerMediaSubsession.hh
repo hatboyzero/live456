@@ -53,7 +53,7 @@ public:
         /// @name I_StreamSourceFactory interface
         /// @{
     public:
-        virtual FramedSource* create() = 0;
+        virtual FramedSource* create(StreamServerMediaSubsession& _subsession) = 0;
         /// @}
 
     };  // interface I_StreamSourceFactory

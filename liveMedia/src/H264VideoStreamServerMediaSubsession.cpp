@@ -78,6 +78,13 @@ H264VideoStreamServerMediaSubsession::afterPlayingDummy1()
 }
 
 //-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
+void
+H264VideoStreamServerMediaSubsession::setSProp(char const* spropStr)
+{
+    fSPropStr = spropStr;
+}
+
+//-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
 static void
 checkForAuxSDPLine(void* clientData)
 {
@@ -151,7 +158,7 @@ H264VideoStreamServerMediaSubsession::createNewStreamSource(unsigned /*clientSes
 {
     estBitrate = 500;
 
-    return H264VideoStreamDiscreteFramer::createNew(envir(), m_factory.create());
+    return H264VideoStreamDiscreteFramer::createNew(envir(), m_factory.create(*this));
 }
 
 //-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~

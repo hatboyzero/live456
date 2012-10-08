@@ -150,7 +150,7 @@ MPEG4VideoStreamServerMediaSubsession::createNewStreamSource(unsigned /*clientSe
 {
     estBitrate = 500; // kbps, estimate
 
-    return MPEG4VideoStreamDiscreteFramer::createNew(envir(), m_factory.create());
+    return MPEG4VideoStreamDiscreteFramer::createNew(envir(), m_factory.create(*this));
 }
 
 //-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
