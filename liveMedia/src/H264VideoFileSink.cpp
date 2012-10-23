@@ -30,9 +30,13 @@ H264VideoFileSink
 		    unsigned bufferSize, char const* perFrameFileNamePrefix)
   : FileSink(env, fid, bufferSize, perFrameFileNamePrefix),
     fSPropParameterSetsStr(sPropParameterSetsStr), fHaveWrittenFirstFrame(False) {
+    int length = strlen(sPropParameterSetsStr);
+    fSPropParameterSetsStr = new char[length + 1];
+    memcpy((void*)fSPropParameterSetsStr, sPropParameterSetsStr, length + 1);
 }
 
 H264VideoFileSink::~H264VideoFileSink() {
+    delete [] fSPropParameterSetsStr;
 }
 
 H264VideoFileSink*
